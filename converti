@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd img
+
+for image in *; do
+
+convert "$image" "${image%.*}.png"
+
+done
+
+exit 0

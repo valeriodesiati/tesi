@@ -1,12 +1,64 @@
 % % !TeX spellcheck = it_IT
 
 \chapter{Tecnologie utilizzate}\label{sec:second_mpi}
+In questo capitolo saranno descritte le tecnologie più rilevanti utilizzate nella realizzazione del progetto.
+
 \section{Git}
+\emph{Git} è un DVCS (Distributed Version Control Systems) gratuito, open source e distribuito, utilizzabile da riga di comando, che consente di effettuare il controllo versione per un progetto.\\
+Data la sua natura “distribuita” \emph{Git} è basato su flussi di lavoro simultanei; quindi, diversi sviluppatori possono collaborare ad un progetto, ognuno con il proprio workflow.
+\begin{figure}[ht]
+	\centering
+	%\includegraphics[width=50mm,scale=0.5]{img/git}
+	\resizebox{.3\textwidth}{!}{\includegraphics{img/git}}
+	\caption{Logo di Git}
+	\label{fig:one}
+\end{figure}
+
 \section{Java}
+\emph{Java} è un linguaggio di programmazione ad alto livello orientato agli oggetti.\\
+Il suo scopo è quello di essere multipiattaforma, tutte le piattaforme che supportano il linguaggio devono essere in grado di eseguire un codice \emph{Java} compilato senza effettuare nuovamente la compilazione.\\
+Compilando un codice \emph{Java} si ottiene un file \emph{Java ByteCode} (con estensione \emph{.class}) che sarà eseguito sulla \emph{JVM} (Java Virtual Machine).\\
+È proprio la \emph{JVM} ad essere utilizzabile sulla maggior parte delle piattaforme.\\
+\begin{figure}[ht]
+	\centering
+	\resizebox{.1\textwidth}{!}{\includegraphics{img/java}}
+	\caption{Logo di Java}
+	\label{fig:one}
+\end{figure}
+
 \section{Eclipse}
+\emph{Eclipse} è un IDE (Integrated Development Environment) per lo sviluppo software realizzato in Java.\\
+\emph{Eclipse} unisce in un’unica interfaccia grafica per:
+\begin{itemize}
+	\item[$\bullet$]Scrittura del codice sorgente
+	\item[$\bullet$]Compilazione
+	\item[$\bullet$]Debugging
+\end{itemize}
+\begin{figure}[ht]
+	\centering
+	\resizebox{.1\textwidth}{!}{\includegraphics{img/eclipse}}
+	\caption{Logo di Eclipse}
+	\label{fig:one}
+\end{figure}
+
 \section{Framework Spring}
+\emph{Spring} è un framework open source per lo sviluppo di applicazioni in Java.\\
+\emph{Spring} è un framework modulare, consente di utilizzare solo i moduli di cui effettivamente si necessita.\\
+Nello specifico, per la realizzazione del progetto, sono stati utilizzati i moduli descritti in seguito.
 \subsection{Spring Boot}
+L’utilizzo di questo modulo consente di creare applicazioni Java standalone, pronte all’esecuzione.\\
+\emph{Spring Boot} consente di scegliere quale tool utilizzare per effettuare la build, in questo progetto è stato utilizzato Maven.\\
+Alla base di ogni build con \emph{Spring Boot} e \emph{Maven} c’è il file \emph{pom.xml} (acronimo di Project Object Model) in cui sono descritte tutte le impostazioni e le dipendenze necessarie alla build in un linguaggio \emph{simil-XML}.
 \subsection{Spring Data}
+
+\begin{figure}[ht]
+	\centering
+	\resizebox{.3\textwidth}{!}{\includegraphics{img/spring}}
+	\caption{Logo di Spring}
+	\label{fig:one}
+\end{figure}
+
+
 \section{Azure}
 \section{MySQL}
 \section{Kong Gateway}
