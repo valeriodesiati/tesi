@@ -17,7 +17,7 @@ Data la sua natura “distribuita” \emph{Git} è basato su flussi di lavoro si
 \section{Java}
 \emph{Java} è un linguaggio di programmazione ad alto livello orientato agli oggetti.\\
 Il suo scopo è quello di essere multipiattaforma, tutte le piattaforme che supportano il linguaggio devono essere in grado di eseguire un codice \emph{Java} compilato senza effettuare nuovamente la compilazione.\\
-Compilando un codice \emph{Java} si ottiene un file \emph{Java ByteCode} (con estensione \emph{.class}) che sarà eseguito sulla \emph{JVM} (Java Virtual Machine).\\
+Compilando un codice \emph{Java} si ottiene un file \emph{Java ByteCode} (con estensione \texttt{.class}) che sarà eseguito sulla \emph{JVM} (Java Virtual Machine).\\
 È proprio la \emph{JVM} ad essere utilizzabile sulla maggior parte delle piattaforme.\\
 \begin{figure}[ht]
 	\centering
@@ -44,12 +44,19 @@ Compilando un codice \emph{Java} si ottiene un file \emph{Java ByteCode} (con es
 \section{Framework Spring}
 \emph{Spring} è un framework open source per lo sviluppo di applicazioni in Java.\\
 \emph{Spring} è un framework modulare, consente di utilizzare solo i moduli di cui effettivamente si necessita.\\
-Nello specifico, per la realizzazione del progetto, sono stati utilizzati i moduli descritti in seguito.
+Nello specifico, per la realizzazione del progetto sono stati utilizzati i moduli descritti in seguito.
 \subsection{Spring Boot}
 L’utilizzo di questo modulo consente di creare applicazioni Java standalone, pronte all’esecuzione.\\
 \emph{Spring Boot} consente di scegliere quale tool utilizzare per effettuare la build, in questo progetto è stato utilizzato Maven.\\
 Alla base di ogni build con \emph{Spring Boot} e \emph{Maven} c’è il file \emph{pom.xml} (acronimo di Project Object Model) in cui sono descritte tutte le impostazioni e le dipendenze necessarie alla build in un linguaggio \emph{simil-XML}.
 \subsection{Spring Data}
+\emph{Spring Data} fornisce un modello di programmazione per l’accesso ai dati indipendentemente dal tipo di database utilizzato.\\
+Nello specifico, per la realizzazione del progetto è stata utilizzata la specifica di \emph{Spring Data} chiamata \emph{JPA} per:
+\begin{itemize}
+	\item[$\bullet$]Gestione del database
+	\item[$\bullet$]Creazione di tabelle
+	\item[$\bullet$]Esecuzione di query
+\end{itemize}
 
 \begin{figure}[ht]
 	\centering
@@ -59,12 +66,107 @@ Alla base di ogni build con \emph{Spring Boot} e \emph{Maven} c’è il file \em
 \end{figure}
 
 
-\section{Azure}
-\section{MySQL}
-\section{Kong Gateway}
-\section{Lua}
+\section{Azure DevOps}
+\emph{Azure DevOps} è una piattaforma fornita da Microsoft\texttrademark che consente di pianificare il lavoro, creare e distribuire applicazioni.\\
+Nello specifico, per la realizzazione del progetto sono state utilizzate le applicazioni descritte in seguito:
+\begin{itemize}
+	\item \textbf{Azure Repos} per la creazione e la gestione di repository \emph{Git} per il controllo e il versionamento del codice sorgente.
+	\item \textbf{Azure Pipelines} per l’automatizzazione del build e del deploy dell’intero progetto.
+	\item \textbf{Azure Artifacts} per la condivisione degli artefatti \emph{Maven}.
+\end{itemize}
+\begin{figure}[ht]
+	\centering
+	\resizebox{.3\textwidth}{!}{\includegraphics{img/azure}}
+	\caption{Logo di Azure}
+	\label{fig:one}
+\end{figure}
 \section{Docker}
+\emph{Docker} è un progetto open source per la creazione di container portabili e multipiattaforma.\\
+Docker utilizza il kernel Linux per isolare i processi in modo da poterli eseguire in maniera indipendente.\\
+Ogni container è basato su un’immagine, solitamente un intero Sistema Operativo, a scelta tra quelle fornite all’interno di Docker Hub (raccolta ufficiale di tutte le immagini disponibili) o un’immagine “custom”, realizzata appositamente dal singolo sviluppatore per un determinato scopo.\\
+Grazie all’organizzazione in container si ha un alto livello di sicurezza, esattamente come se i sistemi in esecuzione fossero fisicamente separati.\\
+Nella realizzazione del progetto è stata utilizzata l’immagine ufficiale di \emph{Kong Gateway} (approfondita nel paragrafo successivo) per la creazione del container.
+\begin{figure}[ht]
+	\centering
+	\resizebox{.3\textwidth}{!}{\includegraphics{img/docker}}
+	\caption{Logo di Docker}
+	\label{fig:one}
+\end{figure}
+
+\section{Kong Gateway}
+Un API gateway è uno strumento che si interpone tra un client e un back end per la gestione delle API (Application Programming Interface) che si comporta come un proxy inverso accettando tutte le richieste indirizzate alle API gestite, consentendo di configurare\emph{services} e \emph{routes}.\\
+Kong Gateway è un API gateway cloud-native che fornisce tutte le caratteristiche descritte sopra e, inoltre, consente l’utilizzo di plugin.\\
+Una volta installato è possibile configurarlo accedendo alle seguenti pagine:
+\begin{itemize}
+	\item \textbf{Kong Manager}, porta 8000, consente di utilizzare un’interfaccia grafica per configurare \emph{services}, \emph{routes} e \emph{plugins}.
+	\item \textbf{Pagina delle configurazioni}, porta 8002, raccoglie tutte le configurazioni del gateway in formato JSON.
+\end{itemize}
+\begin{figure}[ht]
+	\centering
+	\resizebox{.3\textwidth}{!}{\includegraphics{img/kong}}
+	\caption{Logo di Kong Gateway}
+	\label{fig:one}
+\end{figure}
+\subsection{Service}
+Un \emph{service} in Kong Gateway è un’astrazione di tutti i servizi upstream custom che si aggiungono alla configurazione. Con \emph{servizio upstream custom} si intende un microservizio custom che prende dati dalla richiesta inoltrata al gateway e ne restituisce altri al gateway stesso, che si occuperà di comunicarli al client.\\
+Solitamente ad ogni \emph{service} è associato una o più \emph{routes}.\\
+
+\subsection{Route}
+Una \emph{route} è una regola definita per indirizzare correttamente le richieste del client.\\
+L’associazione di una (o più) route ad un servizio consente di realizzare un meccanismo di routing molto potente, dato che è possibile configurare molto nel dettaglio il percorso che si vuole realizzare (protocolli da utilizzare, livello di sicurezza ecc.).\\
+
+\subsection{Plugin}
+Un \emph{plugin} è un’entità che sarà eseguita durante tutto il ciclo di vita di una richiesta o risposta HTTP/S (HyperText Trasfer Protocol / Secure).\\
+È il modo in cui Kong Gateway fornisce la possibilità di ottenere funzionalità aggiuntive per un \emph{service} o una \emph{route}.\\
+I plugin possono configurabili possono essere sia proprietari (attivabili da Kong Manager) sia custom. Per la realizzazione di un plugin custom si ha la possibilità di scegliere tra vari linguaggi di programmazione per lo sviluppo quali Go, Python, JavaScript e Lua (linguaggio utilizzato per lo sviluppo del plugin custom utilizzato nel progetto).\\ 
+
+\subsection{Consumer}
+Un \emph{consumer} in Kong Gateway può essere inteso come un utente di uno specifico servizio e può essere identificato tramite un \texttt{id} univoco.
+
+\section{PostgreSQL}
+\emph{PostgreSQL} è un DBMS (Database Management System) open source relazionale a oggetti che supporta la gran parte delle istruzioni del linguaggio SQL standard alle quali aggiunge diverse feature quali:
+\begin{itemize}
+	\item[$\bullet$]Query complesse
+	\item[$\bullet$]Foreign keys
+	\item[$\bullet$]Triggers
+	\item[$\bullet$]Views aggiornabili
+	\item[$\bullet$]Integrità dei dati nelle transazioni
+	\item[$\bullet$]Controllo concorrente del versionamento
+\end{itemize}
+Inoltre fornisce la possibilità di aggiungere tipi di dato, funzioni, operatori ecc.
+\begin{figure}[ht]
+	\centering
+	\resizebox{.4\textwidth}{!}{\includegraphics{img/postgres}}
+	\caption{Logo di PostgreSQL}
+	\label{fig:one}
+\end{figure}
+
+\section{Lua}
+\emph{Lua} è un linguaggio di scripting open source che combina la sintassi procedurale a costrutti di dati basati su array associativi.\\
+È un linguaggio tipizzato dinamicamente, viene eseguito interpretando un bytecode e gestisce la memoria in modo automatico tramite un \emph{garbage collector}.\\
+È stato scelto per la realizzazione del plugin per le sue caratteristiche quali:
+\begin{itemize}
+	\item[$\bullet$]Velocità
+	\item[$\bullet$]Portabilità
+	\item[$\bullet$]Leggerezza
+	\item[$\bullet$]Embed-easy
+\end{itemize}
+\begin{figure}[ht]
+	\centering
+	\resizebox{.2\textwidth}{!}{\includegraphics{img/lua}}
+	\caption{Logo di Lua}
+	\label{fig:one}
+\end{figure}
+
 \section{Postman}
+\emph{Postman} è una piattaforma API per la creazione, sviluppo e testing di APIs.\\
+Nello sviluppo del progetto è stato utilizzato per la fase di testing (approfondita nel capitolo dedicato), dato che permette di effettuare delle richieste HTTP/S, offrendo la possibilità di configurare il body della stessa e di ricevere la risposta.\\
+\begin{figure}[ht]
+	\centering
+	\resizebox{.2\textwidth}{!}{\includegraphics{img/postman}}
+	\caption{Logo di Postman}
+	\label{fig:one}
+\end{figure}
 
 % \emph{MPI} cioè, Message Passing Interface, è uno \textit{standard per l'interfaccia di una libreria per lo scambio di messaggi} \cite{mpi_standard}.\\
 % Questo standard \textit{de facto} è nato grazie al lavoro svolto su \textit{MPI Forum}, un forum nel quale aziende che si occupano di \textquotedblleft Parallel Computing\textquotedblright, ricercatori nell'ambito informatico, sviluppatori di librerie e di applicazioni hanno collaborato per raggiungere questo risultato.\\
