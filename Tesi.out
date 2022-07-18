@@ -1,12 +1,12 @@
 \BOOKMARK [0][-]{chapter*.5}{Introduzione}{}% 1
 \BOOKMARK [0][-]{chapter.1}{Descrizione\040dello\040stage}{}% 2
-\BOOKMARK [1][-]{section.1.1}{Progetto\040di\040stage}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.2}{Azienda}{chapter.1}% 4
-\BOOKMARK [2][-]{subsection.1.2.1}{Servizi\040offerti}{section.1.2}% 5
-\BOOKMARK [2][-]{subsection.1.2.2}{Organizzazione}{section.1.2}% 6
-\BOOKMARK [2][-]{subsection.1.2.3}{Metodologie\040aziendali}{section.1.2}% 7
-\BOOKMARK [1][-]{section.1.3}{Introduzione\040al\040progetto}{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.4}{Obiettivi}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.1}{Azienda}{chapter.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.1}{Servizi\040offerti}{section.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.2}{Organizzazione}{section.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.3}{Metodologie\040aziendali}{section.1.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Progetto\040di\040stage}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.2.1}{Ripartizione\040del\040lavoro\040svolto}{section.1.2}% 8
+\BOOKMARK [1][-]{section.1.3}{Obiettivi}{chapter.1}% 9
 \BOOKMARK [0][-]{chapter.2}{Tecnologie\040utilizzate}{}% 10
 \BOOKMARK [1][-]{section.2.1}{Git}{chapter.2}% 11
 \BOOKMARK [1][-]{section.2.2}{Java}{chapter.2}% 12
@@ -35,5 +35,5 @@
 \BOOKMARK [1][-]{section.4.5}{Architettura\040del\040plugin}{chapter.4}% 35
 \BOOKMARK [2][-]{subsection.4.5.1}{Sviluppo\040del\040plugin}{section.4.5}% 36
 \BOOKMARK [0][-]{chapter.5}{Testing}{}% 37
-\BOOKMARK [0][-]{chapter*.18}{Conclusione}{}% 38
+\BOOKMARK [0][-]{chapter*.20}{Conclusione}{}% 38
 \BOOKMARK [0][-]{appendix.Alph1}{Appendice}{}% 39

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.13)  17 JUL 2022 20:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.13)  18 JUL 2022 20:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -817,6 +817,33 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/hhline.sty
 Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
 )
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip73
+\multirow@cntb=\count320
+\multirow@dima=\skip74
+\bigstrutjot=\dimen277
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen278
+\lightrulewidth=\dimen279
+\cmidrulewidth=\dimen280
+\belowrulesep=\dimen281
+\belowbottomsep=\dimen282
+\aboverulesep=\dimen283
+\abovetopsep=\dimen284
+\cmidrulesep=\dimen285
+\cmidrulekern=\dimen286
+\defaultaddspace=\dimen287
+\@cmidla=\count321
+\@cmidlb=\count322
+\@aboverulesep=\dimen288
+\@belowrulesep=\dimen289
+\@thisruleclass=\count323
+\@lastruleclass=\count324
+\@thisrulewidth=\dimen290
+)
 (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
@@ -826,24 +853,24 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count320
-\c@Blindtext=\count321
-\c@blind@countparstart=\count322
-\blind@countxx=\count323
-\blindtext@numBlindtext=\count324
-\blind@countyy=\count325
-\c@blindlist=\count326
-\c@blindlistlevel=\count327
-\c@blindlist@level=\count328
-\blind@listitem=\count329
-\c@blind@listcount=\count330
-\c@blind@levelcount=\count331
-\blind@mathformula=\count332
-\blind@Mathformula=\count333
-\c@blind@randomcount=\count334
-\c@blind@randommax=\count335
-\c@blind@pangramcount=\count336
-\c@blind@pangrammax=\count337
+\c@blindtext=\count325
+\c@Blindtext=\count326
+\c@blind@countparstart=\count327
+\blind@countxx=\count328
+\blindtext@numBlindtext=\count329
+\blind@countyy=\count330
+\c@blindlist=\count331
+\c@blindlistlevel=\count332
+\c@blindlist@level=\count333
+\blind@listitem=\count334
+\c@blind@listcount=\count335
+\c@blind@levelcount=\count336
+\blind@mathformula=\count337
+\blind@Mathformula=\count338
+\c@blind@randomcount=\count339
+\c@blind@randommax=\count340
+\c@blind@pangramcount=\count341
+\c@blind@pangrammax=\count342
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
@@ -854,14 +881,14 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 )
-\c@thm=\count338
-\c@defn=\count339
-\c@example=\count340
-\c@oss=\count341
+\c@thm=\count343
+\c@defn=\count344
+\c@example=\count345
+\c@oss=\count346
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count342
+\l__kernel_color_stack_int=\count347
 \l__pdf_internal_box=\box66
 )
 (./Tesi.aux (./Frontespizio/Frontespizio.aux) (./Capitoli/Introduzione.aux)
@@ -896,14 +923,7 @@ LaTeX Warning: Label `fig:one' multiply defined.
 
 LaTeX Warning: Label `fig:one' multiply defined.
 
-) (./Capitoli/AnalisiRequisiti.aux
-
-LaTeX Warning: Label `chapter:formattazione' multiply defined.
-
-
-LaTeX Warning: Label `sec:cap_sec_subsec' multiply defined.
-
-) (./Capitoli/ProgettazioneSviluppo.aux
+) (./Capitoli/AnalisiRequisiti.aux) (./Capitoli/ProgettazioneSviluppo.aux
 
 LaTeX Warning: Label `chapter:formattazione' multiply defined.
 
@@ -932,37 +952,37 @@ LaTeX Warning: Label `sec:cap_sec_subsec' multiply defined.
 (./Capitoli/Appendici/Appendice1.aux))
 \openout1 = `Tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count343
-\scratchdimen=\dimen277
+\scratchcounter=\count348
+\scratchdimen=\dimen291
 \scratchbox=\box67
-\nofMPsegments=\count344
-\nofMParguments=\count345
+\nofMPsegments=\count349
+\nofMParguments=\count350
 \everyMPshowfont=\toks51
-\MPscratchCnt=\count346
-\MPscratchDim=\dimen278
-\MPnumerator=\count347
-\makeMPintoPDFobject=\count348
+\MPscratchCnt=\count351
+\MPscratchDim=\dimen292
+\MPnumerator=\count352
+\makeMPintoPDFobject=\count353
 \everyMPtoPDFconversion=\toks52
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -975,7 +995,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box68
-Package hyperref Info: Link coloring OFF on input line 114.
+Package hyperref Info: Link coloring OFF on input line 116.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -986,11 +1006,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count349
+\c@section@level=\count354
 )
-LaTeX Info: Redefining \ref on input line 114.
-LaTeX Info: Redefining \pageref on input line 114.
-LaTeX Info: Redefining \nameref on input line 114.
+LaTeX Info: Redefining \ref on input line 116.
+LaTeX Info: Redefining \pageref on input line 116.
+LaTeX Info: Redefining \nameref on input line 116.
 
 (./Tesi.out) (./Tesi.out)
 \@outlinefile=\write6
@@ -1000,8 +1020,8 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \it@ocap on input line 114.
-LaTeX Info: Redefining \it@ccap on input line 114.
+LaTeX Info: Redefining \it@ocap on input line 116.
+LaTeX Info: Redefining \it@ccap on input line 116.
 
 
 File italian.ldf warning: 
@@ -1009,9 +1029,9 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 114.
+italian.ldf    on input line 116.
 
-\c@lstlisting=\count350
+\c@lstlisting=\count355
 \openout2 = `Frontespizio/Frontespizio.aux'.
 
 (./Frontespizio/Frontespizio.tex
@@ -1068,7 +1088,7 @@ Package pdftex.def Info: Tesi-frn.pdf  used on input line 1.
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.146 \include{Capitoli/Introduzione}
+l.148 \include{Capitoli/Introduzione}
                                       [1]
 \openout2 = `Capitoli/DescrizioneStage.aux'.
 
@@ -1077,7 +1097,7 @@ me identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter
-            {Descrizione dello stage}\label{chapter:formattazione} [2
+            {Descrizione dello stage}\label{chapter:descrizione} [2
 
 
 
@@ -1085,21 +1105,25 @@ l.1 \chapter
 ]
 Capitolo 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
+Underfull \hbox (badness 10000) in paragraph at lines 5--7
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
+Underfull \hbox (badness 10000) in paragraph at lines 26--29
 
  []
 
-<img/aesys.png, id=333, 200.75pt x 55.20625pt>
+<img/aesys.png, id=337, 200.75pt x 55.20625pt>
 File: img/aesys.png Graphic file (type png)
 <use img/aesys.png>
-Package pdftex.def Info: img/aesys.png  used on input line 35.
+Package pdftex.def Info: img/aesys.png  used on input line 32.
 (pdftex.def)             Requested size: 200.7495pt x 55.2061pt.
-)
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--41
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 14.49998pt.
@@ -1107,50 +1131,69 @@ We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
 [4 <./img/aesys.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 79.
+
+
+Overfull \hbox (27.35013pt too wide) in paragraph at lines 81--90
+ [][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 93.
+
+
+Overfull \hbox (11.50806pt too wide) in paragraph at lines 95--110
+ [][] 
+ []
+
+[5] [6]) [7]
 \openout2 = `Capitoli/TecnologieUtilizzate.aux'.
 
- (./Capitoli/TecnologieUtilizzate.tex
+ (./Capitoli/TecnologieUtilizzate.tex [8
+
+
+
+
+]
 Capitolo 2.
-<img/git.png, id=342, 642.4pt x 268.00125pt>
+<img/git.png, id=362, 642.4pt x 268.00125pt>
 File: img/git.png Graphic file (type png)
 <use img/git.png>
 Package pdftex.def Info: img/git.png  used on input line 11.
 (pdftex.def)             Requested size: 642.39844pt x 268.00058pt.
-<img/java.png, id=343, 1204.5pt x 2242.3775pt>
+<img/java.png, id=363, 1204.5pt x 2242.3775pt>
 File: img/java.png Graphic file (type png)
 <use img/java.png>
 Package pdftex.def Info: img/java.png  used on input line 23.
 (pdftex.def)             Requested size: 1204.49707pt x 2242.37206pt.
-[5
-
-
-
-
- <./img/git.png>]
-<img/eclipse.png, id=350, 225.84375pt x 225.84375pt>
+[9 <./img/git.png>]
+<img/eclipse.png, id=371, 225.84375pt x 225.84375pt>
 File: img/eclipse.png Graphic file (type png)
 <use img/eclipse.png>
 Package pdftex.def Info: img/eclipse.png  used on input line 38.
 (pdftex.def)             Requested size: 225.84319pt x 225.84319pt.
- [6 <./img/java.png> <./img/eclipse.png>]
-<img/spring.png, id=357, 444.66125pt x 114.4275pt>
+ [10 <./img/java.png> <./img/eclipse.png>]
+<img/spring.png, id=378, 444.66125pt x 114.4275pt>
 File: img/spring.png Graphic file (type png)
 <use img/spring.png>
 Package pdftex.def Info: img/spring.png  used on input line 62.
 (pdftex.def)             Requested size: 444.66016pt x 114.42722pt.
-<img/azure.png, id=358, 308.352pt x 78.0516pt>
+<img/azure.png, id=379, 308.352pt x 78.0516pt>
 File: img/azure.png Graphic file (type png)
 <use img/azure.png>
 Package pdftex.def Info: img/azure.png  used on input line 78.
 (pdftex.def)             Requested size: 308.35124pt x 78.0514pt.
- [7 <./img/spring.png>]
-<img/docker.png, id=365, 1084.05pt x 1084.05pt>
+ [11 <./img/spring.png>]
+<img/docker.png, id=386, 1084.05pt x 1084.05pt>
 File: img/docker.png Graphic file (type png)
 <use img/docker.png>
 Package pdftex.def Info: img/docker.png  used on input line 90.
 (pdftex.def)             Requested size: 1084.04736pt x 1084.04736pt.
- [8 <./img/azure.png> <./img/docker.png>]
-<img/kong.png, id=372, 321.2pt x 132.495pt>
+ [12 <./img/azure.png> <./img/docker.png>]
+<img/kong.png, id=393, 321.2pt x 132.495pt>
 File: img/kong.png Graphic file (type png)
 <use img/kong.png>
 Package pdftex.def Info: img/kong.png  used on input line 105.
@@ -1170,134 +1213,98 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--121
 
  []
 
-[9 <./img/kong.png>]
-<img/postgres.png, id=379, 3198.95125pt x 1501.61pt>
+[13 <./img/kong.png>]
+<img/postgres.png, id=399, 3198.95125pt x 1501.61pt>
 File: img/postgres.png Graphic file (type png)
 <use img/postgres.png>
 Package pdftex.def Info: img/postgres.png  used on input line 138.
 (pdftex.def)             Requested size: 3198.94348pt x 1501.60635pt.
- [10 <./img/postgres.png>]
-<img/lua.png, id=385, 642.4pt x 642.4pt>
+ [14 <./img/postgres.png>]
+<img/lua.png, id=405, 642.4pt x 642.4pt>
 File: img/lua.png Graphic file (type png)
 <use img/lua.png>
 Package pdftex.def Info: img/lua.png  used on input line 155.
 (pdftex.def)             Requested size: 642.39844pt x 642.39844pt.
-<img/postman.png, id=386, 636.3775pt x 572.1375pt>
+<img/postman.png, id=406, 636.3775pt x 572.1375pt>
 File: img/postman.png Graphic file (type png)
 <use img/postman.png>
 Package pdftex.def Info: img/postman.png  used on input line 165.
 (pdftex.def)             Requested size: 636.37595pt x 572.1361pt.
-) [11 <./img/lua.png> <./img/postman.png>]
+) [15 <./img/lua.png> <./img/postman.png>]
 \openout2 = `Capitoli/AnalisiRequisiti.aux'.
 
- (./Capitoli/AnalisiRequisiti.tex [12
+ (./Capitoli/AnalisiRequisiti.tex [16
 
 
 
 
 ]
 Capitolo 3.
-) [13]
+) [17]
 \openout2 = `Capitoli/ProgettazioneSviluppo.aux'.
 
- (./Capitoli/ProgettazioneSviluppo.tex [14
+ (./Capitoli/ProgettazioneSviluppo.tex [18
 
 
 
 
 ]
 Capitolo 4.
-) [15]
+) [19]
 \openout2 = `Capitoli/Testing.aux'.
 
- (./Capitoli/Testing.tex [16
+ (./Capitoli/Testing.tex [20
 
 
 
 
 ]
 Capitolo 5.
-) [17]
+) [21]
 \openout2 = `Capitoli/Conclusione.aux'.
 
- (./Capitoli/Conclusione.tex [18
+ (./Capitoli/Conclusione.tex [22
 
 
 
 
-]
-
-Package blindtext Warning: italian not defined, using English instead.
-(blindtext)                 on input line 6.
-
-)
-
-Package blindtext Warning: italian not defined, using English instead.
-(blindtext)                 on input line 160.
-
-[19]
+]) [23]
 No file Tesi.bbl.
 \openout2 = `Capitoli/Appendici/Appendice1.aux'.
 
-(./Capitoli/Appendici/Appendice1.tex [20
+(./Capitoli/Appendici/Appendice1.tex [24
 
 
 
 
 ]
 Appendice A.
-)
-
-Package blindtext Warning: italian not defined, using English instead.
-(blindtext)                 on input line 170.
-
-
-Package blindtext Warning: italian not defined, using English instead.
-(blindtext)                 on input line 170.
-
-
-Package blindtext Warning: italian not defined, using English instead.
-(blindtext)                 on input line 170.
-
-
-Package blindtext Warning: italian not defined, using English instead.
-(blindtext)                 on input line 170.
-
-[21]
-
-Package blindtext Warning: italian not defined, using English instead.
-(blindtext)                 on input line 170.
-
-
-Package blindtext Warning: italian not defined, using English instead.
-(blindtext)                 on input line 170.
-
-[22]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 172.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 172.
- (./Tesi.aux (./Frontespizio/Frontespizio.aux) (./Capitoli/Introduzione.aux) (.
-/Capitoli/DescrizioneStage.aux) (./Capitoli/TecnologieUtilizzate.aux)
-(./Capitoli/AnalisiRequisiti.aux) (./Capitoli/ProgettazioneSviluppo.aux)
-(./Capitoli/Testing.aux) (./Capitoli/Conclusione.aux)
-(./Capitoli/Appendici/Appendice1.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 172.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 172.
+) [25]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 174.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 174.
+ (./Tesi.aux (./Frontespizio/Frontespizio.aux)
+(./Capitoli/Introduzione.aux) (./Capitoli/DescrizioneStage.aux)
+(./Capitoli/TecnologieUtilizzate.aux) (./Capitoli/AnalisiRequisiti.aux)
+(./Capitoli/ProgettazioneSviluppo.aux) (./Capitoli/Testing.aux)
+(./Capitoli/Conclusione.aux) (./Capitoli/Appendici/Appendice1.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 174.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 174.
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 754200A18CDD3E2CA097E5F1BA07F2C1;2475.
+(rerunfilecheck)             Checksum: C3A590D54C30F2D61EB648C65EC8A4A9;2491.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 172.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
  ) 
 Here is how much of TeX's memory you used:
- 28414 strings out of 483099
- 483976 string characters out of 5964234
- 897906 words of memory out of 5000000
- 42747 multiletter control sequences out of 15000+600000
+ 28533 strings out of 483099
+ 485686 string characters out of 5964234
+ 901203 words of memory out of 5000000
+ 42853 multiletter control sequences out of 15000+600000
  538725 words of font info for 46 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 68i,11n,97p,906b,2341s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,15n,97p,906b,2341s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/valeriodesiati/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcr
 m1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
@@ -1306,9 +1313,9 @@ share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Tesi.pdf (32 pages, 736067 bytes).
+Output written on Tesi.pdf (35 pages, 739543 bytes).
 PDF statistics:
- 486 PDF objects out of 1000 (max. 8388607)
- 86 named destinations out of 1000 (max. 500000)
+ 503 PDF objects out of 1000 (max. 8388607)
+ 91 named destinations out of 1000 (max. 500000)
  493 words of extra memory for PDF output out of 10000 (max. 10000000)
 

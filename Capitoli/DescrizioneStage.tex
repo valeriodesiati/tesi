@@ -1,10 +1,7 @@
-\chapter{Descrizione dello stage}\label{chapter:formattazione}
+\chapter{Descrizione dello stage}\label{chapter:descrizione}
+In questo capitolo saranno esposte brevemente tutte le caratteristiche e le dinamiche dello stage svolto, che saranno approfondite nei capitoli successivi.
 
-
-\section{Progetto di stage}\label{sec:cap_sec_subsec}
-
-
-\section{Azienda}\label{sec:images}
+\section{Azienda}\label{sec:azienda}
 AESYS S.r.l. è un’azienda fondata nel 2013 a Pescara (PE) che si occupa di sviluppo software e consulting con sedi a Pescara e Torino. Ad oggi AESYS conta più di 240 dipendenti.\\
 Nel corso degli anni l’azienda ha vissuto una grande crescita e ora dispone di figure specializzate in molteplici campi.\\
 
@@ -37,5 +34,83 @@ All’interno dell’azienda viene utilizzato \emph{Git} come sistema di version
 	\label{fig:one}
 \end{figure}
 
-\section{Introduzione al progetto}\label{sec:code}
-\section{Obiettivi}
+\section{Progetto di stage}\label{sec:progetto}
+Il progetto di stage prevede la realizzazione di un plugin per \emph{Kong Gateway} scritto con il linguaggio \emph{Lua}.\\
+Il plugin prevede l'integrazione del gateway con un microservizio scritto in Java per verificare l'avvenuto acquisto di un modulo applicativo da parte di un utente identificato tramite token.\\
+Il progetto comprende la realizzazione del microservizio e l'ottimizzazione del plugin tramite l'utilizzo di una cache locale a Kong.\\
+
+Ovviamente è stato necessario acquisire delle competenze di base prima della realizzazione del progetto, come ad esempio:
+Acquisire una conoscenza sufficiente del sistema di Version Control \emph{Git}.
+
+Le competenze necessarie per lo svolgimento del progetto sono:
+\begin{itemize}
+	\item[$\bullet$]Conoscenza della metodologia di sviluppo Agile (acquisita durante lo stage).
+	\item[$\bullet$]Conoscenza del sistema di Version Control \emph{Git} (acquisita durante lo stage).
+	\item[$\bullet$]Conoscenza del linguaggio Java e della JVM (Java Virtual Machine) per la realizzazione del microservizio (acquisita durante gli studi accademici).
+	\item[$\bullet$]Conoscenza del framework \emph{Spring} da utilizzare nello sviluppo del microservizio.
+	\item[$\bullet$]Conoscenza della struttura e del funzionamento di Kong Gateway (acquisita durante lo stage).
+	\item[$\bullet$]Conoscenza del linguaggio Lua per lo sviluppo del plugin (acquisita durante lo stage).
+	\item[$\bullet$]Conoscenza degli strumenti per effettuare testing sul prodotto finito (acquisita durante lo stage).
+\end{itemize}
+
+\subsection{Ripartizione del lavoro svolto}
+Lo stage aziendale ha avuto una durata di 225 ore, come previsto dal piano di studio Universitario per la Facoltà di Informatica. All’interno dell’azienda le ore sono state suddivise in cinque settimane lavorative full time, dal lunedì al venerdì dalle 09:00 alle 18:00.\\
+Di seguito due tabelle che riassumono la ripartizione settimanale e oraria dello sviluppo del progetto.\\
+% \begin{table}[]
+% 	\centering
+% 	\begin{tabular}{ |c|p{c}
+% 		\hline
+% 		\textbf{Settimana} & \textbf{Attività svolte} \\ \hline
+% 		\multirow{3}{*}{Prima settimana} & Esposizione delle specifiche del progetto.  \\
+% 		& Acquisizione delle competenze preliminari necessarie quali \emph{Git} e metodologia di sviluppo \emph{Agile}. \\ \hline
+% 		\multirow{2}{*}{Seconda settimana} & Studio del framework \emph{Spring}.  \\
+% 		& Sviluppo del microservizio. \\ \hline
+% 		\multirow{1}{*}{Terza settimana} & Sviluppo del microservizio. \\ \hline
+% 		\multirow{3}{*}{Quarta settimana} & Testing del microservizio. \\
+% 		& Studio del funzionamento di Kong Gateway. \\
+% 		& Configurazione Kong Gateway. \\ \hline
+% 		\multirow{4}{*}{Quinta settimana} & Studio delle specifiche del plugin. \\
+% 		& Studio della sintassi e della semantica del linguaggio \emph{Lua}. \\
+% 		& Sviluppo del plugin per Kong Gateway. \\
+% 		& Testing del prodotto finito. \\ \hline
+% 	\end{tabular}
+% 	\caption{Ripartizione settimanale del lavoro svolto}
+% \end{table}
+\begin{table}[]
+	\centering
+	\begin{tabular}{|c|c|}
+	\hline
+	\textbf{Settimana} & \textbf{Attività svolte} \\ \hline
+	Prima settimana & \begin{tabular}[c]{@{}c@{}}Esposizione delle specifiche del progetto.\\ Acquisizione delle competenze preliminari necessarie\\ quali Git e metodologia di sviluppo Agile.\end{tabular} \\ \hline
+	Seconda settimana & \begin{tabular}[c]{@{}c@{}}Studio del framework Spring.\\ Sviluppo del microservizio.\end{tabular} \\ \hline
+	Terza settimana & Sviluppo del microservizio. \\ \hline
+	Quarta settimana & \begin{tabular}[c]{@{}c@{}}Testing del microservizio.\\ Studio del funzionamento di Kong Gateway.\\ Configurazione Kong Gateway.\end{tabular} \\ \hline
+	Quinta settimana & \begin{tabular}[c]{@{}c@{}}Studio delle specifiche del plugin.\\ Studio della sintassi e della semantica del linguaggio Lua.\\ Sviluppo del plugin per Kong Gateway.\\ Testing del prodotto finito.\end{tabular} \\ \hline
+	\end{tabular}
+	\caption{Ripartizione settimanale del lavoro svolto}
+\end{table}
+
+\begin{table}[]
+	\centering
+	\begin{tabular}{|c|c|}
+	\hline
+	\textbf{Attività svolte} & \textbf{Ore impiegate} \\ \hline
+	Esposizione delle specifiche del progetto & 2 \\ \hline
+	\begin{tabular}[c]{@{}c@{}}Acquisizione delle competenze preliminari \\ necessarie quali Git e metodologia di sviluppo Agile\end{tabular} & 38 \\ \hline
+	Studio del framework Spring & 20 \\ \hline
+	Sviluppo del microservizio & 60 \\ \hline
+	Testing del microservizio & 5 \\ \hline
+	Studio del funzionamento di Kong Gateway & 30 \\ \hline
+	Configurazione Kong Gateway & 5 \\ \hline
+	Studio delle specifiche del plugin & 2 \\ \hline
+	Studio della sintassi e della semantica del linguaggio Lua & 12 \\ \hline
+	Sviluppo plugin per Kong Gateway & 20 \\ \hline
+	Testing del prodotto finito & 8 \\ \hline
+	\end{tabular}
+	\caption{Ripartizione oraria del lavoro svolto}
+\end{table}
+
+%TROVA MODO DI SPAZIARE VERTICALMENTE LE CELLE
+
+%\section{Introduzione al progetto}\label{sec:introduzione}
+\section{Obiettivi}\label{sec:obiettivi}
