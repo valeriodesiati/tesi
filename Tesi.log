@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.13)  18 JUL 2022 20:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.13)  19 JUL 2022 19:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1131,25 +1131,13 @@ We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
 [4 <./img/aesys.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 57--74
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 79.
-
-
-Overfull \hbox (27.35013pt too wide) in paragraph at lines 81--90
- [][] 
  []
 
+[5] [6]) [7
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 93.
-
-
-Overfull \hbox (11.50806pt too wide) in paragraph at lines 95--110
- [][] 
- []
-
-[5] [6]) [7]
+]
 \openout2 = `Capitoli/TecnologieUtilizzate.aux'.
 
  (./Capitoli/TecnologieUtilizzate.tex [8
@@ -1298,13 +1286,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
  ) 
 Here is how much of TeX's memory you used:
- 28533 strings out of 483099
- 485686 string characters out of 5964234
- 901203 words of memory out of 5000000
- 42853 multiletter control sequences out of 15000+600000
+ 28534 strings out of 483099
+ 485701 string characters out of 5964234
+ 906203 words of memory out of 5000000
+ 42854 multiletter control sequences out of 15000+600000
  538725 words of font info for 46 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 68i,15n,97p,906b,2341s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,11n,97p,906b,2341s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/valeriodesiati/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcr
 m1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
@@ -1313,7 +1301,7 @@ share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Tesi.pdf (35 pages, 739543 bytes).
+Output written on Tesi.pdf (35 pages, 740806 bytes).
 PDF statistics:
  503 PDF objects out of 1000 (max. 8388607)
  91 named destinations out of 1000 (max. 500000)
