@@ -27,17 +27,18 @@
 \contentsline {subsection}{\numberline {2.7.4}Consumer}{14}{subsection.2.7.4}%
 \contentsline {section}{\numberline {2.8}PostgreSQL}{14}{section.2.8}%
 \contentsline {section}{\numberline {2.9}Lua}{15}{section.2.9}%
-\contentsline {section}{\numberline {2.10}Postman}{15}{section.2.10}%
+\contentsline {section}{\numberline {2.10}JWT}{15}{section.2.10}%
+\contentsline {section}{\numberline {2.11}Postman}{16}{section.2.11}%
 \contentsline {chapter}{\numberline {3}Analisi dei requisiti}{17}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Casi d'uso}{17}{section.3.1}%
 \contentsline {chapter}{\numberline {4}Progettazione e sviluppo}{19}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introduzione ai microservizi}{19}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Introduzione a Kong Gateway}{19}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Architettura del progetto}{19}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Architettura del microservizio}{19}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Sviluppo del microservizio}{19}{subsection.4.4.1}%
-\contentsline {section}{\numberline {4.5}Architettura del plugin}{19}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Sviluppo del plugin}{19}{subsection.4.5.1}%
-\contentsline {chapter}{\numberline {5}Testing}{21}{chapter.5}%
-\contentsline {chapter}{Conclusione}{23}{chapter*.20}%
-\contentsline {chapter}{\numberline {A}Appendice}{25}{appendix.Alph1}%
+\contentsline {section}{\numberline {4.2}Introduzione a Kong Gateway}{21}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Architettura del progetto}{21}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Architettura del microservizio}{21}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Sviluppo del microservizio}{21}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Architettura del plugin}{21}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Sviluppo del plugin}{21}{subsection.4.5.1}%
+\contentsline {chapter}{\numberline {5}Testing}{23}{chapter.5}%
+\contentsline {chapter}{Conclusione}{25}{chapter*.22}%
+\contentsline {chapter}{\numberline {A}Appendice}{27}{appendix.Alph1}%

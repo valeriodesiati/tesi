@@ -157,6 +157,30 @@ Inoltre fornisce la possibilità di aggiungere tipi di dato, funzioni, operatori
 	\label{fig:one}
 \end{figure}
 
+\section{JWT}
+\emph{JWT} (JSON Web Token) è un open standard che definisce un metodo sicuro per la trasmissione di informazioni tra le parti sottoforma di oggetto JSON.\\
+Le informazioni inviate sono firmate digitalmente tramite un \emph{secret}, utilizzando l’algoritmo HMAC, oppure tramite una coppia di chiavi pubblica/privata, con gli algoritmi RSA o ECDSA.
+Questa tipologia di token risulta utile in diversi scenari, come:
+\begin{itemize}
+	\item \textbf{Autorizzazioni}, una volta che l’utente effettua una richiesta includendo il token sarà autorizzato ad accedere a tutte le risorse che gli sono permesse.
+	\item \textbf{Scambio di informazioni}, utilizzando i token JWT firmati con una coppia di chiavi è possibile in ogni momento verificare l’autenticità del mittente o del destinatario.
+\end{itemize}
+
+Un token JWT composto da tre parti principali, in questo ordine:
+\begin{itemize}
+	\item[$\bullet$]Header
+	\item[$\bullet$]Payload
+	\item[$\bullet$]Signature
+\end{itemize}
+ed ha una forma del tipo:
+\[ xxxxx.yyyyy.zzzzz \]
+\begin{figure}[ht]
+	\centering
+	\resizebox{.4\textwidth}{!}{\includegraphics{img/jwt}}
+	\caption{Logo di JWT}
+	\label{fig:one}
+\end{figure}
+
 \section{Postman}
 \emph{Postman} è una piattaforma API per la creazione, sviluppo e testing di APIs.\\
 Nello sviluppo del progetto è stato utilizzato per la fase di testing dato che permette di effettuare delle richieste HTTP/S, offrendo la possibilità di configurare il body della stessa e di ricevere la risposta.\\
