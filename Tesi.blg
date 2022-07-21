@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Tesi.aux
+A level-1 auxiliary file: Frontespizio/Frontespizio.aux
+A level-1 auxiliary file: Capitoli/Introduzione.aux
+A level-1 auxiliary file: Capitoli/DescrizioneStage.aux
+A level-1 auxiliary file: Capitoli/TecnologieUtilizzate.aux
+A level-1 auxiliary file: Capitoli/AnalisiRequisiti.aux
+A level-1 auxiliary file: Capitoli/ProgettazioneSviluppo.aux
+A level-1 auxiliary file: Capitoli/Testing.aux
+A level-1 auxiliary file: Capitoli/Conclusione.aux
+The style file: apalike.bst
+A level-1 auxiliary file: Capitoli/Appendici/Appendice1.aux
+Database file #1: ./Bibliografia.bib
+You've used 7 entries,
+            1935 wiz_defined-function locations,
+            529 strings with 5388 characters,
+and the built_in function-call counts, 2857 in all, are:
+= -- 290
+> -- 99
+< -- 7
++ -- 36
+- -- 32
+* -- 224
+:= -- 483
+add.period$ -- 22
+call.type$ -- 7
+change.case$ -- 49
+chr.to.int$ -- 7
+cite$ -- 7
+duplicate$ -- 115
+empty$ -- 205
+format.name$ -- 45
+if$ -- 573
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 8
+newline$ -- 38
+num.names$ -- 21
+pop$ -- 48
+preamble$ -- 1
+purify$ -- 51
+quote$ -- 0
+skip$ -- 91
+stack$ -- 0
+substring$ -- 216
+swap$ -- 22
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 38
+warning$ -- 0
+while$ -- 26
+width$ -- 0
+write$ -- 93

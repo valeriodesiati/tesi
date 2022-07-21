@@ -3,7 +3,7 @@
 \chapter{Tecnologie utilizzate}\label{sec:tecnologie}
 In questo capitolo saranno descritte le tecnologie utilizzate nella realizzazione del progetto.
 
-\section{Git}
+\section{Git}\label{sec:git}
 \emph{Git} è un DVCS (Distributed Version Control Systems) gratuito, open source e distribuito, utilizzabile da riga di comando, che consente di effettuare il controllo versione per un progetto.\\
 Data la sua natura “distribuita” \emph{Git} è basato su flussi di lavoro simultanei con i quali diversi sviluppatori possono collaborare ad un progetto, ognuno con il proprio workflow.
 \begin{figure}[ht]
@@ -13,7 +13,7 @@ Data la sua natura “distribuita” \emph{Git} è basato su flussi di lavoro si
 	\label{fig:one}
 \end{figure}
 
-\section{Java}
+\section{Java}\label{sec:java}
 \emph{Java} è un linguaggio di programmazione ad alto livello orientato agli oggetti.\\
 Il suo scopo è quello di essere multipiattaforma, tutte le piattaforme che supportano il linguaggio devono essere in grado di eseguire un codice \emph{Java} compilato senza effettuare nuovamente la compilazione.\\
 Compilando un codice \emph{Java} si ottiene un file \emph{Java bytecode} (con estensione \texttt{.class}) che sarà eseguito sulla \emph{JVM} (Java Virtual Machine).\\
@@ -25,7 +25,7 @@ Compilando un codice \emph{Java} si ottiene un file \emph{Java bytecode} (con es
 	\label{fig:one}
 \end{figure}
 
-\section{Eclipse}
+\section{Eclipse}\label{sec:eclipse}
 \emph{Eclipse} è un IDE (Integrated Development Environment) per lo sviluppo software realizzato in Java.\\
 \emph{Eclipse} unisce in un’unica interfaccia grafica:
 \begin{itemize}
@@ -40,15 +40,15 @@ Compilando un codice \emph{Java} si ottiene un file \emph{Java bytecode} (con es
 	\label{fig:one}
 \end{figure}
 
-\section{Framework Spring}
+\section{Framework Spring}\label{sec:spring}
 \emph{Spring} è un framework open source per lo sviluppo di applicazioni in Java.\\
 \emph{Spring} è strutturato in diversi moduli ma consente l'utilizzo solo di quelli di cui effettivamente si necessita.\\
 Nello specifico, per la realizzazione del progetto sono stati utilizzati i moduli descritti in seguito.
-\subsection{Spring Boot}
+\subsection{Spring Boot}\label{sec:springboot}
 L’utilizzo di questo modulo consente di creare applicazioni Java standalone, pronte all’esecuzione.\\
 \emph{Spring Boot} consente di scegliere quale tool utilizzare per effettuare la build, in questo progetto è stato utilizzato Maven.\\
 Alla base di ogni build con \emph{Spring Boot} e \emph{Maven} c’è il file \emph{pom.xml} (acronimo di Project Object Model) in cui sono descritte tutte le impostazioni e le dipendenze necessarie alla build in un linguaggio \emph{simil-XML}.
-\subsection{Spring Data}
+\subsection{Spring Data}\label{sec:springdata}
 \emph{Spring Data} fornisce un modello di programmazione per l’accesso ai dati indipendentemente dal tipo di database utilizzato.\\
 Nello specifico, per la realizzazione del progetto è stata utilizzata la specifica di \emph{Spring Data} chiamata \emph{JPA} (Java Persistence API) per:
 \begin{itemize}
@@ -65,7 +65,7 @@ Nello specifico, per la realizzazione del progetto è stata utilizzata la specif
 \end{figure}
 
 
-\section{Azure DevOps}
+\section{Azure DevOps}\label{sec:azure}
 \emph{Azure DevOps} è una piattaforma fornita da Microsoft\texttrademark che consente di pianificare il lavoro, creare e distribuire applicazioni.\\
 Nello specifico, per la realizzazione del progetto sono state utilizzate le applicazioni descritte in seguito:
 \begin{itemize}
@@ -79,7 +79,8 @@ Nello specifico, per la realizzazione del progetto sono state utilizzate le appl
 	\caption{Logo di Azure}
 	\label{fig:one}
 \end{figure}
-\section{Docker}
+
+\section{Docker}\label{sec:docker}
 \emph{Docker} è un progetto open source per la creazione di container portabili e multipiattaforma.\\
 Docker utilizza il kernel Linux per isolare i processi in modo da poterli eseguire in maniera indipendente.\\
 Ogni container è basato su un’immagine, solitamente un intero Sistema Operativo, a scelta tra quelle fornite all’interno di Docker Hub (raccolta ufficiale di tutte le immagini disponibili) o un’immagine “custom”, realizzata appositamente dal singolo sviluppatore per un determinato scopo.\\
@@ -92,7 +93,7 @@ Nella realizzazione del progetto è stata utilizzata l’immagine ufficiale di \
 	\label{fig:one}
 \end{figure}
 
-\section{Kong Gateway}
+\section{Kong Gateway}\label{sec:kongintro}
 Un API gateway è uno strumento che si interpone tra un client e un back end per la gestione delle API (Application Programming Interface) che si comporta come un proxy inverso accettando tutte le richieste indirizzate alle API gestite, consentendo di configurare \emph{services} e \emph{routes}.\\
 Kong Gateway è un API gateway cloud-native che fornisce tutte le caratteristiche descritte sopra e, inoltre, consente l’utilizzo di plugin.\\
 Una volta installato è possibile configurarlo accedendo alle seguenti pagine:
@@ -100,29 +101,17 @@ Una volta installato è possibile configurarlo accedendo alle seguenti pagine:
 	\item \textbf{Kong Manager}, porta 8000, consente di utilizzare un’interfaccia grafica per configurare \emph{services}, \emph{routes} e \emph{plugins}.
 	\item \textbf{Pagina delle configurazioni}, porta 8002, raccoglie tutte le configurazioni del gateway in formato JSON.
 \end{itemize}
+
+L'argomento sarà approfondito nel paragrafo \ref{sec:kongprog}, contestualmente al suo utilizzo nella realizzazione del progetto.
+
 \begin{figure}[ht]
 	\centering
 	\resizebox{.3\textwidth}{!}{\includegraphics{img/kong}}
 	\caption{Logo di Kong Gateway}
 	\label{fig:one}
 \end{figure}
-\subsection{Service}
-Un \emph{service} in Kong Gateway è un’astrazione di tutti i servizi upstream custom che si aggiungono alla configurazione. Con \emph{servizio upstream custom} si intende un microservizio custom che prende dati dalla richiesta inoltrata al gateway e ne restituisce altri al gateway stesso, che si occuperà di comunicarli al client.\\
-Solitamente ad ogni \emph{service} è associata una o più \emph{routes}.\\
 
-\subsection{Route}
-Una \emph{route} è una regola definita per indirizzare correttamente le richieste del client.\\
-L’associazione di una (o più) route ad un servizio consente di realizzare un meccanismo di routing molto potente, dato che è possibile configurare nel dettaglio il percorso che si vuole realizzare (protocolli da utilizzare, livello di sicurezza ecc.).\\
-
-\subsection{Plugin}
-Un \emph{plugin} è un’entità che sarà eseguita durante tutto il ciclo di vita di una richiesta o risposta HTTP/S (HyperText Trasfer Protocol / Secure).\\
-È il modo in cui Kong Gateway fornisce la possibilità di ottenere funzionalità aggiuntive per un \emph{service} o una \emph{route}.\\
-I plugin possono configurabili possono essere sia proprietari (attivabili da Kong Manager) sia custom. Per la realizzazione di un plugin custom si ha la possibilità di scegliere tra vari linguaggi di programmazione per lo sviluppo quali Go, Python, JavaScript e Lua (linguaggio utilizzato per lo sviluppo del plugin custom utilizzato nel progetto).\\ 
-
-\subsection{Consumer}
-Un \emph{consumer} in Kong Gateway può essere inteso come un utente di uno specifico servizio e può essere identificato tramite un \texttt{id} univoco.
-
-\section{PostgreSQL}
+\section{PostgreSQL}\label{sec:postgresql}
 \emph{PostgreSQL} è un DBMS (Database Management System) open source relazionale a oggetti che supporta la gran parte delle istruzioni del linguaggio SQL standard alle quali aggiunge diverse feature quali:
 \begin{itemize}
 	\item[$\bullet$]Query complesse
@@ -140,7 +129,7 @@ Inoltre fornisce la possibilità di aggiungere tipi di dato, funzioni, operatori
 	\label{fig:one}
 \end{figure}
 
-\section{Lua}
+\section{Lua}\label{sec:lua}
 \emph{Lua} è un linguaggio di scripting open source che combina la sintassi procedurale a costrutti di dati basati su array associativi.\\
 È un linguaggio tipizzato dinamicamente, viene eseguito interpretando un bytecode e gestisce la memoria in modo automatico tramite un \emph{garbage collector}.\\
 È stato scelto per la realizzazione del plugin per le sue caratteristiche quali:
@@ -157,7 +146,7 @@ Inoltre fornisce la possibilità di aggiungere tipi di dato, funzioni, operatori
 	\label{fig:one}
 \end{figure}
 
-\section{JWT}
+\section{JWT}\label{sec:jwt}
 \emph{JWT} (JSON Web Token) è un open standard che definisce un metodo sicuro per la trasmissione di informazioni tra le parti sottoforma di oggetto JSON.\\
 Le informazioni inviate sono firmate digitalmente tramite un \emph{secret}, utilizzando l’algoritmo HMAC, oppure tramite una coppia di chiavi pubblica/privata, con gli algoritmi RSA o ECDSA.
 Questa tipologia di token risulta utile in diversi scenari, come:
@@ -181,12 +170,12 @@ ed ha una forma del tipo:
 	\label{fig:one}
 \end{figure}
 
-\section{Postman}
+\section{Postman}\label{sec:postman}
 \emph{Postman} è una piattaforma API per la creazione, sviluppo e testing di APIs.\\
 Nello sviluppo del progetto è stato utilizzato per la fase di testing dato che permette di effettuare delle richieste HTTP/S, offrendo la possibilità di configurare il body della stessa e di ricevere la risposta.\\
 \begin{figure}[ht]
 	\centering
 	\resizebox{.2\textwidth}{!}{\includegraphics{img/postman}}
 	\caption{Logo di Postman}
-	\label{fig:one}
+	\label{fig:postman}
 \end{figure}

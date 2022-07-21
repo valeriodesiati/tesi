@@ -4,7 +4,7 @@ cd img
 
 for image in *; do
 
-convert "$image" "${image%.*}.png"
+	convert "$image" "${image%.*}.png"
 
 done
 

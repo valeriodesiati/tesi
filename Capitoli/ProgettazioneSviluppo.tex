@@ -1,7 +1,9 @@
-\chapter{Progettazione e sviluppo}\label{chapter:formattazione}
+\chapter{Progettazione e sviluppo}\label{chapter:progettazionesviluppo}
 In questo capitolo saranno esposti gli approcci teorici e pratici per lo sviluppo del progetto.
 
-\section{Introduzione ai microservizi}\label{sec:cap_sec_subsec}
+\section{Architettura del progetto}\label{sec:architetturaprogetto}
+
+\section{Introduzione ai microservizi}\label{sec:microserviziintro}
 Prima di introdurre il concetto di architettura a microservizi è bene introdurre il concetto di architettura monolitica.\\
 Un’architettura monolitica è una metodologia di sviluppo secondo la quale tutti i processi coinvolti sono strettamente legati tra di loro e sono erogati come un singolo servizio.\\
 Questa tipologia di approccio porta ad avere sistemi nei quali modificare le funzionalità diventa più complesso in quanto si deve agire sull’intero sistema e non solo sulle parti effettivamente interessate.\\
@@ -31,11 +33,66 @@ Di seguito sono elencati alcuni dei vantaggi di un’architettura a microservizi
 
 \end{itemize}
 
+\section{Il microservizio \texttt{CheckEmail}}\label{sec:architetturamicroservizio}
+Il microservizio che è stato realizzato serve a verificare l'avvenuto acquisto di un modulo applicativo da parte di un utente, identificato, per ora, da un indirizzo e-mail.\\
+Per lo sviluppo del microservizio è stato deciso di utilizzare il linguaggio di programmazione Java ed il framework Spring.\\
+Lo scopo principale del microservizio è quello di ricevere una richiesta \texttt{HTTP} con all’interno del body un indirizzo e-mail.\\
+Una volta estratto l’indirizzo e-mail il microservizio effettua una \emph{query} all’interno del Database per controllare che l’indirizzo sia presente nella tabella degli utenti abilitati all’utilizzo di un determinato servizio.\\
+In base al risultato della query il microservizio restituisce un codice \texttt{HTTP} come risposta alla richiesta.\\
+\newline
+La tipologia di richieste descritte sono effettuate tramite il metodo \textbf{\texttt{GET}} di \texttt{HTTP}, quindi vengono richiesti dei dati dal server.\\
+\newpage
+I codici che possono essere restituiti sono:\\
+\begin{table}[ht]
+	\centering
+	\resizebox{1.0\linewidth}{!}{
+		\begin{tabular}{|c|c|c|}
+			\hhline{|-|-|-|}
+			\textbf{Codice \texttt{HTTP}} & \textbf{Significato} & \textbf{Descrizione}\\
+			\hhline{|-|-|-|}
+			200 & OK & Il microservizio ha risposto correttamente \cr && e l'utente è autorizzato a procedere. \\
+			\hhline{|-|-|-|}
+			402 & PAYMENT REQUIRED & Il microservizio ha risposto correttamente \cr && ma l'utente non è autorizzato a procedere.\\
+			\hhline{|-|-|-|}
+			500 & INTERNAL SERVER ERROR & Messaggio di errore generico, \cr && non si è potuto raggiungere il microservizio.\\
+			\hhline{|-|-|-|}
+			503 & SERVICE UNAVAILABLE & Server non disponibile, \cr && non si è potuto raggiungere il microservizio. \\
+			\hhline{|-|-|-|}
+		\end{tabular}
+	}
+	\vspace*{2mm}
+	\caption{Codici \texttt{HTTP} restituiti dal microservizio}
+	\label{tab:httpcode}
+\end{table}
 
+\begin{figure}[ht]
+	\centering
+	\resizebox{0.9\textwidth}{!}{\includegraphics{img/comunicazionemicroservizio}}
+	\caption{Schema di comunicazione Utente - microservizio}
+	\label{fig:one}
+\end{figure}
 
-\section{Introduzione a Kong Gateway}\label{sec:cap_sec_subsec}
-\section{Architettura del progetto}\label{sec:cap_sec_subsec}
-\section{Architettura del microservizio}\label{sec:cap_sec_subsec}
-\subsection{Sviluppo del microservizio}\label{sec:cap_sec_subsec}
-\section{Architettura del plugin}\label{sec:cap_sec_subsec}
-\subsection{Sviluppo del plugin}\label{sec:cap_sec_subsec}
+\subsection{Sviluppo}\label{sec:sviluppomicroservizio}
+
+\section{Introduzione a Kong Gateway}\label{sec:kongprog}
+Come accennato nel paragrafo \ref{sec:kongintro}, \emph{Kong Gateway} è un API gateway cloud-native che fornisce l’opportunità di configurare \emph{services} e \emph{routes} e, oltre a questi, anche \emph{plugin} e \emph{consumer}.
+\subsection{Service}\label{sec:kongservice}
+Un \emph{service} in Kong Gateway è un’astrazione di tutti i servizi upstream custom che si aggiungono alla configurazione. Con \emph{servizio upstream custom} si intende un microservizio custom che prende dati dalla richiesta inoltrata al gateway e ne restituisce altri al gateway stesso, che si occuperà di comunicarli al client.\\
+Solitamente ad ogni \emph{service} è associata una o più \emph{routes}.\\
+
+\subsection{Route}\label{sec:kongroute}
+Una \emph{route} è una regola definita per indirizzare correttamente le richieste del client.\\
+L’associazione di una (o più) route ad un servizio consente di realizzare un meccanismo di routing molto potente, dato che è possibile configurare nel dettaglio il percorso che si vuole realizzare (protocolli da utilizzare, livello di sicurezza ecc.).\\
+
+\subsection{Plugin}\label{sec:kongplugin}
+Un \emph{plugin} è un’entità che sarà eseguita durante tutto il ciclo di vita di una richiesta o risposta HTTP/S (HyperText Trasfer Protocol / Secure).\\
+È il modo in cui Kong Gateway fornisce la possibilità di ottenere funzionalità aggiuntive per un \emph{service} o una \emph{route}.\\
+I plugin possono configurabili possono essere sia proprietari (attivabili da Kong Manager) sia custom. Per la realizzazione di un plugin custom si ha la possibilità di scegliere tra vari linguaggi di programmazione per lo sviluppo quali Go, Python, JavaScript e Lua (linguaggio utilizzato per lo sviluppo del plugin custom utilizzato nel progetto).\\ 
+
+\subsection{Consumer}\label{sec:kongconsumer}
+Un \emph{consumer} in Kong Gateway può essere inteso come un utente di uno specifico servizio e può essere identificato tramite un \texttt{id} univoco.
+
+\section{Architettura del plugin}\label{sec:architetturaplugin}
+\subsection{Sviluppo}\label{sec:sviluppoplugin}
+
+\section{Configurazione Kong Gateway}\label{sec:kongconf}
