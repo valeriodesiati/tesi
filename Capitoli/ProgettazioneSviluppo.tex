@@ -70,6 +70,29 @@ I codici che possono essere restituiti sono:\\
 \end{figure}
 
 \subsection{Sviluppo}\label{sec:sviluppomicroservizio}
+\subsubsection{Database}
+Per sviluppare ed utilizzare il microservizio si è resa necessaria la creazione del Database PostgresSQL per la memorizzazione dei dati degli utenti.\\
+È bene premettere che il Database è stato volutamente creato nella maniera più semplice e facilmente mantenibile possibile dato che durante lo sviluppo questo doveva servire solo per scopi di testing.\\
+Il Database è composto da due tabelle:
+\begin{itemize}
+		\item \textbf{\texttt{users}}\\ Contiene le informazioni di tutti gli utenti abilitati ad accedere ad un determinato servizio.
+		\item \textbf{\texttt{email}}\\ Contiene gli indirizzi e-mail di tutti gli utenti della piattaforma, quindi non è garantito che tutti avranno accesso a tutti i servizi.
+\end{itemize}
+\begin{figure}[ht]
+	\centering
+	\resizebox{0.8\textwidth}{!}{\includegraphics{img/dbtables}}
+	\caption{Schema del Database visualizzato dalla shell di PostgresSQL}
+	\label{fig:one}
+\end{figure}
+\begin{figure}[ht]
+	\centering
+	\resizebox{0.8\textwidth}{!}{\includegraphics{img/emaildb}}
+	\caption{Contenuto delle tabelle visualizzato dalla shell di PostgresSQL}
+	\label{fig:one}
+\end{figure}
+
+\subsubsection{Microservizio}
+
 \begin{algorithm}
 \centering
 \begin{minted}[fontsize=\scriptsize]{java}

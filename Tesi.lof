@@ -19,6 +19,8 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Architettura monolitica e architettura a microservizi a confronto\relax }}{20}{figure.caption.21}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Schema di comunicazione Utente - microservizio\relax }}{22}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Schema di comunicazione Utente - microservizio\relax }}{23}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Schema del Database visualizzato dalla shell di PostgresSQL\relax }}{23}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Contenuto delle tabelle visualizzato dalla shell di PostgresSQL\relax }}{23}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Schema di comunicazione Utente - microservizio\relax }}{24}{figure.caption.28}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
