@@ -1,7 +1,6 @@
 \chapter{Progettazione e sviluppo}\label{chapter:progettazionesviluppo}
 In questo capitolo saranno esposti gli approcci teorici e pratici per lo sviluppo del progetto.
 
-\section{Architettura del progetto}\label{sec:architetturaprogetto}
 
 \section{Introduzione ai microservizi}\label{sec:microserviziintro}
 Prima di introdurre il concetto di architettura a microservizi è bene introdurre il concetto di architettura monolitica.\\
@@ -33,8 +32,7 @@ Di seguito sono elencati alcuni dei vantaggi di un’architettura a microservizi
 \end{itemize}
 
 \section{Il microservizio \texttt{CheckEmail}}\label{sec:architetturamicroservizio}
-Il microservizio che è stato realizzato serve a verificare l'avvenuto acquisto di un modulo applicativo da parte di un utente, identificato, per ora, da un indirizzo e-mail.\\
-Per lo sviluppo del microservizio è stato deciso di utilizzare il linguaggio di programmazione Java ed il framework Spring.\\
+Il microservizio realizzato verifica l'avvenuto acquisto di un modulo applicativo da parte di un utente, identificato, ai fini del microservizio, da un indirizzo e-mail.\\
 Lo scopo principale del microservizio è quello di ricevere una richiesta \texttt{HTTP} con all’interno del body un indirizzo e-mail.\\
 Una volta estratto l’indirizzo e-mail il microservizio effettua una \emph{query} all’interno del Database per controllare che l’indirizzo sia presente nella tabella degli utenti abilitati all’utilizzo di un determinato servizio.\\
 In base al risultato della query il microservizio restituisce un codice \texttt{HTTP} come risposta alla richiesta.\\
@@ -72,6 +70,45 @@ I codici che possono essere restituiti sono:\\
 \end{figure}
 
 \subsection{Sviluppo}\label{sec:sviluppomicroservizio}
+\begin{algorithm}
+\centering
+\begin{minted}[fontsize=\scriptsize]{java}
+	@Transactional
+	@GetMapping("/join/checkemail/{mail}")
+	public ResponseEntity<Integer> checkEmail(@PathVariable("mail") String mail) {
+
+	EntityManager em = emf.createEntityManager();
+	em.getTransaction().begin();
+	String result = null;
+
+	try {
+		result = (String) em.createQuery("SELECT u.email
+                                                  FROM Users u, Email e
+                                                  WHERE u.email = e.email 
+                                                  AND u.email = :email")
+                                                  .setParameter("email", mail)
+                                                  .getSingleResult();
+	}
+	catch(NoResultException | NullPointerException e) {
+		return ResponseEntity.status(HttpStatus.PAYMENT_REQUIRED).body(402);
+	}
+
+	if(result == null)
+		return ResponseEntity.status(HttpStatus.PAYMENT_REQUIRED).body(402);
+	else
+		return ResponseEntity.status(HttpStatus.OK).body(200);
+
+	}
+\end{minted}
+\caption{Accesso al Database}
+\end{algorithm}
+
+\begin{figure}[ht]
+	\centering
+	\resizebox{1.0\textwidth}{!}{\includegraphics{img/uml}}
+	\caption{Schema di comunicazione Utente - microservizio}
+	\label{fig:one}
+\end{figure}
 
 \section{Introduzione a Kong Gateway}\label{sec:kongprog}
 Come accennato nel paragrafo \ref{sec:kongintro}, \emph{Kong Gateway} è un API gateway cloud-native che fornisce l’opportunità di configurare \emph{services} e \emph{routes} e, oltre a questi, anche \emph{plugin} e \emph{consumer}.
