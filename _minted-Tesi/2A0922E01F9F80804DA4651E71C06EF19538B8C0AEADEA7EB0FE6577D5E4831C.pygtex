@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nd}{@Entity}
+\PYG{n+nd}{@Table}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{name}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}email\PYGZdq{}}\PYG{p}{)}
+\PYG{k+kd}{public}\PYG{+w}{ }\PYG{k+kd}{class} \PYG{n+nc}{Email}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+
+\PYG{+w}{	}\PYG{n+nd}{@Id}
+\PYG{+w}{	}\PYG{n+nd}{@GeneratedValue}\PYG{p}{(}\PYG{n}{strategy}\PYG{o}{=}\PYG{n}{GenerationType}\PYG{p}{.}\PYG{n+na}{IDENTITY}\PYG{p}{)}
+\PYG{+w}{	}\PYG{k+kd}{private}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{id}\PYG{p}{;}
+\PYG{+w}{	}\PYG{n+nd}{@Column}\PYG{p}{(}\PYG{n}{name}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}email\PYGZdq{}}\PYG{p}{)}
+\PYG{+w}{	}\PYG{k+kd}{private}\PYG{+w}{ }\PYG{n}{String}\PYG{+w}{ }\PYG{n}{email}\PYG{p}{;}
+\PYG{+w}{	}
+\PYG{+w}{	}\PYG{k+kd}{public}\PYG{+w}{ }\PYG{n+nf}{Email}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}\PYGZcb{}}
+
+\PYG{+w}{	}\PYG{k+kd}{public}\PYG{+w}{ }\PYG{n+nf}{Email}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{id}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{String}\PYG{+w}{ }\PYG{n}{email}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{		}\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{id}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{id}\PYG{p}{;}
+\PYG{+w}{		}\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{email}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{email}\PYG{p}{;}
+\PYG{+w}{	}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{	}
+\PYG{+w}{	}\PYG{c+c1}{//getters, setters and toString()...}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

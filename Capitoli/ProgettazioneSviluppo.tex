@@ -80,18 +80,75 @@ Il Database è composto da due tabelle:
 \end{itemize}
 \begin{figure}[ht]
 	\centering
-	\resizebox{0.8\textwidth}{!}{\includegraphics{img/dbtables}}
-	\caption{Schema del Database visualizzato dalla shell di PostgresSQL}
+	\resizebox{0.3\textwidth}{!}{\includegraphics{img/dbtables-drawio}}
+	\caption{Modello Entità Relazione del Database}
 	\label{fig:one}
 \end{figure}
-\begin{figure}[ht]
+% \begin{figure}[ht]
+% 	\centering
+% 	\resizebox{0.8\textwidth}{!}{\includegraphics{img/emaildb_e}}
+% 	\caption{Contenuto delle tabelle visualizzato dalla shell di PostgresSQL}
+% 	\label{fig:one}
+% \end{figure}
+
+\subsubsection{Microservizio}
+Per lo sviluppo del microservizio, come accennato in precedenza, è stato deciso di utilizzare il linguaggio di programmazione Java e il framework Spring.\\
+Il progetto è stato realizzato utilizzando l’IDE Eclipse ed è composto da cinque \emph{package}.
+\begin{figure}[h]
 	\centering
-	\resizebox{0.8\textwidth}{!}{\includegraphics{img/emaildb}}
-	\caption{Contenuto delle tabelle visualizzato dalla shell di PostgresSQL}
+	\resizebox{0.6\textwidth}{!}{\includegraphics{img/classi}}
+	\caption{Diagramma UML delle classi principali del progetto}
 	\label{fig:one}
 \end{figure}
 
-\subsubsection{Microservizio}
+\begin{figure}[h]
+	\centering
+	\resizebox{0.8\textwidth}{!}{\includegraphics{img/controller}}
+	\caption{Diagramma UML delle classi \emph{controller} del progetto}
+	\label{fig:one}
+\end{figure}
+\newpage
+\begin{figure}[h]
+	\centering
+	\resizebox{0.5\textwidth}{!}{\includegraphics{img/exception}}
+	\caption{Diagramma UML delle \emph{custom exception} del progetto}
+	\label{fig:one}
+\end{figure}
+
+Descrizione dei package:
+\begin{itemize}
+	\item \textbf{\texttt{com.aesys.valeriodesiati.mail}}\\ Contiene la classe principale del microservizio.
+	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.model}}\\ Contiene le classi relative alle Entità all’interno del Database.\\ \emph{Spring Boot JPA} consente la creazione di entità in un Database a partire da una normale classe Java tramite l’aggiunta di annotazioni fornite dal framework.\\Un esempio di utilizzo di un \emph{model} è l'Algoritmo \ref{alg:checkemailmodel}.
+	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.repository}}\\ Contiene le interfacce relative alle entità del Database che ereditano l’interfaccia \mintinline{java}{JpaRepository<T,ID>}.\\ Tale interfaccia contiene le API per tutte le operazioni CRUD di base.\\ CRUD (Create Read Update Delete) è un acronimo che indica le quattro operazioni fondamentali per creare un’applicazione che abbia uno storage persistente.
+	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.controller}}\\ Contiene le classi \emph{Controller} del microservizio, ovvero le classi annotate con \mintinline{java}{@RestController}.\\ In Spring una classe annotata come \emph{Controller} è una classe che sarà utilizzata come handler di richieste web.\\Un esempio di utilizzo di un \mintinline{java}{@RestController} è l’Algoritmo \ref{alg:checkemail}.
+	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.exception}}\\ Contiene le classi per la definizione di \emph{custom exception}.\\ L’implementazione di tali classi si è resa necessaria per poter comprendere meglio gli errori in fase di sviluppo e di debug.\\
+\end{itemize}
+
+\begin{algorithm}
+\centering
+\begin{minted}[fontsize=\scriptsize]{java}
+@Entity
+@Table (name="email")
+public class Email {
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int id;
+	@Column(name = "email")
+	private String email;
+	
+	public Email() {}
+
+	public Email(int id, String email) {
+		this.id = id;
+		this.email = email;
+	}
+	
+	//getters, setters and toString()...
+}
+\end{minted}
+\caption{Utilizzo di un \emph{model} di Sping Boot JPA}\label{alg:checkemailmodel}
+\end{algorithm}
 
 \begin{algorithm}
 \centering
@@ -123,15 +180,15 @@ Il Database è composto da due tabelle:
 
 	}
 \end{minted}
-\caption{Accesso al Database}
+\caption{Accesso al Database}\label{alg:checkemail}
 \end{algorithm}
 
-\begin{figure}[ht]
-	\centering
-	\resizebox{1.0\textwidth}{!}{\includegraphics{img/uml}}
-	\caption{Schema di comunicazione Utente - microservizio}
-	\label{fig:one}
-\end{figure}
+% \begin{figure}[ht]
+% 	\centering
+% 	\resizebox{1.0\textwidth}{!}{\includegraphics{img/uml}}
+% 	\caption{Schema di comunicazione Utente - microservizio}
+% 	\label{fig:one}
+% \end{figure}
 
 \section{Introduzione a Kong Gateway}\label{sec:kongprog}
 Come accennato nel paragrafo \ref{sec:kongintro}, \emph{Kong Gateway} è un API gateway cloud-native che fornisce l’opportunità di configurare \emph{services} e \emph{routes} e, oltre a questi, anche \emph{plugin} e \emph{consumer}.
