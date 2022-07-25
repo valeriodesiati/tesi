@@ -126,7 +126,7 @@ Descrizione dei package:
 
 \begin{algorithm}
 \centering
-\begin{minted}[fontsize=\scriptsize]{java}
+\begin{minted}[fontsize=\scriptsize, xleftmargin=20pt,linenos]{java}
 @Entity
 @Table (name="email")
 public class Email {
@@ -152,7 +152,7 @@ public class Email {
 
 \begin{algorithm}
 \centering
-\begin{minted}[fontsize=\scriptsize]{java}
+\begin{minted}[fontsize=\scriptsize, xleftmargin=20pt, linenos]{java}
 	@Transactional
 	@GetMapping("/join/checkemail/{mail}")
 	public ResponseEntity<Integer> checkEmail(@PathVariable("mail") String mail) {
