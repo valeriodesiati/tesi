@@ -1,0 +1,17 @@
+"Sviluppo di un sistema di controllo degli accessi tramite token utilizzando Spring Framework in Java"
+"Implementazione di un sistema di sicurezza basato su token con Spring Framework in Java"
+"Progettazione e sviluppo di un sistema di autenticazione basato su token utilizzando Spring Framework"
+"Gestione degli accessi tramite token in una piattaforma web utilizzando Spring Framework in Java"
+"Sicurezza degli accessi tramite token in una piattaforma generica con Spring Framework in Java"
+"Controllo degli accessi basato su token in un'architettura client-server con Spring Framework in Java"
+"Utilizzo di Spring Framework per la gestione degli accessi tramite token in una piattaforma generica"
+"Protezione di una piattaforma web tramite token utilizzando Spring Framework in Java"
+"Implementazione di un sistema di sicurezza avanzato basato su token con Spring Framework in Java"
+"Analisi delle prestazioni di un sistema di controllo degli accessi tramite token implementato con Spring Framework in Java".
+
+CONTROLLO DEGLI ACCESSI TRAMITE
+TOKEN: REALIZZAZIONE DI UN
+MICROSERVIZIO IN JAVA ED UN
+PLUGIN CUSTOM PER L’API GATEWAY
+KONG
+
