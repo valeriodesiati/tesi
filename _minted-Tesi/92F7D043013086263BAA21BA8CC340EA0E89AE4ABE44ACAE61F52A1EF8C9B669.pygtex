@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k+kd}{local} \PYG{n}{body}\PYG{p}{,} \PYG{n}{code}\PYG{p}{,} \PYG{n}{headers}\PYG{p}{,} \PYG{n}{status} \PYG{o}{=}
+			\PYG{n}{http}\PYG{p}{.}\PYG{n}{request}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}http://restservice\PYGZhy{}springid.azurewebsites.net}
+\PYG{l+s+s2}{				      /join/checkemail/\PYGZdq{}}\PYG{o}{..}\PYG{n}{bodyTok}\PYG{p}{.}\PYG{n}{email}\PYG{p}{)}
+\end{Verbatim}

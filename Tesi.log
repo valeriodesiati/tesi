@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.13)  26 MAY 2023 12:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.13)  26 MAY 2023 20:02
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1217,7 +1217,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--29
 
  []
 
-<img/aesys.png, id=369, 200.75pt x 55.20625pt>
+<img/aesys.png, id=375, 200.75pt x 55.20625pt>
 File: img/aesys.png Graphic file (type png)
 <use img/aesys.png>
 Package pdftex.def Info: img/aesys.png  used on input line 32.
@@ -1250,63 +1250,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
 ]
 Capitolo 2.
-<img/git.png, id=394, 642.4pt x 268.00125pt>
+<img/git.png, id=400, 642.4pt x 268.00125pt>
 File: img/git.png Graphic file (type png)
 <use img/git.png>
 Package pdftex.def Info: img/git.png  used on input line 11.
 (pdftex.def)             Requested size: 642.39844pt x 268.00058pt.
-<img/java.png, id=395, 1204.5pt x 2242.3775pt>
+<img/java.png, id=401, 1204.5pt x 2242.3775pt>
 File: img/java.png Graphic file (type png)
 <use img/java.png>
 Package pdftex.def Info: img/java.png  used on input line 23.
 (pdftex.def)             Requested size: 1204.49707pt x 2242.37206pt.
 [9 <./img/git.png>]
-<img/eclipse.png, id=402, 225.84375pt x 225.84375pt>
+<img/eclipse.png, id=408, 225.84375pt x 225.84375pt>
 File: img/eclipse.png Graphic file (type png)
 <use img/eclipse.png>
 Package pdftex.def Info: img/eclipse.png  used on input line 38.
 (pdftex.def)             Requested size: 225.84319pt x 225.84319pt.
  [10 <./img/java.png> <./img/eclipse.png>]
-<img/spring.png, id=409, 444.66125pt x 114.4275pt>
+<img/spring.png, id=415, 444.66125pt x 114.4275pt>
 File: img/spring.png Graphic file (type png)
 <use img/spring.png>
 Package pdftex.def Info: img/spring.png  used on input line 62.
 (pdftex.def)             Requested size: 444.66016pt x 114.42722pt.
-<img/azure.png, id=410, 308.352pt x 78.0516pt>
+<img/azure.png, id=416, 308.352pt x 78.0516pt>
 File: img/azure.png Graphic file (type png)
 <use img/azure.png>
 Package pdftex.def Info: img/azure.png  used on input line 78.
 (pdftex.def)             Requested size: 308.35124pt x 78.0514pt.
  [11 <./img/spring.png>]
-<img/docker.png, id=417, 1084.05pt x 1084.05pt>
+<img/docker.png, id=423, 1084.05pt x 1084.05pt>
 File: img/docker.png Graphic file (type png)
 <use img/docker.png>
 Package pdftex.def Info: img/docker.png  used on input line 91.
 (pdftex.def)             Requested size: 1084.04736pt x 1084.04736pt.
  [12 <./img/azure.png> <./img/docker.png>]
-<img/kong.png, id=425, 321.2pt x 132.495pt>
+<img/kong.png, id=431, 321.2pt x 132.495pt>
 File: img/kong.png Graphic file (type png)
 <use img/kong.png>
 Package pdftex.def Info: img/kong.png  used on input line 109.
 (pdftex.def)             Requested size: 321.19922pt x 132.49466pt.
-<img/postgres.png, id=426, 3198.95125pt x 1501.61pt>
+<img/postgres.png, id=432, 3198.95125pt x 1501.61pt>
 File: img/postgres.png Graphic file (type png)
 <use img/postgres.png>
 Package pdftex.def Info: img/postgres.png  used on input line 127.
 (pdftex.def)             Requested size: 3198.94348pt x 1501.60635pt.
  [13 <./img/kong.png>]
-<img/lua.png, id=432, 642.4pt x 642.4pt>
+<img/lua.png, id=438, 642.4pt x 642.4pt>
 File: img/lua.png Graphic file (type png)
 <use img/lua.png>
 Package pdftex.def Info: img/lua.png  used on input line 144.
 (pdftex.def)             Requested size: 642.39844pt x 642.39844pt.
  [14 <./img/postgres.png> <./img/lua.png>]
-<img/jwt.png, id=439, 1284.8pt x 722.7pt>
+<img/jwt.png, id=445, 1284.8pt x 722.7pt>
 File: img/jwt.png Graphic file (type png)
 <use img/jwt.png>
 Package pdftex.def Info: img/jwt.png  used on input line 168.
 (pdftex.def)             Requested size: 1284.79688pt x 722.69823pt.
-<img/postman.png, id=440, 636.3775pt x 572.1375pt>
+<img/postman.png, id=446, 636.3775pt x 572.1375pt>
 File: img/postman.png Graphic file (type png)
 <use img/postman.png>
 Package pdftex.def Info: img/postman.png  used on input line 178.
@@ -1342,7 +1342,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--14
  []
 
 [19]
-<img/monovsmicro.jpg, id=463, 546.843pt x 299.31825pt>
+<img/monovsmicro.jpg, id=469, 546.843pt x 299.31825pt>
 File: img/monovsmicro.jpg Graphic file (type jpg)
 <use img/monovsmicro.jpg>
 Package pdftex.def Info: img/monovsmicro.jpg  used on input line 17.
@@ -1368,24 +1368,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--41
  []
 
 [21]
-<img/comunicazionemicroservizio.png, id=473, 564.97072pt x 195.129pt>
+<img/comunicazionemicroservizio.png, id=479, 564.97072pt x 195.129pt>
 File: img/comunicazionemicroservizio.png Graphic file (type png)
 <use img/comunicazionemicroservizio.png>
 Package pdftex.def Info: img/comunicazionemicroservizio.png  used on input line
  67.
 (pdftex.def)             Requested size: 564.96935pt x 195.12851pt.
  [22 <./img/comunicazionemicroservizio.png>]
-<img/dbtables-drawio.png, id=480, 181.3977pt x 198.0198pt>
+<img/dbtables-drawio.png, id=486, 181.3977pt x 198.0198pt>
 File: img/dbtables-drawio.png Graphic file (type png)
 <use img/dbtables-drawio.png>
 Package pdftex.def Info: img/dbtables-drawio.png  used on input line 83.
 (pdftex.def)             Requested size: 181.39725pt x 198.01932pt.
-<img/classi.png, id=481, 257.2812pt x 231.264pt>
+<img/classi.png, id=487, 257.2812pt x 231.264pt>
 File: img/classi.png Graphic file (type png)
 <use img/classi.png>
 Package pdftex.def Info: img/classi.png  used on input line 99.
 (pdftex.def)             Requested size: 257.28058pt x 231.26343pt.
-<img/controller.png, id=482, 461.8053pt x 263.0628pt>
+<img/controller.png, id=488, 461.8053pt x 263.0628pt>
 File: img/controller.png Graphic file (type png)
 <use img/controller.png>
 Package pdftex.def Info: img/controller.png  used on input line 106.
@@ -1395,7 +1395,7 @@ Package pdftex.def Info: img/controller.png  used on input line 106.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [23 <./img/dbtables-drawio.png> <./img/classi.png>]
-<img/exception.png, id=490, 181.03635pt x 195.129pt>
+<img/exception.png, id=496, 181.03635pt x 195.129pt>
 File: img/exception.png Graphic file (type png)
 <use img/exception.png>
 Package pdftex.def Info: img/exception.png  used on input line 113.
@@ -1451,6 +1451,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--210
  []
 
 [27]
+\openout7 = `Tesi.pyg'.
+
+
+(./_minted-Tesi/BF14133693BF5BD9A7137E1D8515A25B0E89AE4ABE44ACAE61F52A1EF8C9B66
+9.pygtex)
 \openout6 = `Tesi.pyg'.
 
 
@@ -1475,25 +1480,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--210
 
 
 (./_minted-Tesi/1EF93D56BD098DB9F214F876CFAF69510E89AE4ABE44ACAE61F52A1EF8C9B66
-9.pygtex) [28]) [29]
+9.pygtex) [28]
+\openout6 = `Tesi.pyg'.
+
+
+(./_minted-Tesi/92F7D043013086263BAA21BA8CC340EA0E89AE4ABE44ACAE61F52A1EF8C9B66
+9.pygtex) [29]
+\openout6 = `Tesi.pyg'.
+
+
+(./_minted-Tesi/6A353F5DAADB9A1F4B97BFB3B4AD3A890E89AE4ABE44ACAE61F52A1EF8C9B66
+9.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 318--328
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--338
+
+ []
+
+[30]
+\openout7 = `Tesi.pyg'.
+
+
+(./_minted-Tesi/37055243218EFA7C8ADB2346F2386F7A3F2F6D2950BD4B5C2478DFDE02D8FB5
+7.pygtex)
+\openout6 = `Tesi.pyg'.
+
+
+(./_minted-Tesi/6FA1DDAAE49B89687F6C502124F14D9D485351A2653A8CC56049AE9D3323AC1
+B.pygtex)) [31]
 \openout2 = `Capitoli/Testing.aux'.
 
- (./Capitoli/Testing.tex [30
+ (./Capitoli/Testing.tex [32
 
 
 
 
 ]
 Capitolo 5.
-) [31]
+) [33]
 \openout2 = `Capitoli/Conclusione.aux'.
 
- (./Capitoli/Conclusione.tex [32
+ (./Capitoli/Conclusione.tex [34
 
 
 
 
-]) [33] (./Tesi.bbl [34
+]) [35] (./Tesi.bbl [36
 
 
 
@@ -1502,16 +1537,16 @@ Underfull \hbox (badness 1168) in paragraph at lines 38--42
 []\OT1/cmr/m/n/12 van Beek, H. (2019).  Di-gi-tal Fo-ren-sics as a Ser-vi-
  []
 
-) [35]
+) [37]
 \openout2 = `Capitoli/Appendici/Appendice1.aux'.
 
- (./Capitoli/Appendici/Appendice1.tex [36
+ (./Capitoli/Appendici/Appendice1.tex [38
 
 
 
 ]
 Appendice A.
-) [37]
+) [39]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
  (./Tesi.aux (./Frontespizio/Frontespizio.aux)
@@ -1522,7 +1557,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 5A72017FBBF34F933F587336094F72DB;2524.
+(rerunfilecheck)             Checksum: B51C37A0A44B7C40528D35265E4F50C8;2514.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1532,10 +1567,10 @@ runsystem(rm Tesi.pyg)...executed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 176.
  ) 
 Here is how much of TeX's memory you used:
- 31483 strings out of 483099
- 550638 string characters out of 5964234
+ 31522 strings out of 483099
+ 552758 string characters out of 5964234
  1005970 words of memory out of 5000000
- 45665 multiletter control sequences out of 15000+600000
+ 45685 multiletter control sequences out of 15000+600000
  539230 words of font info for 49 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  68i,11n,97p,906b,2341s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1551,9 +1586,9 @@ onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt8.pfb>
-Output written on Tesi.pdf (47 pages, 1320241 bytes).
+Output written on Tesi.pdf (49 pages, 1330095 bytes).
 PDF statistics:
- 646 PDF objects out of 1000 (max. 8388607)
- 130 named destinations out of 1000 (max. 500000)
+ 662 PDF objects out of 1000 (max. 8388607)
+ 135 named destinations out of 1000 (max. 500000)
  536 words of extra memory for PDF output out of 10000 (max. 10000000)
 

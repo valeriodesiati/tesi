@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    sudo docker \PYG{n+nb}{exec} \PYGZhy{}it \PYGZhy{}\PYGZhy{}user root \PYG{n+nv}{\PYGZdl{}container} rm \PYGZhy{}rf
+				/usr/local/share/lua/5.1/kong/plugins/\PYG{n+nv}{\PYGZdl{}dir}
+    sudo docker \PYG{n+nb}{exec} \PYGZhy{}it \PYGZhy{}\PYGZhy{}user root \PYG{n+nv}{\PYGZdl{}container} mkdir
+				/usr/local/share/lua/5.1/kong/plugins/\PYG{n+nv}{\PYGZdl{}dir}
+    sudo docker cp . \PYG{n+nv}{\PYGZdl{}container}:/usr/local/share/lua/5.1/kong/plugins/\PYG{n+nv}{\PYGZdl{}dir}/
+    curl \PYGZhy{}s \PYGZhy{}X POST \PYGZhy{}H \PYG{l+s+s2}{\PYGZdq{}Content\PYGZhy{}Type: application/json\PYGZdq{}}
+	\PYGZhy{}d @./config/checkemail/services.json
+	http://checkemail.westeurope.cloudapp.azure.com:8001/services \PYGZgt{} /dev/null
+\end{Verbatim}

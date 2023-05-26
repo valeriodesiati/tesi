@@ -248,9 +248,8 @@ La funzione restituisce un array contenente le tre componenti del token.
 
 Successivamente si procede con il parse del token, mediante la funzione \mintinline{lua}{ParseToken(token)} che inizia chiamando la funzione \mintinline{lua}{SplitToken(token)}
 per ottenere l'array delle parti, per poi proseguire applicando una decodifica ad ogni parte controllando anche l'eventuale presenza di errori.\\
-La funzione può restituire tre o quattro risultati: nel caso in cui non ci siano stati errori  vengono restituite solo le tre componenti del token decodificate, altrimenti 
-vengono restituiti quattro risultati, i primi tre impostati a \mintinline{lua}{null}
-(rappresentano i campi del token) e il quarto come stringa con un messaggio di errore.\\
+La funzione può restituire tre o quattro risultati: nel caso in cui non ci siano stati errori vengono restituite solo le tre componenti del token decodificate, altrimenti 
+vengono restituiti quattro risultati, i primi tre impostati a \mintinline{lua}{null} (rappresentano i campi del token) e il quarto come stringa con un messaggio di errore.\\
 Da notare come tutte le parti vengano prima suddivise e poi decodificate anche se il dato ricercato (l'indirizzo mail) si trova solo nel Body, questo per favorire e semplificare 
 la ricerca di eventuali componenti del token corrotte.
 
@@ -283,7 +282,81 @@ la ricerca di eventuali componenti del token corrotte.
 \end{minted}
 \caption{Parse token JWT}\label{alg:parsetoken}
 \end{algorithm}
+\newpage
+Il ciclo del funzionamento del plugin termina quindi l'estrazione dell'indirizzo mail dal token decodificato e l'inoltro della richiesta \texttt{HTTP} al microservizio \texttt{CheckEmail}.\\
+Il microservizio è raggiungibile al link\\ \texttt{ http://restservice-springid.azurewebsites.net/join/checkemail/}, \\unendo al link l'indirizzo mail che si desidera controllare.\\
+\begin{algorithm}
+\centering
+\begin{minted}[fontsize=\scriptsize, xleftmargin=20pt, linenos]{lua}
+    local body, code, headers, status = 
+			http.request("http://restservice-springid.azurewebsites.net
+				      /join/checkemail/"..bodyTok.email)
+\end{minted}
+\caption{Inoltro richiesta \texttt{HTTP} dal plugin}\label{alg:pluginhttprequest }
+\end{algorithm}
 
+\newpage
+L'ultimo controllo che si effettua è quello sul codice di ritorno \texttt{HTTP} ricevuto dal microservizio, quindi si invia una risposta da Kong Gateway all'utente.
 
+\begin{algorithm}
+\centering
+\begin{minted}[fontsize=\scriptsize, xleftmargin=20pt, linenos]{lua}
+    if code == 200 then
+        return kong.response.exit(200, "Success")
+    end
 
-\section{Configurazione finale Kong Gateway}\label{sec:kongconf}
+    if code == 402 then
+        return kong.response.error(402, "Payment Required")
+    end
+
+	--response codes 500 and 503...
+\end{minted}
+\caption{Inoltro risposta dal plugin a Kong Gateway}\label{alg:plugingatewayresponse}
+\end{algorithm}
+
+\section{Configurazione Kong Gateway}\label{sec:kongconf}
+Kong Gateway è stato containerizzato tramite Docker utilizzando l'immagine ufficiale presente su Docker Hub.\\
+Il container è stato reso raggiungibile tramite una macchina virtuale su Azure con immagine Debian.\\
+Sono state create delle pipeline CI/CD per automatizzare i processi di containerizzazione e di installazione del plugin.\\
+La pipeline è azionata automaticamente dai cambiamenti nella repository principale del progetto e si occupa di far eseguire, all'interno della macchina virtuale, uno script per l'aggiornamento dei \emph{services}, \emph{routes}, \emph{consumers}.\\
+\\
+Il gateway può essere configurato in modi diversi:
+Interfaccia grafica di Kong Manager, disponibile collegandosi da browser alla porta 8002 del container.
+Tramite file JSON contenenti le informazioni necessarie che saranno aggiunte al file di configurazione principale (\texttt{kong.conf}), inoltrati con delle richieste \texttt{HTTP POST} verso il container in esecuzione.
+\\
+Come detto in precedenza, gli aspetti configurabili sono:
+\begin{itemize}
+	\item\emph{Services}
+	\item\emph{Routes}
+	\item\emph{Consumers}
+	\item\emph{Plugin}
+\end{itemize}
+
+Ognuno con un file JSON di configurazione dedicato.\\
+I plugin custom, come quello realizzato, non necessitano di un file di configurazione dedicato, è sufficiente copiare i file relativi nella directory\\
+\texttt{/usr/local/share/lua/5.1/kong/plugins/nome\_plugin/} del container.\\
+
+Tutta la configurazione è effettuata tramite lo script bash \texttt{addplugin} che ha i seguenti compiti:
+\begin{itemize}
+\item Avviare il container.
+\item Copiare all'interno i file relativi ai plugin custom.
+\item Riavviare il container (per consentire la lettura dei file dei plugin caricati)
+\item Eseguire il comando \mintinline{bash}{curl} per tutti i file JSON presenti relativi a tutte le altre configurazioni necessarie.
+\end{itemize}
+Di seguito alcune righe dello script di configurazione:
+
+\begin{algorithm}
+\centering
+\begin{minted}[fontsize=\scriptsize, xleftmargin=20pt, linenos]{sh}
+    sudo docker exec -it --user root $container rm -rf 
+				/usr/local/share/lua/5.1/kong/plugins/$dir
+    sudo docker exec -it --user root $container mkdir
+				/usr/local/share/lua/5.1/kong/plugins/$dir
+    sudo docker cp . $container:/usr/local/share/lua/5.1/kong/plugins/$dir/
+    curl -s -X POST -H "Content-Type: application/json"
+	-d @./config/checkemail/services.json
+	http://checkemail.westeurope.cloudapp.azure.com:8001/services > /dev/null
+\end{minted}
+\caption{Script per la configurazione di Kong Gateway}\label{alg:container_config}
+\end{algorithm}
+

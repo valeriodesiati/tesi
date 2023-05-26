@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k+kr}{if} \PYG{n}{code} \PYG{o}{==} \PYG{l+m+mi}{200} \PYG{k+kr}{then}
+        \PYG{k+kr}{return} \PYG{n}{kong}\PYG{p}{.}\PYG{n}{response}\PYG{p}{.}\PYG{n}{exit}\PYG{p}{(}\PYG{l+m+mi}{200}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Success\PYGZdq{}}\PYG{p}{)}
+    \PYG{k+kr}{end}
+
+    \PYG{k+kr}{if} \PYG{n}{code} \PYG{o}{==} \PYG{l+m+mi}{402} \PYG{k+kr}{then}
+        \PYG{k+kr}{return} \PYG{n}{kong}\PYG{p}{.}\PYG{n}{response}\PYG{p}{.}\PYG{n+nb}{error}\PYG{p}{(}\PYG{l+m+mi}{402}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Payment Required\PYGZdq{}}\PYG{p}{)}
+    \PYG{k+kr}{end}
+
+	\PYG{c+c1}{\PYGZhy{}\PYGZhy{}response codes 500 and 503...}
+\end{Verbatim}
