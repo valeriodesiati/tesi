@@ -30,11 +30,11 @@
 \BOOKMARK [1][-]{section.4.3}{Introduzione\040a\040Kong\040Gateway}{chapter.4}% 30
 \BOOKMARK [2][-]{subsection.4.3.1}{Service}{section.4.3}% 31
 \BOOKMARK [2][-]{subsection.4.3.2}{Route}{section.4.3}% 32
-\BOOKMARK [2][-]{subsection.4.3.3}{Plugin}{section.4.3}% 33
-\BOOKMARK [2][-]{subsection.4.3.4}{Consumer}{section.4.3}% 34
-\BOOKMARK [1][-]{section.4.4}{Architettura\040del\040plugin}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.3.3}{Consumer}{section.4.3}% 33
+\BOOKMARK [2][-]{subsection.4.3.4}{Plugin}{section.4.3}% 34
+\BOOKMARK [1][-]{section.4.4}{Architettura\040del\040plugin\040checkemail}{chapter.4}% 35
 \BOOKMARK [2][-]{subsection.4.4.1}{Sviluppo}{section.4.4}% 36
-\BOOKMARK [1][-]{section.4.5}{Configurazione\040Kong\040Gateway}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.5}{Configurazione\040finale\040Kong\040Gateway}{chapter.4}% 37
 \BOOKMARK [0][-]{chapter.5}{Testing}{}% 38
 \BOOKMARK [0][-]{chapter*.30}{Conclusione}{}% 39
 \BOOKMARK [0][-]{appendix.Alph1}{Appendice}{}% 40

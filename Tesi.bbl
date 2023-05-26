@@ -1,5 +1,11 @@
 \begin{thebibliography}{}
 
+\bibitem[aaaaaaaaaaaaaaaaaaaaaaaa, 2010]{modernApproach}
+aaaaaaaaaaaaaaaaaaaaaaaa (2010).
+\newblock {\em Artificial Intelligence - {A} Modern Approach, Third
+  International Edition}.
+\newblock Pearson Education.
+
 \bibitem[Allen and Zilberstein, 2009]{allen2009complexity}
 Allen, M. and Zilberstein, S. (2009).
 \newblock Complexity of decentralized control: Special cases.
@@ -27,12 +33,6 @@ Durfee, E.~H. (2001).
 Gelfond, M. and Lifschitz, V. (1998).
 \newblock Action languages.
 \newblock {\em Electron. Trans. Artif. Intell.}, 2:193--210.
-
-\bibitem[Russell and Norvig, 2010]{modernApproach}
-Russell, S.~J. and Norvig, P. (2010).
-\newblock {\em Artificial Intelligence - {A} Modern Approach, Third
-  International Edition}.
-\newblock Pearson Education.
 
 \bibitem[van Beek, 2019]{hasken}
 van Beek, H. (2019).
