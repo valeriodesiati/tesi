@@ -222,11 +222,11 @@ Il funzionamento e l'utilizzo di questi file sarà approfondito nel paragrafo su
 Come detto in precedenza la logica del plugin è interamente contenuta nel file \texttt{handler.lua}.\\ 
 È richiesto il seguente comportamento dal plugin:
 
-\begin{itemize}
+\begin{enumerate}
 	\item Analizzare il token ricevuto.
 	\item Estrarre l'indirizzo mail.
 	\item Inviare una richiesta http al microservizio \texttt{CheckEmail}.
 	\item Ottenere e inoltrare al Gateway il codice di risposta ottenuto.
-\end{itemize}
+\end{enumerate}
 
 \section{Configurazione finale Kong Gateway}\label{sec:kongconf}
