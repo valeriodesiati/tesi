@@ -1,2 +1,4 @@
 \contentsline {algorithm}{\numberline {1}{\ignorespaces Utilizzo di un \emph {model} di Spring Boot JPA\relax }}{25}{algorithm.1}%
 \contentsline {algorithm}{\numberline {2}{\ignorespaces Accesso al Database\relax }}{26}{algorithm.2}%
+\contentsline {algorithm}{\numberline {3}{\ignorespaces Suddivisione token JWT\relax }}{28}{algorithm.3}%
+\contentsline {algorithm}{\numberline {4}{\ignorespaces Parse token JWT\relax }}{29}{algorithm.4}%

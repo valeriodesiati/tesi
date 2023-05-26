@@ -40,7 +40,7 @@
 \contentsline {subsection}{\numberline {4.3.4}Plugin}{27}{subsection.4.3.4}%
 \contentsline {section}{\numberline {4.4}Architettura del plugin \texttt {checkemail}}{27}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Sviluppo}{28}{subsection.4.4.1}%
-\contentsline {section}{\numberline {4.5}Configurazione finale Kong Gateway}{28}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Testing}{29}{chapter.5}%
-\contentsline {chapter}{Conclusione}{31}{chapter*.30}%
-\contentsline {chapter}{\numberline {A}Appendice}{35}{appendix.Alph1}%
+\contentsline {section}{\numberline {4.5}Configurazione finale Kong Gateway}{29}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Testing}{31}{chapter.5}%
+\contentsline {chapter}{Conclusione}{33}{chapter*.30}%
+\contentsline {chapter}{\numberline {A}Appendice}{37}{appendix.Alph1}%

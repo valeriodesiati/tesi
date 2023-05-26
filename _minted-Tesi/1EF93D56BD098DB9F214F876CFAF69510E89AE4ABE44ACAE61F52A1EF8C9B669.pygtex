@@ -1,0 +1,25 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{k+kd}{local} \PYG{k+kr}{function} \PYG{n+nf}{ParseToken}\PYG{p}{(}\PYG{n}{token}\PYG{p}{)}
+		\PYG{k+kd}{local} \PYG{n}{segments} \PYG{o}{=} \PYG{n}{SplitToken}\PYG{p}{(}\PYG{n}{token}\PYG{p}{)}
+		\PYG{k+kr}{if} \PYG{o}{\PYGZsh{}}\PYG{n}{segments} \PYG{o}{\PYGZti{}=} \PYG{l+m+mi}{3} \PYG{k+kr}{then}
+			\PYG{k+kr}{return} \PYG{k+kc}{nil}\PYG{p}{,} \PYG{k+kc}{nil}\PYG{p}{,} \PYG{k+kc}{nil}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Invalid token\PYGZdq{}}
+		\PYG{k+kr}{end}
+
+		\PYG{k+kd}{local} \PYG{n}{header}\PYG{p}{,} \PYG{n}{err} \PYG{o}{=} \PYG{n}{cjson\PYGZus{}safe}\PYG{p}{.}\PYG{n}{decode}\PYG{p}{(}\PYG{n}{basexx}\PYG{p}{.}\PYG{n}{from\PYGZus{}url64}\PYG{p}{(}\PYG{n}{segments}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]))}
+		\PYG{k+kr}{if} \PYG{n}{err} \PYG{k+kr}{then}
+			\PYG{k+kr}{return} \PYG{k+kc}{nil}\PYG{p}{,} \PYG{k+kc}{nil}\PYG{p}{,} \PYG{k+kc}{nil}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Invalid header\PYGZdq{}}
+		\PYG{k+kr}{end}
+
+		\PYG{k+kd}{local} \PYG{n}{body}\PYG{p}{,} \PYG{n}{err} \PYG{o}{=} \PYG{n}{cjson\PYGZus{}safe}\PYG{p}{.}\PYG{n}{decode}\PYG{p}{(}\PYG{n}{basexx}\PYG{p}{.}\PYG{n}{from\PYGZus{}url64}\PYG{p}{(}\PYG{n}{segments}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{]))}
+		\PYG{k+kr}{if} \PYG{n}{err} \PYG{k+kr}{then}
+			\PYG{k+kr}{return} \PYG{k+kc}{nil}\PYG{p}{,} \PYG{k+kc}{nil}\PYG{p}{,} \PYG{k+kc}{nil}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Invalid body\PYGZdq{}}
+		\PYG{k+kr}{end}
+
+		\PYG{k+kd}{local} \PYG{n}{sig}\PYG{p}{,} \PYG{n}{err} \PYG{o}{=} \PYG{n}{basexx}\PYG{p}{.}\PYG{n}{from\PYGZus{}url64}\PYG{p}{(}\PYG{n}{segments}\PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{])}
+		\PYG{k+kr}{if} \PYG{n}{err} \PYG{k+kr}{then}
+			\PYG{k+kr}{return} \PYG{k+kc}{nil}\PYG{p}{,} \PYG{k+kc}{nil}\PYG{p}{,} \PYG{k+kc}{nil}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}Invalid signature\PYGZdq{}}
+		\PYG{k+kr}{end}
+
+		\PYG{k+kr}{return} \PYG{n}{header}\PYG{p}{,} \PYG{n}{body}\PYG{p}{,} \PYG{n}{sig}
+	\PYG{k+kr}{end}
+\end{Verbatim}

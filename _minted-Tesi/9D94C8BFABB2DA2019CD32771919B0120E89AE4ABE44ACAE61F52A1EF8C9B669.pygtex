@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{k+kd}{local} \PYG{k+kr}{function} \PYG{n+nf}{SplitToken}\PYG{p}{(}\PYG{n}{token}\PYG{p}{)}
+		\PYG{k+kd}{local} \PYG{n}{segments} \PYG{o}{=} \PYG{p}{\PYGZob{}\PYGZcb{}}
+		\PYG{k+kr}{for} \PYG{n}{str} \PYG{k+kr}{in} \PYG{n+nb}{string.gmatch}\PYG{p}{(}\PYG{n}{token}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}([\PYGZca{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s2}{.]+)\PYGZdq{}}\PYG{p}{)} \PYG{k+kr}{do}
+			\PYG{n+nb}{table.insert}\PYG{p}{(}\PYG{n}{segments}\PYG{p}{,} \PYG{n}{str}\PYG{p}{)}
+		\PYG{k+kr}{end}
+		\PYG{k+kr}{return} \PYG{n}{segments}
+	\PYG{k+kr}{end}
+\end{Verbatim}
