@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{try}\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k}{catch}\PYG{p}{(}\PYG{n}{Exception}\PYG{p}{)\PYGZob{}}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

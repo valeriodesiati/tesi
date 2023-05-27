@@ -32,7 +32,7 @@ Di seguito sono elencati alcuni dei vantaggi di un'architettura a microservizi:
 \end{itemize}
 
 \section{Il microservizio \texttt{CheckEmail}}\label{sec:architetturamicroservizio}
-Il microservizio realizzato verifica l'avvenuto acquisto di un modulo applicativo da parte di un utente identificato, ai fini del microservizio, da un indirizzo e-mail.\\
+Il microservizio realizzato verifica l'avvenuto acquisto di un modulo applicativo da parte di un utente identificato, ai fini del microservizio, tramite un indirizzo e-mail.\\
 Lo scopo principale del microservizio è quello di ricevere una richiesta \texttt{HTTP} con all'interno del body un indirizzo e-mail.\\
 Una volta estratto l'indirizzo e-mail il microservizio effettua una \emph{query} all'interno del Database per controllare che l'indirizzo sia presente nella tabella degli utenti abilitati all'utilizzo di un determinato servizio.\\
 In base al risultato della query il microservizio restituisce un codice \texttt{HTTP} come risposta alla richiesta.\\
@@ -72,7 +72,7 @@ I codici che possono essere restituiti sono:\\
 \subsection{Sviluppo}\label{sec:sviluppomicroservizio}
 \subsubsection{Database}
 Per sviluppare ed utilizzare il microservizio si è resa necessaria la creazione del Database PostgreSQL per la memorizzazione dei dati degli utenti.\\
-È bene premettere che il Database è stato volutamente creato nella maniera più semplice e facilmente manutenibile possibile dato che durante lo sviluppo questo doveva servire solo per scopi di testing.\\
+È bene premettere che il Database è stato volutamente creato nella maniera più semplice e facilmente manutenibile, dato che durante lo sviluppo questo doveva servire solo per scopi di testing.\\
 Il Database è composto da due tabelle:
 \begin{itemize}
 		\item \textbf{\texttt{users}}\\ Contiene le informazioni di tutti gli utenti abilitati ad accedere ad un determinato servizio.
@@ -118,7 +118,7 @@ Il progetto è stato realizzato utilizzando l'IDE Eclipse ed è composto da cinq
 Descrizione dei package:
 \begin{itemize}
 	\item \textbf{\texttt{com.aesys.valeriodesiati.mail}}\\ Contiene la classe principale del microservizio.
-	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.model}}\\ Contiene le classi relative alle Entità all'interno del Database.\\ \emph{Spring Boot JPA} consente la creazione di entità in un Database a partire da una normale classe Java tramite l'aggiunta di annotazioni fornite dal framework.\\Un esempio di utilizzo di un \emph{model} è l'Algoritmo \ref{alg:checkemailmodel}.
+	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.model}}\\ Contiene le classi relative alle Entità all'interno del Database.\\ \emph{Spring Boot JPA} consente la creazione di entità in un Database a partire da una normale classe Java tramite l'aggiunta di annotazioni fornite dal framework.\\Un esempio di utilizzo di un \emph{model} è l'Algoritmo \ref{alg:checkemailmodel}.\\Il risultato sarà quindi la creazione di una tabella nel Database con i campi specificati dalle relative variabili annotate.
 	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.repository}}\\ Contiene le interfacce relative alle entità del Database che ereditano l'interfaccia \mintinline{java}{JpaRepository<T,ID>}.\\ Tale interfaccia contiene le API per tutte le operazioni CRUD di base.\\ CRUD (Create Read Update Delete) è un acronimo che indica le quattro operazioni fondamentali per creare un'applicazione che abbia uno storage persistente.
 	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.controller}}\\ Contiene le classi \emph{Controller} del microservizio, ovvero le classi annotate con \mintinline{java}{@RestController}.\\ In Spring una classe annotata come \emph{Controller} è una classe che sarà utilizzata come handler di richieste web.\\Un esempio di utilizzo di un \mintinline{java}{@RestController} è l'Algoritmo \ref{alg:checkemail}.
 	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.exception}}\\ Contiene le classi per la definizione di \emph{custom exception}.\\ L'implementazione di tali classi si è resa necessaria per poter comprendere meglio gli errori in fase di sviluppo e di debug.\\
@@ -182,6 +182,19 @@ public class Email {
 \end{minted}
 \caption{Accesso al Database}\label{alg:checkemail}
 \end{algorithm}
+
+Andando ad analizzare più a fondo le specifiche dell'Algoritmo \ref{alg:checkemail} è possibile notare, in testa al metodo, l'annotazione\\ \\
+\centerline{\mintinline{java}{@GetMapping("/join/checkemail/{mail}")}} \\ \\
+tramite la quale diventa possibile intercettare delle richieste \texttt{HTTP GET} effettuate in un determinato percorso. Il parametro \mintinline{java}{{mail}} può essere
+utilizzato all'interno della funzione.\\
+Si passa poi alla creazione di un \mintinline{java}{EntityManager} che consente di eseguire query all'interno delle \emph{entity} create tramite i \emph{model}.\\ \\
+I passaggi successivi sono per la creazione e l'esecuzione della query, che effettua un'operazione di join tra le tabelle \texttt{Users} e \texttt{Email}, andando
+semplicemente a controllare che l'indirizzo mail specificato nella richiesta \texttt{HTTP GET} sia effettivamente presente all'interno della tabella \texttt{Users} e
+quindi sia abilitato all'accesso.\\
+Il tutto è svolto all'interno di un blocco \mintinline{java}{try{ } catch(Exception){ }} al fine di prevenire comportamenti anomali: se viene lanciata l'eccezione\\
+\mintinline{java}{NoResultException} o \mintinline{java}{NullPointerException}, si ritorna il codice \texttt{HTTP 402 Payment Required}.
+Se si termina l'esecuzione della query senza eccezioni e la variabile \mintinline{java}{result} non è impostata a \mintinline{java}{null}, si ritorna il codice \texttt{HTTP 200 OK}.
+
 
 % \begin{figure}[ht]
 % 	\centering
@@ -319,7 +332,7 @@ Kong Gateway è stato containerizzato tramite Docker utilizzando l'immagine uffi
 Il container è stato reso raggiungibile tramite una macchina virtuale su Azure con immagine Debian.\\
 Sono state create delle pipeline CI/CD per automatizzare i processi di containerizzazione e di installazione del plugin.\\
 La pipeline è azionata automaticamente dai cambiamenti nella repository principale del progetto e si occupa di far eseguire, all'interno della macchina virtuale, uno script per l'aggiornamento dei \emph{services}, \emph{routes}, \emph{consumers}.\\
-\\
+
 Il gateway può essere configurato in modi diversi:
 Interfaccia grafica di Kong Manager, disponibile collegandosi da browser alla porta 8002 del container.
 Tramite file JSON contenenti le informazioni necessarie che saranno aggiunte al file di configurazione principale (\texttt{kong.conf}), inoltrati con delle richieste \texttt{HTTP POST} verso il container in esecuzione.

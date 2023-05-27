@@ -33,14 +33,14 @@
 \contentsline {subsection}{\numberline {4.2.1}Sviluppo}{22}{subsection.4.2.1}%
 \contentsline {subsubsection}{Database}{22}{section*.24}%
 \contentsline {subsubsection}{Microservizio}{23}{section*.26}%
-\contentsline {section}{\numberline {4.3}Introduzione a Kong Gateway}{26}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Service}{26}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Route}{26}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.3}Introduzione a Kong Gateway}{27}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Service}{27}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Route}{27}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Consumer}{27}{subsection.4.3.3}%
 \contentsline {subsection}{\numberline {4.3.4}Plugin}{27}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Architettura del plugin \texttt {checkemail}}{27}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Architettura del plugin \texttt {checkemail}}{28}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Sviluppo}{28}{subsection.4.4.1}%
-\contentsline {section}{\numberline {4.5}Configurazione Kong Gateway}{30}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Configurazione Kong Gateway}{31}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Testing}{33}{chapter.5}%
 \contentsline {chapter}{Conclusione}{35}{chapter*.30}%
 \contentsline {chapter}{\numberline {A}Appendice}{39}{appendix.Alph1}%
