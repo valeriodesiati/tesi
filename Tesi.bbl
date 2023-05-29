@@ -1,69 +1,90 @@
 \begin{thebibliography}{10}
 
-\bibitem{Amazon}
-Amazon AWS.
-\newblock Microservizi.
-\newblock \url{https://aws.amazon.com/it/microservices/}.
+\bibitem{git}
+Git.
+\newblock About version control.
+\newblock
+  \url{https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control}.
 
-\bibitem{Microsoft}
-Microsoft~Azure DevOps.
-\newblock Azure devops.
-\newblock \url{https://azure.microsoft.com/it-it/products/devops/#overview}.
+\bibitem{AESYS}
+AESYS Srl.
+\newblock Aesys {S}rl.
+\newblock \url{https://www.aesys.tech/}.
+
+\bibitem{Java}
+Java.
+\newblock Che cos'è la tecnologia {J}ava e a cosa serve?
+\newblock \url{https://www.java.com/it/download/help/whatis_java.html}.
 
 \bibitem{Eclipse}
 Eclipse.
 \newblock Eclipse documentation.
 \newblock \url{https://help.eclipse.org/latest/index.jsp}.
 
-\bibitem{git}
-git.
-\newblock About version control.
+\bibitem{SpringFramework}
+Spring.
+\newblock Spring {F}ramework.
+\newblock \url{https://spring.io/projects/spring-framework}.
+
+\bibitem{SpringBoot}
+Spring.
+\newblock Spring {B}oot.
+\newblock \url{https://spring.io/projects/spring-boot}.
+
+\bibitem{SpringData}
+Spring.
+\newblock Spring {D}ata.
+\newblock \url{https://spring.io/projects/spring-data}.
+
+\bibitem{SpringDataJPA}
+Spring.
+\newblock Spring {D}ata {JPA}.
+\newblock \url{https://spring.io/projects/spring-data-jpa}.
+
+\bibitem{Microsoft}
+Microsoft~Azure DevOps.
+\newblock Azure {D}ev{O}ps.
+\newblock \url{https://azure.microsoft.com/it-it/products/devops/#overview}.
+
+\bibitem{RedHatDocker}
+RedHat.
+\newblock Cos'è {D}ocker?
+\newblock \url{https://www.redhat.com/it/topics/containers/what-is-docker}.
+
+\bibitem{Amazon}
+Amazon AWS.
+\newblock Microservizi.
+\newblock \url{https://aws.amazon.com/it/microservices/}.
+
+\bibitem{RedHatMicroservices}
+RedHat.
+\newblock Cosa sono i microservizi?
 \newblock
-  \url{https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control}.
-
-\bibitem{Java}
-Java.
-\newblock Che cos'è la tecnologia java e a cosa serve?
-\newblock \url{https://www.java.com/it/download/help/whatis_java.html}.
-
-\bibitem{JWT}
-JWT.
-\newblock What is json web token?
-\newblock \url{https://jwt.io/introduction}.
+  \url{http://www.usabilityfirst.com/glossary/scientific-visualization/}.
 
 \bibitem{Kong}
 Kong.
-\newblock Kong gateway.
+\newblock Kong {G}ateway.
 \newblock \url{https://docs.konghq.com/gateway/latest/}.
-
-\bibitem{Lua}
-Lua.
-\newblock Lua 5.4 reference manual.
-\newblock \url{https://www.lua.org/manual/5.4/manual.html}.
 
 \bibitem{PostgreSQL}
 PostgreSQL.
-\newblock What is postgresql?
+\newblock What is {P}ostgre{SQL}?
 \newblock \url{https://www.postgresql.org/docs/current/intro-whatis.html}.
+
+\bibitem{Lua}
+Lua.
+\newblock Lua 5.4 {R}eference {M}anual.
+\newblock \url{https://www.lua.org/manual/5.4/manual.html}.
+
+\bibitem{JWT}
+JWT.
+\newblock What is {JSON W}eb {T}oken?
+\newblock \url{https://jwt.io/introduction}.
 
 \bibitem{Postman}
 Postman.
 \newblock Postman.
 \newblock \url{https://learning.postman.com/docs/introduction/overview/}.
-
-\bibitem{RedHat}
-RedHat.
-\newblock Cos'è docker?
-\newblock \url{https://www.redhat.com/it/topics/containers/what-is-docker}.
-
-\bibitem{Spring}
-Spring.
-\newblock Spring framework.
-\newblock \url{https://spring.io/projects/spring-framework}.
-
-\bibitem{AESYS}
-AESYS Srl.
-\newblock Aesys srl.
-\newblock \url{https://www.aesys.tech/}.
 
 \end{thebibliography}
