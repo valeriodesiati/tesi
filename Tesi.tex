@@ -24,8 +24,8 @@
 \usepackage{array}
 \usepackage{lipsum}
 \usepackage[section]{placeins}
+\usepackage{blindtext} % Per Dummy Text - remove}
 
-\usepackage{blindtext} % Per Dummy Text - remove
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%Comandi per formattazione%%%%%%%%%%%
@@ -166,10 +166,15 @@
 %
 %%%% La bibliograﬁa
 \nocite{*}
-\bibliographystyle{apalike} %{plain} -- Scegliere lo stile preferito
+\bibliographystyle{plain} %{plain} -- Scegliere lo stile preferito
+\addcontentsline{toc}{chapter}{\bibname}
 \bibliography{./Bibliografia}
+
+% \nocite{*}
+% \bibliographystyle{plain} %{apalike} -- Scegliere lo stile preferito
+% \bibliography{./Bibliografia}
 %
-%\include{Capitoli/Ringraziamenti}
+\include{Capitoli/Ringraziamenti}
 %
 % Le appendici
 \appendix

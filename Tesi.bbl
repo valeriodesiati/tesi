@@ -1,43 +1,69 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
 
-\bibitem[aaaaaaaaaaaaaaaaaaaaaaaa, 2010]{modernApproach}
-aaaaaaaaaaaaaaaaaaaaaaaa (2010).
-\newblock {\em Artificial Intelligence - {A} Modern Approach, Third
-  International Edition}.
-\newblock Pearson Education.
+\bibitem{Amazon}
+Amazon AWS.
+\newblock Microservizi.
+\newblock \url{https://aws.amazon.com/it/microservices/}.
 
-\bibitem[Allen and Zilberstein, 2009]{allen2009complexity}
-Allen, M. and Zilberstein, S. (2009).
-\newblock Complexity of decentralized control: Special cases.
-\newblock In {\em 23rd Annual Conference on Neural Information Processing
-  Systems 2009, 7-10 December , Vancouver, British Columbia, Canada}, pages
-  19--27. Curran Associates, Inc.
+\bibitem{Microsoft}
+Microsoft~Azure DevOps.
+\newblock Azure devops.
+\newblock \url{https://azure.microsoft.com/it-it/products/devops/#overview}.
 
-\bibitem[Bernstein et~al., 2002]{bernstein2002complexity}
-Bernstein, D.~S., Givan, R., Immerman, N., and Zilberstein, S. (2002).
-\newblock The complexity of decentralized control of markov decision processes.
-\newblock {\em Mathematics of operations research}, 27(4):819--840.
+\bibitem{Eclipse}
+Eclipse.
+\newblock Eclipse documentation.
+\newblock \url{https://help.eclipse.org/latest/index.jsp}.
 
-\bibitem[De~Weerdt et~al., 2003]{de2003resource}
-De~Weerdt, M., Bos, A., Tonino, H., and Witteveen, C. (2003).
-\newblock A resource logic for multi-agent plan merging.
-\newblock {\em Annals of Mathematics and Artificial Intelligence},
-  37(1-2):93--130.
-
-\bibitem[Durfee, 2001]{durfee1999distributed}
-Durfee, E.~H. (2001).
-\newblock {\em Distributed Problem Solving and Planning}, pages 118--149.
-\newblock Springer Berlin Heidelberg, Berlin, Heidelberg.
-
-\bibitem[Gelfond and Lifschitz, 1998]{gelfond1998action}
-Gelfond, M. and Lifschitz, V. (1998).
-\newblock Action languages.
-\newblock {\em Electron. Trans. Artif. Intell.}, 2:193--210.
-
-\bibitem[van Beek, 2019]{hasken}
-van Beek, H. (2019).
-\newblock {Digital Forensics as a Service}.
+\bibitem{git}
+git.
+\newblock About version control.
 \newblock
-  \url{https://www.forensicinstitute.nl/research-and-innovation/latest-forensic-innovations/hansken}.
+  \url{https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control}.
+
+\bibitem{Java}
+Java.
+\newblock Che cos'è la tecnologia java e a cosa serve?
+\newblock \url{https://www.java.com/it/download/help/whatis_java.html}.
+
+\bibitem{JWT}
+JWT.
+\newblock What is json web token?
+\newblock \url{https://jwt.io/introduction}.
+
+\bibitem{Kong}
+Kong.
+\newblock Kong gateway.
+\newblock \url{https://docs.konghq.com/gateway/latest/}.
+
+\bibitem{Lua}
+Lua.
+\newblock Lua 5.4 reference manual.
+\newblock \url{https://www.lua.org/manual/5.4/manual.html}.
+
+\bibitem{PostgreSQL}
+PostgreSQL.
+\newblock What is postgresql?
+\newblock \url{https://www.postgresql.org/docs/current/intro-whatis.html}.
+
+\bibitem{Postman}
+Postman.
+\newblock Postman.
+\newblock \url{https://learning.postman.com/docs/introduction/overview/}.
+
+\bibitem{RedHat}
+RedHat.
+\newblock Cos'è docker?
+\newblock \url{https://www.redhat.com/it/topics/containers/what-is-docker}.
+
+\bibitem{Spring}
+Spring.
+\newblock Spring framework.
+\newblock \url{https://spring.io/projects/spring-framework}.
+
+\bibitem{AESYS}
+AESYS Srl.
+\newblock Aesys srl.
+\newblock \url{https://www.aesys.tech/}.
 
 \end{thebibliography}

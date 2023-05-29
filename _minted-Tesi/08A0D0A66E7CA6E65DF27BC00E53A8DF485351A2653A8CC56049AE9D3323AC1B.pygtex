@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+curl \PYGZhy{}\PYGZhy{}location \PYGZhy{}\PYGZhy{}request GET
+\PYG{l+s+s1}{\PYGZsq{}http://checkemail.westeurope.cloudapp.azure.com:8000}
+\PYG{l+s+s1}{/join/checkemail/valerio.desiati@aesys.tech\PYGZsq{}}
+\PYGZhy{}\PYGZhy{}header \PYG{l+s+s1}{\PYGZsq{}Authorization: Bearer}
+\PYG{l+s+s1}{eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik94NnhKc}
+\PYG{l+s+s1}{VZHZE5ZQVBpY3dmVDBST1NOdXBDMjJETFJTIn0.eyJuYW1lIjoiVmFs}
+\PYG{l+s+s1}{ZXJpbyBEZXNpYXRpIiwibWFpbCI6InZhbGVyaW8uZGVzaWF0aUBhZXN}
+\PYG{l+s+s1}{5cy50ZWNoIiwiZXhwIjo5OTkwMDAwOTk5fQ.SeTuFxcnJkYvccx7PiA}
+\PYG{l+s+s1}{ZEPbZiJbcnOb7y9bpOJxNFok\PYGZsq{}}
+\end{Verbatim}

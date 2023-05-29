@@ -1,30 +1,67 @@
 \chapter{Testing}\label{chapter:testing}
+\section{Testing con Postman}\label{sec:test1}
 Come anticipato nel paragrafo \ref{sec:postman}, il software utilizzato per la fase di testing del progetto è Postman.\\
-L'utilizzo di questo software non è stato strettamente necessario, dato che si può ottenere lo stesso risultato effettuando da terminale un comando \texttt{curl} all'indirizzo di Kong Gateway, specificando tutti i parametri e i campi della richiesta \texttt{HTTP}, ottenendo comunque i risultati (in formato diverso).\\
-L'utilizzo di Postman è stato preferito per motivi di comodità nella fase di testing, soprattutto perché offre la possibilità di memorizzare le richieste inviate (con tutti i relativi campi e parametri) e i risultati.\\
-Il software risulta molto intuitivo, basta selezionare il metodo di richiesta che si vuole utilizzare (in questo caso \texttt{HTTP GET}), inserire l'URL e, se necessario, configurare i campi della richiesta, ovvero in questo caso, aggiungere al body della richiesta il token JWT.\\
+L'utilizzo di questo software non è stato strettamente necessario, dato che si può ottenere lo stesso risultato effettuando da terminale un comando \texttt{curl}
+all'indirizzo di Kong Gateway, specificando tutti i parametri e i campi della richiesta \texttt{HTTP}, ottenendo comunque i risultati (in formato diverso).\\
+L'utilizzo di Postman è stato preferito per motivi di comodità nella fase di testing, soprattutto perché offre la possibilità di memorizzare le richieste inviate 
+(con tutti i relativi campi e parametri) e i risultati.\\ \\
+Il software risulta molto intuitivo, basta selezionare il metodo di richiesta che si vuole utilizzare (in questo caso \texttt{HTTP GET}), 
+inserire l'URL e, se necessario, configurare i campi della richiesta, ovvero in questo caso, aggiungere al body della richiesta il token JWT.\\ \\
 
-Di seguito alcune immagini che dimostrano il funzionamento del progetto:\\
+Di seguito la descrizione dei test effettuati.\\
+
+\subsection{Test effettuati}\label{subsec:testeffettuati}
+
+Nella prima immagine è possibile notare come, inserendo tutti i parametri richiesti (URL, token corretto), si venga autorizzati a procedere con un codice di risposta
+\texttt{HTTP 200 OK}, questo perché sia l'indirizzo mail nell'URL, sia quello estratto dal token, si trovano all'interno di entrambe le tabelle del Database 
+(si ricorda che la tabella \texttt{email} contiene tutti gli indirizzi mail, mentre la tabella \texttt{users} solo gli indirizzi autorizzati ad utilizzare un determinato servizio).
+
 \begin{figure}[h]
 	\centering
-	\resizebox{0.6\textwidth}{!}{\includegraphics{img/postmanauthorized-cut.png}}
+	\resizebox{1\textwidth}{!}{\includegraphics{img/postmanauthorized-cut.png}}
 	\caption{Test - Autorizzazione concessa}
-	\label{fig:one}
+	\label{fig:auth}
 \end{figure}
+Nella seconda immagine si testa il comportamento in una situazione particolare: nell'URL viene inserito un indirizzo mail non presente all'interno 
+del Database e nel body della richiesta viene inserito un token relativo ad un indirizzo mail valido (lo stesso dell'immagine precedente).\\
+Il comportamento atteso e ricevuto è quello di non essere autorizzati a procedere con un codice \texttt{HTTP 402 PAYMENT REQUIRED}.
 
 \begin{figure}[h]
 	\centering
-	\resizebox{0.6\textwidth}{!}{\includegraphics{img/postmanpaymentrequired-cut.png}}
+	\resizebox{1\textwidth}{!}{\includegraphics{img/postmanpaymentrequired-cut.png}}
 	\caption{Test - Autorizzazione non concessa, pagamento richiesto}
-	\label{fig:one}
+	\label{fig:payment}
 \end{figure}
+
+Ancora, si testa il comportamento in un'altra situazione particolare, ovvero se si dovesse effettuare la richiesta con un indirizzo mail presente nel Database 
+ma non si fornisce il token.\\
+Ancora una volta, il comportamento atteso e ricevuto è quello di non essere autorizzati a procedere.
 
 \begin{figure}[h]
 	\centering
-	\resizebox{0.6\textwidth}{!}{\includegraphics{img/postmanquerynotoken-cut.png}}
+	\resizebox{1\textwidth}{!}{\includegraphics{img/postmanquerynotoken-cut.png}}
 	\caption{Test - Autorizzazione non concessa, token non inserito}
-	\label{fig:one}
+	\label{fig:noauth}
 \end{figure}
 
+\newpage
+\section{Alternativa}\label{sec:testalternativa}
+Come scritto sopra, sarebbe stato possibile effettuare i test anche da riga di comando effettuando una \texttt{curl}, come descritto di seguito:
+\begin{algorithm}
+\centering
+\begin{minted}[fontsize=\scriptsize, xleftmargin=20pt, linenos]{sh}
+curl --location --request GET 
+'http://checkemail.westeurope.cloudapp.azure.com:8000
+/join/checkemail/valerio.desiati@aesys.tech'
+--header 'Authorization: Bearer 
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik94NnhKc
+VZHZE5ZQVBpY3dmVDBST1NOdXBDMjJETFJTIn0.eyJuYW1lIjoiVmFs
+ZXJpbyBEZXNpYXRpIiwibWFpbCI6InZhbGVyaW8uZGVzaWF0aUBhZXN
+5cy50ZWNoIiwiZXhwIjo5OTkwMDAwOTk5fQ.SeTuFxcnJkYvccx7PiA
+ZEPbZiJbcnOb7y9bpOJxNFok'
+\end{minted}
+\caption{Test tramite \texttt{curl}}\label{alg:container_config}
+\end{algorithm}
 
-
+Il comando racchiude esattamente quanto svolto da Postman, si effettua una richiesta \texttt{HTTP} con metodo \texttt{GET}, 
+si specifica il link e tramite l’opzione \mintinline{sh}{--header} si specifica il token JWT.
