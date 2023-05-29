@@ -1,7 +1,7 @@
 \contentsline {algorithm}{\numberline {1}{\ignorespaces Utilizzo di un \emph {model} di Spring Boot JPA\relax }}{25}{algorithm.1}%
-\contentsline {algorithm}{\numberline {2}{\ignorespaces Accesso al Database\relax }}{26}{algorithm.2}%
+\contentsline {algorithm}{\numberline {2}{\ignorespaces Accesso al Database\relax }}{27}{algorithm.2}%
 \contentsline {algorithm}{\numberline {3}{\ignorespaces Suddivisione token JWT\relax }}{29}{algorithm.3}%
-\contentsline {algorithm}{\numberline {4}{\ignorespaces Parse token JWT\relax }}{29}{algorithm.4}%
+\contentsline {algorithm}{\numberline {4}{\ignorespaces Parse token JWT\relax }}{30}{algorithm.4}%
 \contentsline {algorithm}{\numberline {5}{\ignorespaces Inoltro richiesta \texttt {HTTP} dal plugin\relax }}{30}{algorithm.5}%
 \contentsline {algorithm}{\numberline {6}{\ignorespaces Inoltro risposta dal plugin a Kong Gateway\relax }}{31}{algorithm.6}%
 \contentsline {algorithm}{\numberline {7}{\ignorespaces Script per la configurazione di Kong Gateway\relax }}{32}{algorithm.7}%

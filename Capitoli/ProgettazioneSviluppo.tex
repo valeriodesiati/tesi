@@ -43,22 +43,22 @@ I codici che possono essere restituiti sono:\\
 \begin{table}[ht]
 	\centering
 	\resizebox{1.0\linewidth}{!}{
-		\begin{tabular}{|c|c|c|}
+		\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{4cm}|>{\centering\arraybackslash}m{5cm}|}
 			\hhline{|-|-|-|}
-			\textbf{Codice \texttt{HTTP}} & \textbf{Significato} & \textbf{Descrizione}\\
+			\textbf{Codice HTTP} & \textbf{Significato} & \textbf{Descrizione}\\
 			\hhline{|-|-|-|}
-			200 & OK & Il microservizio ha risposto correttamente \cr && e l'utente è autorizzato a procedere. \\
+			200 & OK & Il microservizio ha risposto correttamente e l'utente è autorizzato a procedere. \\
 			\hhline{|-|-|-|}
-			402 & PAYMENT REQUIRED & Il microservizio ha risposto correttamente \cr && ma l'utente non è autorizzato a procedere.\\
+			402 & PAYMENT REQUIRED & Il microservizio ha risposto correttamente ma l'utente non è autorizzato a procedere.\\
 			\hhline{|-|-|-|}
-			500 & INTERNAL SERVER ERROR & Messaggio di errore generico, \cr && non si è potuto raggiungere il microservizio.\\
+			500 & INTERNAL SERVER ERROR & Messaggio di errore generico, non si è potuto raggiungere il microservizio.\\
 			\hhline{|-|-|-|}
-			503 & SERVICE UNAVAILABLE & Server non disponibile, \cr && non si è potuto raggiungere il microservizio. \\
+			503 & SERVICE UNAVAILABLE & Server non disponibile, non si è potuto raggiungere il microservizio. \\
 			\hhline{|-|-|-|}
-		\end{tabular}
+		\end{tabularx}
 	}
-	\vspace*{2mm}
-	\caption{Codici \texttt{HTTP} restituiti dal microservizio}
+	\vspace*{6mm}
+	\caption{Codici HTTP restituiti dal microservizio}
 	\label{tab:httpcode}
 \end{table}
 

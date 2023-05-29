@@ -36,11 +36,11 @@
 \contentsline {section}{\numberline {4.3}Introduzione a Kong Gateway}{27}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Service}{27}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Route}{27}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Consumer}{27}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Plugin}{27}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.3}Consumer}{28}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Plugin}{28}{subsection.4.3.4}%
 \contentsline {section}{\numberline {4.4}Architettura del plugin \texttt {checkemail}}{28}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Sviluppo}{28}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.1}Sviluppo}{29}{subsection.4.4.1}%
 \contentsline {section}{\numberline {4.5}Configurazione Kong Gateway}{31}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Testing}{33}{chapter.5}%
-\contentsline {chapter}{Conclusione}{35}{chapter*.30}%
-\contentsline {chapter}{\numberline {A}Appendice}{39}{appendix.Alph1}%
+\contentsline {chapter}{Conclusione}{37}{chapter*.31}%
+\contentsline {chapter}{\numberline {A}Appendice}{41}{appendix.Alph1}%
