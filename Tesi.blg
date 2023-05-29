@@ -12,52 +12,52 @@ A level-1 auxiliary file: Capitoli/Conclusione.aux
 The style file: plain.bst
 A level-1 auxiliary file: Capitoli/Ringraziamenti.aux
 A level-1 auxiliary file: Capitoli/Appendici/Appendice1.aux
-Database file #1: ./Bibliografia.bib
+Database file #1: Bibliografia.bib
 Warning--entry type for "git" isn't style-file defined
---line 1 of file ./Bibliografia.bib
+--line 1 of file Bibliografia.bib
 Warning--entry type for "AESYS" isn't style-file defined
---line 7 of file ./Bibliografia.bib
+--line 7 of file Bibliografia.bib
 Warning--entry type for "Java" isn't style-file defined
---line 13 of file ./Bibliografia.bib
+--line 13 of file Bibliografia.bib
 Warning--entry type for "Eclipse" isn't style-file defined
---line 19 of file ./Bibliografia.bib
+--line 19 of file Bibliografia.bib
 Warning--entry type for "Spring" isn't style-file defined
---line 25 of file ./Bibliografia.bib
-Repeated entry---line 31 of file ./Bibliografia.bib
+--line 25 of file Bibliografia.bib
+Repeated entry---line 31 of file Bibliografia.bib
  : @online{Spring
  :               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 37 of file ./Bibliografia.bib
+Repeated entry---line 37 of file Bibliografia.bib
  : @online{Spring
  :               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 43 of file ./Bibliografia.bib
+Repeated entry---line 43 of file Bibliografia.bib
  : @online{Spring
  :               ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "Microsoft" isn't style-file defined
---line 49 of file ./Bibliografia.bib
+--line 49 of file Bibliografia.bib
 Warning--entry type for "RedHat" isn't style-file defined
---line 55 of file ./Bibliografia.bib
+--line 55 of file Bibliografia.bib
 Warning--entry type for "Amazon" isn't style-file defined
---line 61 of file ./Bibliografia.bib
-Repeated entry---line 67 of file ./Bibliografia.bib
+--line 61 of file Bibliografia.bib
+Repeated entry---line 67 of file Bibliografia.bib
  : @online{RedHat
  :               ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "Kong" isn't style-file defined
---line 73 of file ./Bibliografia.bib
+--line 73 of file Bibliografia.bib
 Warning--entry type for "PostgreSQL" isn't style-file defined
---line 79 of file ./Bibliografia.bib
+--line 79 of file Bibliografia.bib
 Warning--entry type for "Lua" isn't style-file defined
---line 85 of file ./Bibliografia.bib
+--line 85 of file Bibliografia.bib
 Warning--entry type for "JWT" isn't style-file defined
---line 91 of file ./Bibliografia.bib
+--line 91 of file Bibliografia.bib
 Warning--entry type for "Postman" isn't style-file defined
---line 97 of file ./Bibliografia.bib
+--line 97 of file Bibliografia.bib
 You've used 13 entries,
             2118 wiz_defined-function locations,
-            559 strings with 5366 characters,
+            559 strings with 5364 characters,
 and the built_in function-call counts, 2674 in all, are:
 = -- 247
 > -- 91
