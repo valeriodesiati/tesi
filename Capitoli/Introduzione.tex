@@ -1,8 +1,64 @@
 \chapter*{Introduzione} %Se si cambia il Titolo cambiare anche la riga successiva così che appia corretto nell'indice
 \addcontentsline{toc}{chapter}{Introduzione} %Per far apparire Introduzione nell'indice (Il nome deve rispecchiare quello del chapter)
 \pagenumbering{arabic} % Settaggio numerazione normale
-L'introduzione deve contenere un riassunto del lavoro di Tesi.
-In particolare bisogna esprimere chiaramente e molto sinteticamente: contesto dello studio, motivazioni, contributo e conclusioni.
-Bisogna quindi fare un sommario dello studio ad alto livello, fornendo le intuizioni senza ricadere in dettagli tecnici.
-Anche lo stile dovrebbe essere più discorsivo rispetto alle parti tecniche della tesi.
+% L'introduzione deve contenere un riassunto del lavoro di Tesi.
+% In particolare bisogna esprimere chiaramente e molto sinteticamente: contesto dello studio, motivazioni, contributo e conclusioni.
+% Bisogna quindi fare un sommario dello studio ad alto livello, fornendo le intuizioni senza ricadere in dettagli tecnici.
+% Anche lo stile dovrebbe essere più discorsivo rispetto alle parti tecniche della tesi.
+
+Prima di addentrarsi nelle specifiche di questo progetto è bene partire dal concetto di applicazioni cloud – native.\\
+Un'applicazione cloud – native è un'applicazione concepita e realizzata per risiedere in cloud.\\
+L'approccio da utilizzare per lo sviluppo di questa tipologia di applicazioni è diametralmente opposto a quello per lo sviluppo di un'applicazione monolitica, 
+come sarà spiegato in seguito nel paragrafo \ref{sec:microserviziintro}.\\
+\\
+Le applicazioni cloud – native si basano su tre concetti fondamentali:
+\begin{itemize}
+\item Orchestratori di container
+\item Microservizi
+\item Scalabilità
+\end{itemize}
+
+Proprio nel rispetto di questa filosofia, sono stati introdotti i cosiddetti \emph{Orchestratori di container}, che sono utilizzati per racchiudere e allo stesso tempo 
+isolare, una o più applicazioni nel loro ambiente di esecuzione, con i relativi file necessari.\\ \\
+In altre parole, i container possono essere visti come delle Virtual Machine (infatti possiedono molte delle caratteristiche) che però non eseguono un sistema operativo 
+nella sua interezza, ma solo l'applicazione di cui si necessita ed eventuali altri servizi coinvolti nel ciclo di vita di questa.
+I container risultano essere comodi e affidabili per l'utilizzo in tutti i momenti dello sviluppo di un nuovo software, dallo sviluppo, al test, 
+ino alla fase finale di produzione.\\ Altri due vantaggi che si possono ottenere dall'utilizzo dei container, così come per le Virtual Machine, 
+riguardano la sicurezza e la scalabilità.\\
+La prima è conseguenza del fatto che, come detto sopra, si riesce ad isolare l'applicazione in esecuzione in un determinato container e quindi, se dovessero esserci 
+problemi (nella maggior parte dei casi possono verificarsi problemi inevitabili), questi non potrebbero intaccare in nessun modo altri container e quindi il funzionamento 
+di altre applicazioni.\\
+La scalabilità è garantita dal fatto che un container può essere creato, gestito e modificato in base alle necessità, non esistono \emph{container standard}, ognuno 
+viene adattato per lo scopo da raggiungere.
+
+I microservizi possono essere definiti come la scomposizione di applicazioni in elementi più piccoli, così da ottenere diversi vantaggi, come:
+\begin{itemize}
+\item \textbf{Scalabilità}\\ C'è la possibilità di misurare il carico di lavoro di un singolo servizio in ogni momento e adattarlo di conseguenza (si pensi alla differenza 
+che può esserci in termini di carico di lavoro, ad esempio, nelle ore diurne e nelle ore notturne) il che può portare diversi vantaggi.
+\item \textbf{Semplicità di distribuzione}\\ I microservizi possono essere distribuiti con l'approccio \emph{CI/CD} (Continuous Integration/Continuous Delivery), 
+proprio come è stato fatto nella realizzazione di questo progetto, così da semplificare l'integrazione e il testing di nuove funzionalità.
+\item \textbf{Indipendenza}\\ Si possono gestire gli errori di un determinato servizio isolandolo, senza bloccare l'intera applicazione.
+\end{itemize}
+
+Lo scopo di questo progetto è stato di realizzare un plugin per l'API Gateway Kong.\\
+Il plugin prevede l'integrazione di Kong con un microservizio per verificare l'avvenuto acquisto di un modulo applicativo da parte di un utente, identificato tramite token.
+Il progetto includerà la realizzazione del microservizio e l'ottimizzazione del plugin tramite l'utilizzo di una cache locale a Kong.\\
+Il plugin, insieme al Gateway, funge quindi da tramite tra l'utente e il microservizio, intercettando tutte le richieste dell'utente, analizzandole, scomponendole e 
+inoltrandole al microservizio, che risponderà al plugin che a sua volta inoltrerà la risposta all'utente.\\ \\
+Quindi, il progetto ha tre macro – componenti:
+\begin{itemize}
+\item Kong Gateway
+\item Plugin per Kong Gateway scritto in linguaggio Lua
+\item Microservizio scritto in linguaggio Java
+\end{itemize}
+
+Si è deciso, insieme al Tutor Aziendale, di puntare su Kong Gateway come API Gateway per questo progetto proprio perché questo consente l'installazione di plugin 
+proprietari e custom, oltre a fornire tutte le funzioni di base di un API Gateway.\\ \\
+Per quanto riguarda lo sviluppo del plugin, si è voluto utilizzare il linguaggio Lua per le sue caratteristiche di semplicità di utilizzo e integrazione e leggerezza.\\ \\
+
+Infine, per la realizzazione del microservizio è stato deciso di utilizzare il linguaggio Java e il framework Spring perché sono stati reputati più adatti allo scopo.\\
+Il framework Spring fornisce delle caratteristiche che risultano essere comode e sicure per il programmatore per quanto riguarda la creazione di microservizi, 
+gestione dei dati, integrazione con un Database ecc., il tutto mantenendo intatti i costrutti e le pratiche del linguaggio Java.
+\\ \\
+Tutte le caratteristiche e le specifiche tecniche riguardanti le macro – componenti e le micro – componenti del progetto saranno esposte in seguito.
 
