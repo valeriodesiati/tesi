@@ -8,6 +8,10 @@ A level-1 auxiliary file: Capitoli/TecnologieUtilizzate.aux
 A level-1 auxiliary file: Capitoli/AnalisiRequisiti.aux
 A level-1 auxiliary file: Capitoli/ProgettazioneSviluppo.aux
 A level-1 auxiliary file: Capitoli/Testing.aux
+White space in argument---line 3 of file Capitoli/Testing.aux
+ : \citation{Postman
+ :                   }
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: Capitoli/Conclusione.aux
 The style file: unsrt.bst
 A level-1 auxiliary file: Capitoli/Ringraziamenti.aux
@@ -88,4 +92,4 @@ warning$ -- 0
 while$ -- 17
 width$ -- 19
 write$ -- 155
-(There were 17 warnings)
+(There was 1 error message)

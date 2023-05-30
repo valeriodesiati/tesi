@@ -4,13 +4,17 @@ In questo capitolo saranno esposti gli approcci teorici e pratici per lo svilupp
 
 \section{Introduzione ai microservizi}\label{sec:microserviziintro}
 Prima di introdurre il concetto di architettura a microservizi è bene introdurre il concetto di architettura monolitica.\\
-Un'architettura monolitica è una metodologia di sviluppo secondo la quale tutti i processi coinvolti sono strettamente legati tra di loro e sono erogati come un singolo servizio.\\
-Questa tipologia di approccio porta ad avere sistemi nei quali modificare le funzionalità diventa più complesso in quanto si deve agire sull'intero sistema e non solo sulle parti effettivamente interessate.\\
-Inoltre, utilizzare un'architettura monolitica porta a correre dei rischi per quanto riguarda la disponibilità dell'applicazione, in quanto anche se solo uno dei processi coinvolti avesse un malfunzionamento, questo si propagherebbe nell'intera applicazione.\\ \\
+Un'architettura monolitica è una metodologia di sviluppo secondo la quale tutti i processi coinvolti sono strettamente legati tra di loro e sono erogati 
+come un singolo servizio.\\
+Questa tipologia di approccio porta ad avere sistemi nei quali modificare le funzionalità diventa più complesso in quanto si deve agire sull'intero sistema e non 
+solo sulle parti effettivamente interessate.\\
+Inoltre, utilizzare un'architettura monolitica porta a correre dei rischi per quanto riguarda la disponibilità dell'applicazione, in quanto anche se solo uno dei 
+processi coinvolti avesse un malfunzionamento, questo si propagherebbe nell'intera applicazione.\\ \\
 Per quanto riguarda le architetture a microservizi, queste sono diametralmente opposte alle architetture monolitiche.\\
 Nelle architetture a microservizi l'obiettivo è quello di scomporre l'applicazione da realizzare nelle sue funzioni (\emph{servizi}) di base.\\
 Ogni servizio può essere compilato e distribuito in modo indipendente; quindi i singoli servizi possono funzionare o non funzionare senza compromettere gli altri.\\
-Utilizzare i microservizi significa riuscire a gestire criticità inevitabili, poter sfruttare la scalabilità dinamica e semplificare l'integrazione di nuove caratteristiche.\\
+Utilizzare i microservizi significa riuscire a gestire criticità inevitabili, poter sfruttare la scalabilità dinamica e semplificare l'integrazione 
+di nuove caratteristiche. \cite{RedHatMicroservices}, \cite{Amazon}\\
 
 \begin{figure}[ht]
 	\centering
@@ -20,7 +24,7 @@ Utilizzare i microservizi significa riuscire a gestire criticità inevitabili, p
 \end{figure}
 
 Oggi i container Linux permettono di eseguire più parti di un'applicazione in modo indipendente con un controllo superiore sui singoli componenti.\\
-I microservizi containerizzati rappresentano la base delle applicazioni cloud native.\\ \\
+I microservizi containerizzati rappresentano la base delle applicazioni cloud native. \cite{RedHatDocker}\\ \\
 Di seguito sono elencati alcuni dei vantaggi di un'architettura a microservizi:
 
 \begin{itemize}
@@ -84,12 +88,13 @@ Il Database è composto da due tabelle:
 	\caption{Modello Entità Relazione del Database}
 	\label{fig:one}
 \end{figure}
-% \begin{figure}[ht]
-% 	\centering
-% 	\resizebox{0.8\textwidth}{!}{\includegraphics{img/emaildb_e}}
-% 	\caption{Contenuto delle tabelle visualizzato dalla shell di PostgreSQL}
-% 	\label{fig:one}
-% \end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\resizebox{0.7\textwidth}{!}{\includegraphics{img/emaildb_e}}
+	\caption{Contenuto delle tabelle visualizzato dalla shell di PostgreSQL}
+	\label{fig:one}
+\end{figure}
 
 \subsubsection{Microservizio}
 Per lo sviluppo del microservizio, come accennato in precedenza, è stato deciso di utilizzare il linguaggio di programmazione Java e il framework Spring.\\
@@ -207,19 +212,22 @@ Se si termina l'esecuzione della query senza eccezioni e la variabile \mintinlin
 Come accennato nel paragrafo \ref{sec:kongintro}, \emph{Kong Gateway} è un API gateway cloud-native che fornisce l'opportunità di configurare \emph{services} e \emph{routes} e, oltre a questi, anche \emph{plugin} e \emph{consumer}.
 \subsection{Service}\label{sec:kongservice}
 Un \emph{service} in Kong Gateway è un'astrazione di tutti i servizi upstream custom che si aggiungono alla configurazione. Con \emph{servizio upstream custom} si intende un microservizio custom che prende dati dalla richiesta inoltrata al gateway e ne restituisce altri al gateway stesso, che si occuperà di comunicarli al client.\\
-Solitamente ad ogni \emph{service} è associata una o più \emph{routes}.\\
+Solitamente ad ogni \emph{service} è associata una o più \emph{routes}. \cite{Kong}\\
 
 \subsection{Route}\label{sec:kongroute}
 Una \emph{route} è una regola definita per indirizzare correttamente le richieste del client.\\
-L'associazione di una (o più) route ad un servizio consente di realizzare un meccanismo di routing molto potente, dato che è possibile configurare nel dettaglio il percorso che si vuole realizzare (protocolli da utilizzare, livello di sicurezza ecc.).\\
+L'associazione di una (o più) route ad un servizio consente di realizzare un meccanismo di routing molto potente, dato che è possibile configurare
+ nel dettaglio il percorso che si vuole realizzare (protocolli da utilizzare, livello di sicurezza ecc.). \cite{Kong}\\
 
 \subsection{Consumer}\label{sec:kongconsumer}
-Un \emph{consumer} in Kong Gateway può essere inteso come un utente di uno specifico servizio e può essere identificato tramite un \texttt{id} univoco.
+Un \emph{consumer} in Kong Gateway può essere inteso come un utente di uno specifico servizio e può essere identificato tramite un \texttt{id} univoco. \cite{Kong}
 
 \subsection{Plugin}\label{sec:kongplugin}
 Un \emph{plugin} è un'entità che sarà eseguita durante tutto il ciclo di vita di una richiesta o risposta HTTP/S (HyperText Trasfer Protocol / Secure).\\
 È il modo in cui Kong Gateway fornisce la possibilità di ottenere funzionalità aggiuntive per un \emph{service} o una \emph{route}.\\
-I plugin configurabili possono essere sia proprietari (attivabili da Kong Manager) sia custom. Per la realizzazione di un plugin custom si ha la possibilità di scegliere tra vari linguaggi di programmazione per lo sviluppo quali Go, Python, JavaScript e Lua (linguaggio utilizzato per lo sviluppo del plugin custom utilizzato nel progetto).\\ 
+I plugin configurabili possono essere sia proprietari (attivabili da Kong Manager) sia custom. Per la realizzazione di un plugin custom si ha la possibilità 
+di scegliere tra vari linguaggi di programmazione per lo sviluppo quali Go, Python, JavaScript e Lua (linguaggio utilizzato per lo sviluppo 
+del plugin custom utilizzato nel progetto). \cite{Kong}\\ 
 
 \section{Architettura del plugin \texttt{checkemail}}\label{sec:architetturaplugin}
 Un plugin in Lua per Kong Gateway si compone principalmente di due file:

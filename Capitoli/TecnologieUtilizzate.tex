@@ -4,8 +4,10 @@
 In questo capitolo saranno descritte le tecnologie utilizzate nella realizzazione del progetto.
 
 \section{Git}\label{sec:git}
-\emph{Git} è un DVCS (Distributed Version Control Systems) gratuito, open source e distribuito, utilizzabile da riga di comando, che consente di effettuare il controllo versione per un progetto.\\
-Data la sua natura “distribuita” \emph{Git} è basato su flussi di lavoro simultanei con i quali diversi sviluppatori possono collaborare ad un progetto, ognuno con il proprio workflow.
+\emph{Git} è un DVCS (Distributed Version Control Systems) gratuito, open source e distribuito, utilizzabile da riga di comando, che consente di effettuare 
+il controllo versione per un progetto.\\
+Data la sua natura “distribuita” \emph{Git} è basato su flussi di lavoro simultanei con i quali diversi sviluppatori possono collaborare ad un progetto, ognuno 
+con il proprio workflow. \cite{git}
 \begin{figure}[ht]
 	\centering
 	\resizebox{.3\textwidth}{!}{\includegraphics{img/git}}
@@ -17,7 +19,7 @@ Data la sua natura “distribuita” \emph{Git} è basato su flussi di lavoro si
 \emph{Java} è un linguaggio di programmazione ad alto livello orientato agli oggetti.\\
 Il suo scopo è quello di essere multipiattaforma, tutte le piattaforme che supportano il linguaggio devono essere in grado di eseguire un codice \emph{Java} compilato senza effettuare nuovamente la compilazione.\\
 Compilando un codice \emph{Java} si ottiene un file \emph{Java bytecode} (con estensione \texttt{.class}) che sarà eseguito sulla \emph{JVM} (Java Virtual Machine).\\
-È proprio la \emph{JVM} ad essere utilizzabile sulla maggior parte delle piattaforme.\\
+È proprio la \emph{JVM} ad essere utilizzabile sulla maggior parte delle piattaforme. \cite{Java}\\
 \begin{figure}[ht]
 	\centering
 	\resizebox{.1\textwidth}{!}{\includegraphics{img/java}}
@@ -26,8 +28,8 @@ Compilando un codice \emph{Java} si ottiene un file \emph{Java bytecode} (con es
 \end{figure}
 
 \section{Eclipse}\label{sec:eclipse}
-\emph{Eclipse} è un IDE (Integrated Development Environment) per lo sviluppo software realizzato in Java.\\
-\emph{Eclipse} unisce in un’unica interfaccia grafica:
+\emph{Eclipse} è un IDE (Integrated Development Environment) per lo sviluppo software realizzato in Java. \cite{Eclipse}\\
+\emph{Eclipse} unisce in un'unica interfaccia grafica:
 \begin{itemize}
 	\item[$\bullet$]Scrittura del codice sorgente
 	\item[$\bullet$]Compilazione
@@ -40,17 +42,17 @@ Compilando un codice \emph{Java} si ottiene un file \emph{Java bytecode} (con es
 	\label{fig:one}
 \end{figure}
 
-\section{Framework Spring}\label{sec:spring}
+\section{Spring Framework}\label{sec:spring}
 \emph{Spring} è un framework open source per lo sviluppo di applicazioni in Java.\\
-\emph{Spring} è strutturato in diversi moduli ma consente l'utilizzo solo di quelli di cui effettivamente si necessita.\\
+\emph{Spring} è strutturato in diversi moduli ma consente l'utilizzo solo di quelli di cui effettivamente si necessita. \cite{SpringFramework}\\
 Nello specifico, per la realizzazione del progetto sono stati utilizzati i moduli descritti in seguito.
 \subsection{Spring Boot}\label{sec:springboot}
-L’utilizzo di questo modulo consente di creare applicazioni Java standalone, pronte all’esecuzione.\\
+L'utilizzo di questo modulo consente di creare applicazioni Java standalone, pronte all'esecuzione. \cite{springBoot}\\
 \emph{Spring Boot} consente di scegliere quale tool utilizzare per effettuare la build, in questo progetto è stato utilizzato Maven.\\
-Alla base di ogni build con \emph{Spring Boot} e \emph{Maven} c’è il file \emph{pom.xml} (acronimo di Project Object Model) in cui sono descritte tutte le impostazioni e le dipendenze necessarie alla build in un linguaggio \emph{simil-XML}.
+Alla base di ogni build con \emph{Spring Boot} e \emph{Maven} c'è il file \emph{pom.xml} (acronimo di Project Object Model) in cui sono descritte tutte le impostazioni e le dipendenze necessarie alla build in un linguaggio \emph{simil-XML}.
 \subsection{Spring Data}\label{sec:springdata}
-\emph{Spring Data} fornisce un modello di programmazione per l’accesso ai dati indipendentemente dal tipo di database utilizzato.\\
-Nello specifico, per la realizzazione del progetto è stata utilizzata la specifica di \emph{Spring Data} chiamata \emph{JPA} (Java Persistence API) per:
+\emph{Spring Data} fornisce un modello di programmazione per l'accesso ai dati indipendentemente dal tipo di database utilizzato. \cite{SpringData}\\
+Nello specifico, per la realizzazione del progetto è stata utilizzata la specifica di \emph{Spring Data} chiamata \emph{JPA} \cite{SpringDataJPA} (Java Persistence API) per:
 \begin{itemize}
 	\item[$\bullet$]Gestione del database
 	\item[$\bullet$]Creazione di tabelle
@@ -66,11 +68,11 @@ Nello specifico, per la realizzazione del progetto è stata utilizzata la specif
 
 
 \section{Azure DevOps}\label{sec:azure}
-\emph{Azure DevOps} è una piattaforma fornita da Microsoft\texttrademark  che consente di pianificare il lavoro, creare e distribuire applicazioni.\\
+\emph{Azure DevOps} è una piattaforma fornita da Microsoft\texttrademark  che consente di pianificare il lavoro, creare e distribuire applicazioni. \cite{Microsoft}\\
 Nello specifico, per la realizzazione del progetto sono state utilizzate le applicazioni descritte in seguito:
 \begin{itemize}
 	\item \textbf{Azure Repos} per la creazione e la gestione di repository \emph{Git} per il controllo e il versionamento del codice sorgente.
-	\item \textbf{Azure Pipelines} per l’automatizzazione di build e deploy dell’intero progetto.
+	\item \textbf{Azure Pipelines} per l'automatizzazione di build e deploy dell'intero progetto.
 	\item \textbf{Azure Artifacts} per la condivisione degli artefatti \emph{Maven}.
 \end{itemize}
 \begin{figure}[ht]
@@ -83,9 +85,9 @@ Nello specifico, per la realizzazione del progetto sono state utilizzate le appl
 \section{Docker}\label{sec:docker}
 \emph{Docker} è un progetto open source per la creazione di container portabili e multipiattaforma.\\
 Docker utilizza il kernel Linux per isolare i processi in modo da poterli eseguire in maniera indipendente.\\
-Ogni container è basato su un’immagine, solitamente un intero Sistema Operativo, a scelta tra quelle fornite all’interno di Docker Hub (raccolta ufficiale di tutte le immagini disponibili) o un’immagine “custom”, realizzata appositamente dal singolo sviluppatore per un determinato scopo.\\
-Grazie all’organizzazione in container si ha un alto livello di sicurezza, come se i sistemi in esecuzione fossero fisicamente separati.\\
-Nella realizzazione del progetto è stata utilizzata l’immagine ufficiale di \emph{Kong Gateway} (argomento approfondito nel paragrafo successivo) per la creazione del container.
+Ogni container è basato su un'immagine, solitamente un intero Sistema Operativo, a scelta tra quelle fornite all'interno di Docker Hub (raccolta ufficiale di tutte le immagini disponibili) o un'immagine “custom”, realizzata appositamente dal singolo sviluppatore per un determinato scopo.\\
+Grazie all'organizzazione in container si ha un alto livello di sicurezza, come se i sistemi in esecuzione fossero fisicamente separati. \cite{RedHatDocker}\\
+Nella realizzazione del progetto è stata utilizzata l'immagine ufficiale di \emph{Kong Gateway} (argomento approfondito nel paragrafo successivo) per la creazione del container.
 \begin{figure}[ht]
 	\centering
 	\resizebox{.3\textwidth}{!}{\includegraphics{img/docker}}
@@ -95,10 +97,10 @@ Nella realizzazione del progetto è stata utilizzata l’immagine ufficiale di \
 
 \section{Kong Gateway}\label{sec:kongintro}
 Un API gateway è uno strumento che si interpone tra un client e un back end per la gestione delle API (Application Programming Interface) che si comporta come un proxy inverso accettando tutte le richieste indirizzate alle API gestite, consentendo di configurare \emph{services} e \emph{routes}.\\
-Kong Gateway è un API gateway cloud-native che fornisce tutte le caratteristiche descritte sopra e, inoltre, consente l’utilizzo di plugin.\\
+Kong Gateway è un API gateway cloud-native che fornisce tutte le caratteristiche descritte sopra e, inoltre, consente l'utilizzo di plugin. \cite{Kong}\\
 Una volta installato è possibile configurarlo accedendo alle seguenti pagine:
 \begin{itemize}
-	\item \textbf{Kong Manager}, porta 8000, consente di utilizzare un’interfaccia grafica per configurare \emph{services}, \emph{routes} e \emph{plugins}.
+	\item \textbf{Kong Manager}, porta 8000, consente di utilizzare un'interfaccia grafica per configurare \emph{services}, \emph{routes} e \emph{plugins}.
 	\item \textbf{Pagina delle configurazioni}, porta 8002, raccoglie tutte le configurazioni del gateway in formato JSON.
 \end{itemize}
 
@@ -121,7 +123,7 @@ L'argomento sarà approfondito nel paragrafo \ref{sec:kongprog}, contestualmente
 	\item[$\bullet$]Integrità dei dati nelle transazioni
 	\item[$\bullet$]Controllo concorrente del versionamento
 \end{itemize}
-Inoltre fornisce la possibilità di aggiungere tipi di dato, funzioni, operatori ecc.
+Inoltre fornisce la possibilità di aggiungere tipi di dato, funzioni, operatori ecc. \cite{PostgreSQL}
 \begin{figure}[ht]
 	\centering
 	\resizebox{.4\textwidth}{!}{\includegraphics{img/postgres}}
@@ -131,7 +133,7 @@ Inoltre fornisce la possibilità di aggiungere tipi di dato, funzioni, operatori
 
 \section{Lua}\label{sec:lua}
 \emph{Lua} è un linguaggio di scripting open source che combina la sintassi procedurale a costrutti di dati basati su array associativi.\\
-È un linguaggio tipizzato dinamicamente, viene eseguito interpretando un bytecode e gestisce la memoria in modo automatico tramite un \emph{garbage collector}.\\
+È un linguaggio tipizzato dinamicamente, viene eseguito interpretando un bytecode e gestisce la memoria in modo automatico tramite un \emph{garbage collector}. \cite{Lua}\\
 È stato scelto per la realizzazione del plugin per le sue caratteristiche quali:
 \begin{itemize}
 	\item[$\bullet$]Velocità
@@ -148,11 +150,12 @@ Inoltre fornisce la possibilità di aggiungere tipi di dato, funzioni, operatori
 \newpage
 \section{JWT}\label{sec:jwt}
 \emph{JWT} (JSON Web Token) è un open standard che definisce un metodo sicuro per la trasmissione di informazioni tra le parti sottoforma di oggetto JSON.\\
-Le informazioni inviate sono firmate digitalmente tramite un \emph{secret}, utilizzando l’algoritmo HMAC, oppure tramite una coppia di chiavi pubblica/privata, con gli algoritmi RSA o ECDSA.
+Le informazioni inviate sono firmate digitalmente tramite un \emph{secret}, utilizzando l'algoritmo HMAC, oppure tramite una coppia di chiavi pubblica/privata, 
+con gli algoritmi RSA o ECDSA. \cite{JWT}
 Questa tipologia di token risulta utile in diversi scenari, come:
 \begin{itemize}
-	\item \textbf{Autorizzazioni}, una volta che l’utente effettua una richiesta includendo il token sarà autorizzato ad accedere a tutte le risorse che gli sono permesse.
-	\item \textbf{Scambio di informazioni}, utilizzando i token JWT firmati con una coppia di chiavi è possibile in ogni momento verificare l’autenticità del mittente o del destinatario.
+	\item \textbf{Autorizzazioni}, una volta che l'utente effettua una richiesta includendo il token sarà autorizzato ad accedere a tutte le risorse che gli sono permesse.
+	\item \textbf{Scambio di informazioni}, utilizzando i token JWT firmati con una coppia di chiavi è possibile in ogni momento verificare l'autenticità del mittente o del destinatario.
 \end{itemize}
 
 Un token JWT composto da tre parti principali, in questo ordine:
@@ -172,7 +175,8 @@ ed ha una forma del tipo:
 
 \section{Postman}\label{sec:postman}
 \emph{Postman} è una piattaforma API per la creazione, sviluppo e testing di APIs.\\
-Nello sviluppo del progetto è stato utilizzato per la fase di testing dato che permette di effettuare delle richieste HTTP/S, offrendo la possibilità di configurare il body della stessa e di ricevere la risposta.\\
+Nello sviluppo del progetto è stato utilizzato per la fase di testing dato che permette di effettuare delle richieste HTTP/S,
+offrendo la possibilità di configurare il body della stessa e di ricevere la risposta. \cite{Postman} \\ 
 \begin{figure}[h]
 	\centering
 	\resizebox{0.3\textwidth}{!}{\includegraphics{img/postman}}

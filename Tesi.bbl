@@ -1,32 +1,48 @@
 \begin{thebibliography}{10}
 
-\bibitem{git}
-Git.
-\newblock About version control.
+\bibitem{RedHatMicroservices}
+RedHat.
+\newblock Cosa sono i microservizi?
 \newblock
-  \url{https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control}.
+  \url{http://www.usabilityfirst.com/glossary/scientific-visualization/}.
 
-\bibitem{AESYS}
-AESYS Srl.
-\newblock Aesys {S}rl.
-\newblock \url{https://www.aesys.tech/}.
+\bibitem{Amazon}
+Amazon AWS.
+\newblock Microservizi.
+\newblock \url{https://aws.amazon.com/it/microservices/}.
+
+\bibitem{Kong}
+Kong.
+\newblock Kong {G}ateway.
+\newblock \url{https://docs.konghq.com/gateway/latest/}.
 
 \bibitem{Java}
 Java.
 \newblock Che cos'è la tecnologia {J}ava e a cosa serve?
 \newblock \url{https://www.java.com/it/download/help/whatis_java.html}.
 
-\bibitem{Eclipse}
-Eclipse.
-\newblock Eclipse documentation.
-\newblock \url{https://help.eclipse.org/latest/index.jsp}.
-
 \bibitem{SpringFramework}
 Spring.
 \newblock Spring {F}ramework.
 \newblock \url{https://spring.io/projects/spring-framework}.
 
-\bibitem{SpringBoot}
+\bibitem{AESYS}
+AESYS Srl.
+\newblock Aesys {S}rl.
+\newblock \url{https://www.aesys.tech/}.
+
+\bibitem{git}
+Git.
+\newblock About version control.
+\newblock
+  \url{https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control}.
+
+\bibitem{Eclipse}
+Eclipse.
+\newblock Eclipse documentation.
+\newblock \url{https://help.eclipse.org/latest/index.jsp}.
+
+\bibitem{springBoot}
 Spring.
 \newblock Spring {B}oot.
 \newblock \url{https://spring.io/projects/spring-boot}.
@@ -50,22 +66,6 @@ Microsoft~Azure DevOps.
 RedHat.
 \newblock Cos'è {D}ocker?
 \newblock \url{https://www.redhat.com/it/topics/containers/what-is-docker}.
-
-\bibitem{Amazon}
-Amazon AWS.
-\newblock Microservizi.
-\newblock \url{https://aws.amazon.com/it/microservices/}.
-
-\bibitem{RedHatMicroservices}
-RedHat.
-\newblock Cosa sono i microservizi?
-\newblock
-  \url{http://www.usabilityfirst.com/glossary/scientific-visualization/}.
-
-\bibitem{Kong}
-Kong.
-\newblock Kong {G}ateway.
-\newblock \url{https://docs.konghq.com/gateway/latest/}.
 
 \bibitem{PostgreSQL}
 PostgreSQL.
