@@ -19,13 +19,13 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Architettura monolitica e architettura a microservizi a confronto\relax }}{22}{figure.caption.21}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Schema di comunicazione Utente - microservizio\relax }}{24}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Modello Entità Relazione del Database\relax }}{25}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Contenuto delle tabelle visualizzato dalla shell di PostgreSQL\relax }}{25}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagramma UML delle classi principali del progetto\relax }}{26}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Diagramma UML delle classi \emph {controller} del progetto\relax }}{27}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Diagramma UML delle \emph {custom exception} del progetto\relax }}{28}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Modello Entità Relazione del Database\relax }}{25}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Contenuto delle tabelle visualizzato dalla shell di PostgreSQL\relax }}{25}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagramma UML delle classi principali del progetto\relax }}{27}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Diagramma UML delle classi \emph {controller} del progetto\relax }}{27}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Diagramma UML delle \emph {custom exception} del progetto\relax }}{27}{figure.caption.28}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Test - Autorizzazione concessa\relax }}{36}{figure.caption.31}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Test - Autorizzazione non concessa, pagamento richiesto\relax }}{36}{figure.caption.32}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Test - Autorizzazione non concessa, token non inserito\relax }}{37}{figure.caption.33}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Test - Autorizzazione concessa\relax }}{38}{figure.caption.33}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Test - Autorizzazione non concessa, pagamento richiesto\relax }}{38}{figure.caption.34}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Test - Autorizzazione non concessa, token non inserito\relax }}{39}{figure.caption.35}%
 \addvspace {10\p@ }

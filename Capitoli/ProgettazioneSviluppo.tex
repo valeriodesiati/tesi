@@ -72,11 +72,11 @@ I codici che possono essere restituiti sono:\\
 	\caption{Schema di comunicazione Utente - microservizio}
 	\label{fig:one}
 \end{figure}
-
-\subsection{Sviluppo}\label{sec:sviluppomicroservizio}
-\subsubsection{Database}
+\newpage
+\subsection{Sviluppo Database}\label{sec:sviluppodatabase}
 Per sviluppare ed utilizzare il microservizio si è resa necessaria la creazione del Database PostgreSQL per la memorizzazione dei dati degli utenti.\\
-È bene premettere che il Database è stato volutamente creato nella maniera più semplice e facilmente manutenibile, dato che durante lo sviluppo questo doveva servire solo per scopi di testing.\\
+È bene premettere che il Database è stato volutamente creato nella maniera più semplice e facilmente manutenibile, dato che durante lo sviluppo questo doveva 
+servire solo per scopi di testing.\\
 Il Database è composto da due tabelle:
 \begin{itemize}
 		\item \textbf{\texttt{users}}\\ Contiene le informazioni di tutti gli utenti abilitati ad accedere ad un determinato servizio.
@@ -95,118 +95,205 @@ Il Database è composto da due tabelle:
 	\caption{Contenuto delle tabelle visualizzato dalla shell di PostgreSQL}
 	\label{fig:one}
 \end{figure}
-
-\subsubsection{Microservizio}
-Per lo sviluppo del microservizio, come accennato in precedenza, è stato deciso di utilizzare il linguaggio di programmazione Java e il framework Spring.\\
-Il progetto è stato realizzato utilizzando l'IDE Eclipse ed è composto da cinque \emph{package}.
-\begin{figure}[h]
-	\centering
-	\resizebox{0.6\textwidth}{!}{\includegraphics{img/classi}}
-	\caption{Diagramma UML delle classi principali del progetto}
-	\label{fig:one}
-\end{figure}
-
-\begin{figure}[h]
-	\centering
-	\resizebox{0.8\textwidth}{!}{\includegraphics{img/controller}}
-	\caption{Diagramma UML delle classi \emph{controller} del progetto}
-	\label{fig:one}
-\end{figure}
 \newpage
-\begin{figure}[h]
-	\centering
-	\resizebox{0.5\textwidth}{!}{\includegraphics{img/exception}}
-	\caption{Diagramma UML delle \emph{custom exception} del progetto}
-	\label{fig:one}
-\end{figure}
-
+\subsection{Sviluppo Microservizio}\label{sec:sviluppomicroservizio}
+Per lo sviluppo del microservizio, come accennato in precedenza, è stato deciso di utilizzare il linguaggio di programmazione Java e il framework Spring.\\
+Il progetto è stato realizzato utilizzando l'IDE Eclipse ed è composto da cinque \emph{package}.\\
 Descrizione dei package:
 \begin{itemize}
 	\item \textbf{\texttt{com.aesys.valeriodesiati.mail}}\\ Contiene la classe principale del microservizio.
-	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.model}}\\ Contiene le classi relative alle Entità all'interno del Database.\\ \emph{Spring Boot JPA} consente la creazione di entità in un Database a partire da una normale classe Java tramite l'aggiunta di annotazioni fornite dal framework.\\Un esempio di utilizzo di un \emph{model} è l'Algoritmo \ref{alg:checkemailmodel}.\\Il risultato sarà quindi la creazione di una tabella nel Database con i campi specificati dalle relative variabili annotate.
-	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.repository}}\\ Contiene le interfacce relative alle entità del Database che ereditano l'interfaccia \mintinline{java}{JpaRepository<T,ID>}.\\ Tale interfaccia contiene le API per tutte le operazioni CRUD di base.\\ CRUD (Create Read Update Delete) è un acronimo che indica le quattro operazioni fondamentali per creare un'applicazione che abbia uno storage persistente.
-	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.controller}}\\ Contiene le classi \emph{Controller} del microservizio, ovvero le classi annotate con \mintinline{java}{@RestController}.\\ In Spring una classe annotata come \emph{Controller} è una classe che sarà utilizzata come handler di richieste web.\\Un esempio di utilizzo di un \mintinline{java}{@RestController} è l'Algoritmo \ref{alg:checkemail}.
-	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.exception}}\\ Contiene le classi per la definizione di \emph{custom exception}.\\ L'implementazione di tali classi si è resa necessaria per poter comprendere meglio gli errori in fase di sviluppo e di debug.\\
+	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.model}}\\ Contiene le classi relative alle Entità all'interno del Database.\\
+	\emph{Spring Boot JPA} consente la creazione di entità in un Database a partire da una normale classe Java tramite l'aggiunta di annotazioni fornite dal framework.
+	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.repository}}\\ Contiene le interfacce relative alle entità del Database che ereditano l'interfaccia 
+	\mintinline{java}{JpaRepository<T,ID>}.\\ Tale interfaccia contiene le API per tutte le operazioni CRUD di base.\\ CRUD (Create Read Update Delete) è un acronimo 
+	che indica le quattro operazioni fondamentali per creare un'applicazione che abbia uno storage persistente.
+	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.controller}}\\ Contiene le classi \emph{Controller} del microservizio, ovvero le classi annotate con 
+	\mintinline{java}{@RestController}.\\ In Spring una classe annotata come \emph{Controller} è una classe che sarà utilizzata come handler di richieste web.
+	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.exception}}\\ Contiene le classi per la definizione di \emph{custom exception}.\\ L'implementazione 
+	di tali classi si è resa necessaria per poter comprendere meglio gli errori in fase di sviluppo e di debug.\\
 \end{itemize}
 
+\newpage
+Di seguito i diagrammi UML dei package principali del microservizio:
+\begin{figure}[H]
+	\centering
+	\resizebox{0.5\textwidth}{!}{\includegraphics{img/classi}}
+	\caption{Diagramma UML delle classi principali del progetto}
+	\label{fig:umlclass}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\resizebox{0.7\textwidth}{!}{\includegraphics{img/controller}}
+	\caption{Diagramma UML delle classi \emph{controller} del progetto}
+	\label{fig:umlcontroller}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\resizebox{0.7\textwidth}{!}{\includegraphics{img/exception}}
+	\caption{Diagramma UML delle \emph{custom exception} del progetto}
+	\label{fig:umlexception}
+\end{figure}
+\newpage
+
+\subsubsection{\texttt{EmailApplication.java}}
 \begin{algorithm}
 \centering
 \begin{minted}[fontsize=\scriptsize, xleftmargin=20pt,linenos]{java}
-@Entity
-@Table (name="email")
-public class Email {
+package com.aesys.valeriodesiati.mail;
 
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int id;
-	@Column(name = "email")
-	private String email;
-	
-	public Email() {}
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-	public Email(int id, String email) {
-		this.id = id;
-		this.email = email;
-	}
-	
-	//getters, setters and toString()...
+@SpringBootApplication
+public class EmailApplication {
+    
+    public static void main(String[] args) {
+        SpringApplication.run(EmailApplication.class, args);
+    }
+
 }
 \end{minted}
-\caption{Utilizzo di un \emph{model} di Spring Boot JPA}\label{alg:checkemailmodel}
+\caption{Classe \emph{mail} del progetto}\label{alg:emailapplication}
 \end{algorithm}
 
-\begin{algorithm}
+La classe principale del progetto è composta da un solo comando, che si occupa di avviare l'applicazione.\\
+Il metodo \mintinline{java}{run()} è il metodo principale di Spring Framework, serve ad avviare tutti i processi necessari all'esecuzione dell'applicazione.\\
+La prima cosa che è possibile notare è che il metodo \mintinline{java}{run()} prende come parametri il file bytecode della classe stessa ed eventuali argomenti.\\
+Nello specifico, il metodo:
+\begin{itemize}
+\item Legge le configurazioni.
+\item Avvia l'Application Context, un gestore per tutte le classi coinvolte nell'esecuzione dell'applicazione.
+\item Scansiona il Path dell'intero progetto, per trovare e organizzare tutte le classi annotate con \mintinline{java}{@Controller}, \mintinline{java}{@RestController}, \mintinline{java}{@Entity } ecc.
+\item Se richiesto, avvia Tomcat Server per il deploy e l'avvio dell'applicazione.
+\end{itemize}
+\newpage
+\subsubsection{\texttt{Users.java}}
+\begin{algorithm}[H]
 \centering
-\begin{minted}[fontsize=\scriptsize, xleftmargin=20pt, linenos]{java}
-	@Transactional
-	@GetMapping("/join/checkemail/{mail}")
-	public ResponseEntity<Integer> checkEmail(@PathVariable("mail") String mail) {
+\begin{minted}[fontsize=\scriptsize, breaklines, xleftmargin=20pt,linenos]{java}
+package com.aesys.valeriodesiati.mail.model;
+//imports..
+@Entity
+@Table (name="users")
+public class Users {
 
-	EntityManager em = emf.createEntityManager();
-	em.getTransaction().begin();
-	String result = null;
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private int id;
+    @Column(name = "email", nullable = false)
+    private String email;
+    @Column(name = "name")
+    private String name;
+    @Column(name = "surname")
+    private String surname;
 
-	try {
-		result = (String) em.createQuery("SELECT u.email
+    public Users(int id, String email, String name, String surname) {
+        this.id = id;
+        this.email = email;
+        this.name = name;
+        this.surname = surname;
+    }
+
+    //setters, getters, toString()...
+}
+\end{minted}
+\caption{Classe \mintinline{java}{@Entity} Users.java}\label{alg:usersjava}
+\end{algorithm}
+
+È bene precisare da subito che il comportamento delle classi \texttt{Users.java} e \texttt{Email.java} è molto simile, 
+in quanto entrambe annotate come \mintinline{java}{@Entity}.\\
+Una classe annotata come \mintinline{java}{@Entity} indica che questa servirà per la creazione di una tabella all'interno del Database specificato, 
+utilizzando come campi gli attributi della classe.\\
+È possibile notare come la classe \texttt{Users.java} sia una classe molto “standard” per quanto riguarda la creazione di oggetti di tipo \texttt{Users}, 
+le uniche aggiunte solo le annotazioni Spring, come ad esempio:
+\begin{itemize}
+\item \mintinline{java}{@Id} e \mintinline{java}{@GeneratedValue()} per definire l'attributo come \emph{id} autogenerato.
+\item \mintinline{java}{@Column()} per definire il nome di un campo (colonna) della tabella ed eventuali altre proprietà.
+\end{itemize}
+\newpage
+\subsubsection{\texttt{JoinController.java}}
+\begin{algorithm}[H]
+\centering
+\begin{minted}[fontsize=\scriptsize, breaklines, xleftmargin=20pt,linenos]{java}
+package com.aesys.valeriodesiati.mail.controller;
+//imports..
+@RestController
+public class JoinController {
+    
+    @Autowired
+    EntityManagerFactory emf;
+    
+    @Transactional
+    @GetMapping("/join/checkemail/{mail}")
+    public ResponseEntity<Integer> checkEmail(@PathVariable("mail") String mail) {
+        
+        EntityManager em = emf.createEntityManager();
+        em.getTransaction().begin();
+        String result = null;
+        
+        try {
+            result = (String) em.createQuery("SELECT u.email
                                                   FROM Users u, Email e
                                                   WHERE u.email = e.email 
                                                   AND u.email = :email")
                                                   .setParameter("email", mail)
                                                   .getSingleResult();
-	}
-	catch(NoResultException | NullPointerException e) {
-		return ResponseEntity.status(HttpStatus.PAYMENT_REQUIRED).body(402);
-	}
+        }
+        catch(NoResultException | NullPointerException e) {
+            return ResponseEntity.status(HttpStatus.PAYMENT_REQUIRED).body(402);
+        }
+        
+        if(result == null)
+            return ResponseEntity.status(HttpStatus.PAYMENT_REQUIRED).body(402);
+        else
+            return ResponseEntity.status(HttpStatus.OK).body(200);
+            
+    }
+}
 
-	if(result == null)
-		return ResponseEntity.status(HttpStatus.PAYMENT_REQUIRED).body(402);
-	else
-		return ResponseEntity.status(HttpStatus.OK).body(200);
-
-	}
 \end{minted}
-\caption{Accesso al Database}\label{alg:checkemail}
+\caption{Classe \mintinline{java}{@RestController} JoinController.java}\label{alg:joincontrollerjava}
 \end{algorithm}
 
-Andando ad analizzare più a fondo le specifiche dell'Algoritmo \ref{alg:checkemail} è possibile notare, in testa al metodo, l'annotazione\\ \\
+Si tratta della classe che svolge il compito principale del microservizio, ovvero controllare che l'indirizzo mail specificato si trovi nella 
+tabella \texttt{email}, ma anche nella tabella \texttt{users}, proprio a certificare che l'indirizzo dato sia abilitato a procedere.\\
+La classe è annotata come \mintinline{java}{@RestController}, utilizzato per la gestione di richieste \texttt{HTTP}.\\
+I metodi che possono essere utilizzati con questa tipologia di Controller sono \mintinline{java}{@RequestMapping}, \mintinline{java}{@GetMapping}, 
+\mintinline{java}{@PostMapping}, \mintinline{java}{@PutMapping},\\ \mintinline{java}{@DeleteMapping} ecc., si devono sempre specificare l'URL e il tipo di richiesta da gestire.
+In un'architettura REST le risorse sono rappresentate in modo da essere compatibili con le operazioni CRUD (Create, Read, Update, Delete).\\
+Successivamente troviamo un \mintinline{java}{EntityManager} utilizzato l'interazione con il Database ed è parte del modulo Spring Data JPA.\\
+Consente la creazione, la modifica, la rimozione e il caricamento di entità (tabelle) nel Database.
+
+Andando ad analizzarne più a fondo le specifiche è possibile notare, in testa al metodo, l'annotazione\\ \\
 \centerline{\mintinline{java}{@GetMapping("/join/checkemail/{mail}")}} \\ \\
 tramite la quale diventa possibile intercettare delle richieste \texttt{HTTP GET} effettuate in un determinato percorso. Il parametro \mintinline{java}{{mail}} può essere
 utilizzato all'interno della funzione.\\
-Si passa poi alla creazione di un \mintinline{java}{EntityManager} che consente di eseguire query all'interno delle \emph{entity} create tramite i \emph{model}.\\ \\
-I passaggi successivi sono per la creazione e l'esecuzione della query, che effettua un'operazione di join tra le tabelle \texttt{Users} e \texttt{Email}, andando
-semplicemente a controllare che l'indirizzo mail specificato nella richiesta \texttt{HTTP GET} sia effettivamente presente all'interno della tabella \texttt{Users} e
-quindi sia abilitato all'accesso.\\
+Si prosegue con la creazione e l'esecuzione della query, che effettua un'operazione di join tra le tabelle \texttt{Users} e \texttt{Email}, andando a 
+svolgere le operazioni descritte più in alto.\\
 Il tutto è svolto all'interno di un blocco \mintinline{java}{try{ } catch(Exception){ }} al fine di prevenire comportamenti anomali: se viene lanciata l'eccezione\\
 \mintinline{java}{NoResultException} o \mintinline{java}{NullPointerException}, si ritorna il codice \texttt{HTTP 402 Payment Required}.
 Se si termina l'esecuzione della query senza eccezioni e la variabile \mintinline{java}{result} non è impostata a \mintinline{java}{null}, si ritorna il codice \texttt{HTTP 200 OK}.
 
+\subsubsection{\texttt{application.properties}}
+\begin{algorithm}
+\centering
+\begin{minted}[fontsize=\scriptsize, breaklines, xleftmargin=20pt,linenos]{sh}
+	spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+	spring.datasource.url=
+		jdbc:postgresql://postgresqlkong.postgres.database.azure.com:5432
+				/fattdb?ssl=true&sslmode=require
+	spring.datasource.username=*****
+	spring.datasource.password=*****
+\end{minted}
+\caption{File di configurazione \texttt{application.properties}}\label{alg:applicationproperties}
+\end{algorithm}
+Il file \texttt{application.properties} è utilizzato per definire proprietà aggiuntive dell'applicazione come nel nostro caso, il Database.\\
+È possibile vedere come siano definiti tutti i parametri per la connessione al Database PostgreSQL, all'interno del quale saranno 
+create le tabelle ed effettuate le query.
 
-% \begin{figure}[ht]
-% 	\centering
-% 	\resizebox{1.0\textwidth}{!}{\includegraphics{img/uml}}
-% 	\caption{Schema di comunicazione Utente - microservizio}
-% 	\label{fig:one}
-% \end{figure}
+\newpage
 
 \section{Introduzione a Kong Gateway}\label{sec:kongprog}
 Come accennato nel paragrafo \ref{sec:kongintro}, \emph{Kong Gateway} è un API gateway cloud-native che fornisce l'opportunità di configurare \emph{services} e \emph{routes} e, oltre a questi, anche \emph{plugin} e \emph{consumer}.
@@ -217,7 +304,7 @@ Solitamente ad ogni \emph{service} è associata una o più \emph{routes}. \cite{
 \subsection{Route}\label{sec:kongroute}
 Una \emph{route} è una regola definita per indirizzare correttamente le richieste del client.\\
 L'associazione di una (o più) route ad un servizio consente di realizzare un meccanismo di routing molto potente, dato che è possibile configurare
- nel dettaglio il percorso che si vuole realizzare (protocolli da utilizzare, livello di sicurezza ecc.). \cite{Kong}\\
+ nel dettaglio il percorso che si vuole realizzare (protocolli da utilizzare, livello di sicurezza ecc.). \cite{Kong}
 
 \subsection{Consumer}\label{sec:kongconsumer}
 Un \emph{consumer} in Kong Gateway può essere inteso come un utente di uno specifico servizio e può essere identificato tramite un \texttt{id} univoco. \cite{Kong}
@@ -227,7 +314,7 @@ Un \emph{plugin} è un'entità che sarà eseguita durante tutto il ciclo di vita
 È il modo in cui Kong Gateway fornisce la possibilità di ottenere funzionalità aggiuntive per un \emph{service} o una \emph{route}.\\
 I plugin configurabili possono essere sia proprietari (attivabili da Kong Manager) sia custom. Per la realizzazione di un plugin custom si ha la possibilità 
 di scegliere tra vari linguaggi di programmazione per lo sviluppo quali Go, Python, JavaScript e Lua (linguaggio utilizzato per lo sviluppo 
-del plugin custom utilizzato nel progetto). \cite{Kong}\\ 
+del plugin custom utilizzato nel progetto). \cite{Kong}
 
 \section{Architettura del plugin \texttt{checkemail}}\label{sec:architetturaplugin}
 Un plugin in Lua per Kong Gateway si compone principalmente di due file:
@@ -316,7 +403,6 @@ Il microservizio è raggiungibile al link\\ \texttt{ http://restservice-springid
 \caption{Inoltro richiesta \texttt{HTTP} dal plugin}\label{alg:pluginhttprequest }
 \end{algorithm}
 
-\newpage
 L'ultimo controllo che si effettua è quello sul codice di ritorno \texttt{HTTP} ricevuto dal microservizio, quindi si invia una risposta da Kong Gateway all'utente.
 
 \begin{algorithm}

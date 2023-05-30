@@ -30,22 +30,25 @@
 \contentsline {chapter}{\numberline {4}Progettazione e sviluppo}{21}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introduzione ai microservizi}{21}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Il microservizio \texttt {CheckEmail}}{23}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Sviluppo}{24}{subsection.4.2.1}%
-\contentsline {subsubsection}{Database}{24}{section*.24}%
-\contentsline {subsubsection}{Microservizio}{25}{section*.27}%
-\contentsline {section}{\numberline {4.3}Introduzione a Kong Gateway}{29}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Service}{29}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Route}{29}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Consumer}{30}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Plugin}{30}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Architettura del plugin \texttt {checkemail}}{30}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Sviluppo}{31}{subsection.4.4.1}%
-\contentsline {section}{\numberline {4.5}Configurazione Kong Gateway}{33}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Testing}{35}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Testing con Postman}{35}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Test effettuati}{35}{subsection.5.1.1}%
-\contentsline {section}{\numberline {5.2}Alternativa}{37}{section.5.2}%
-\contentsline {chapter}{Conclusione}{39}{chapter*.34}%
-\contentsline {chapter}{Bibliografia}{40}{chapter*.34}%
-\contentsline {chapter}{Ringraziamenti}{43}{chapter*.36}%
-\contentsline {chapter}{\numberline {A}Appendice}{45}{appendix.Alph1}%
+\contentsline {subsection}{\numberline {4.2.1}Sviluppo Database}{25}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Sviluppo Microservizio}{26}{subsection.4.2.2}%
+\contentsline {subsubsection}{\texttt {EmailApplication.java}}{28}{section*.29}%
+\contentsline {subsubsection}{\texttt {Users.java}}{29}{section*.30}%
+\contentsline {subsubsection}{\texttt {JoinController.java}}{30}{section*.31}%
+\contentsline {subsubsection}{\texttt {application.properties}}{31}{section*.32}%
+\contentsline {section}{\numberline {4.3}Introduzione a Kong Gateway}{32}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Service}{32}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Route}{32}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Consumer}{32}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Plugin}{32}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Architettura del plugin \texttt {checkemail}}{33}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Sviluppo}{33}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Configurazione Kong Gateway}{35}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Testing}{37}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Testing con Postman}{37}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Test effettuati}{37}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Alternativa}{39}{section.5.2}%
+\contentsline {chapter}{Conclusione}{41}{chapter*.36}%
+\contentsline {chapter}{Bibliografia}{42}{chapter*.36}%
+\contentsline {chapter}{Ringraziamenti}{45}{chapter*.38}%
+\contentsline {chapter}{\numberline {A}Appendice}{47}{appendix.Alph1}%

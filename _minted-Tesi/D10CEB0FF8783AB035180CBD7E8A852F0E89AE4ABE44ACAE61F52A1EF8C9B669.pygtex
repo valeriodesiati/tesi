@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{n}{spring}\PYG{p}{.}\PYG{n}{jpa}\PYG{p}{.}\PYG{n}{properties}\PYG{p}{.}\PYG{n}{hibernate}\PYG{p}{.}\PYG{n}{jdbc}\PYG{p}{.}\PYG{n}{lob}\PYG{p}{.}\PYG{n}{non\PYGZus{}contextual\PYGZus{}creation}\PYG{o}{=}\PYG{k+kc}{true}
+	\PYG{n}{spring}\PYG{p}{.}\PYG{n}{datasource}\PYG{p}{.}\PYG{n}{url}\PYG{o}{=}\PYG{n}{jdbc}\PYG{p}{:}\PYG{n}{postgresql}\PYG{p}{:}\PYG{o}{//}\PYG{n}{postgresqlkong}\PYG{p}{.}\PYG{n}{postgres}\PYG{p}{.}\PYG{n}{database}\PYG{p}{.}\PYG{n}{azure}\PYG{p}{.}\PYG{n}{com}\PYG{p}{:}\PYG{l+m+mi}{5432}
+								\PYG{o}{/}\PYG{n}{fattdb}\PYG{err}{?}\PYG{n}{ssl}\PYG{o}{=}\PYG{k+kc}{true}\PYG{o}{\PYGZam{}}\PYG{n}{sslmode}\PYG{o}{=}\PYG{n+nb}{require}
+	\PYG{n}{spring}\PYG{p}{.}\PYG{n}{datasource}\PYG{p}{.}\PYG{n}{username}\PYG{o}{=*****}
+	\PYG{n}{spring}\PYG{p}{.}\PYG{n}{datasource}\PYG{p}{.}\PYG{n}{password}\PYG{o}{=*****}
+\end{Verbatim}

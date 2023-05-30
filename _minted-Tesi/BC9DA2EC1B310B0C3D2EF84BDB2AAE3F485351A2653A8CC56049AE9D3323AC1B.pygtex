@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	spring.jpa.properties.hibernate.jdbc.lob.non\PYGZus{}contextual\PYGZus{}creation\PYG{o}{=}\PYG{n+nb}{true}
+	spring.datasource.url\PYG{o}{=}
+		jdbc:postgresql://postgresqlkong.postgres.database.azure.com:5432
+				/fattdb?ssl\PYG{o}{=}true\PYG{p}{\PYGZam{}}\PYG{n+nv}{sslmode}\PYG{o}{=}require
+	spring.datasource.username\PYG{o}{=}*****
+	spring.datasource.password\PYG{o}{=}*****
+\end{Verbatim}
