@@ -1,2 +1,25 @@
 \chapter*{Conclusione} %Se si cambia il Titolo cambiare anche la riga successiva così che appia corretto nell'conclusione
 \addcontentsline{toc}{chapter}{Conclusione} %Per far apparire Introduzione nell'indice (Il nome deve rispecchiare quello del chapter)
+Al termine della realizzazione del progetto di stage tutti gli obiettivi descritti nel paragrafo \ref{sec:obiettivi} sono stati raggiunti nei tempi prefissati, 
+secondo la ripartizione oraria riportata al paragrafo \ref{sec:ripartizionelavoro}.\\ \\
+
+Il progetto, nella sua fase iniziale, non è risultato di semplice realizzazione in quanto è stato richiesto l'utilizzo di tecnologie e strumenti di cui non si era a conoscenza.\\ \\
+
+Nel corso dello sviluppo ci sono state diverse problematiche:
+\begin{itemize}
+\item Immagini Docker.
+\item Specifiche della Virtual Machine utilizzata.
+\end{itemize}
+
+All'inizio si era provato ad utilizzare l'immagine Docker \texttt{ubuntu:latest}, per poi decidere, in modo definitivo, di utilizzare l'immagine ufficiale di Kong Gateway 
+per problemi di compatibilità e di raggiungibilità del Gateway.
+
+Ancora, come spiegato nei capitoli precedenti, l'applicazione si trova all'interno di una Virtual Machine sulla quale è stato installato Docker con il relativo container Kong.\\
+La problematica era relativa al fatto che in momenti completamente casuali l'applicazione risultava irraggiungibile, e quindi inutilizzabile.\\ 
+Andando ad analizzare le statistiche di utilizzo su Microsoft Azure ci si è resi conto che il problema risiedeva nelle risorse (molto limitate) della Virtual Machine, 
+che quindi accusava problemi di eccessivo utilizzo di CPU e RAM che implicava l'impossibilità di elaborare le richieste.\\ \\ 
+
+Quindi, parlando di eventuali sviluppi futuri del progetto, sicuramente rientra tra questi il miglioramento delle specifiche della Virtual Machine da utilizzare,
+ tenendo conto del fatto che le risorse a disposizione con l'attuale Virtual Machine sono 1 CPU e 512 MB di memoria RAM.\\
+Altri sviluppi futuri potrebbero concentrarsi sull'implementazione di un Database più ampio e ottimizzato, andando ad utilizzare ad esempio Microsoft Azure SQL Database, 
+il Database integrato nella piattaforma Azure.
