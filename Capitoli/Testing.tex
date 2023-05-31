@@ -1,4 +1,7 @@
 \chapter{Testing}\label{chapter:testing}
+
+In questo capitolo saranno esposte le tecnologie e gli approcci utilizzati per il testing dell'applicazione e saranno illustrati i risultati ottenuti.
+
 \section{Testing con Postman}\label{sec:test1}
 Come anticipato nel paragrafo \ref{sec:postman}, il software utilizzato per la fase di testing del progetto è Postman.\\
 L'utilizzo di questo software non è stato strettamente necessario, dato che si può ottenere lo stesso risultato effettuando da terminale un comando \texttt{curl}
@@ -16,7 +19,7 @@ Nella prima immagine è possibile notare come, inserendo tutti i parametri richi
 \texttt{HTTP 200 OK}, questo perché sia l'indirizzo mail nell'URL, sia quello estratto dal token, si trovano all'interno di entrambe le tabelle del Database 
 (si ricorda che la tabella \texttt{email} contiene tutti gli indirizzi mail, mentre la tabella \texttt{users} solo gli indirizzi autorizzati ad utilizzare un determinato servizio).
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\resizebox{1\textwidth}{!}{\includegraphics{img/postmanauthorized-cut.png}}
 	\caption{Test - Autorizzazione concessa}
@@ -26,7 +29,7 @@ Nella seconda immagine si testa il comportamento in una situazione particolare: 
 del Database e nel body della richiesta viene inserito un token relativo ad un indirizzo mail valido (lo stesso dell'immagine precedente).\\
 Il comportamento atteso e ricevuto è quello di non essere autorizzati a procedere con un codice \texttt{HTTP 402 PAYMENT REQUIRED}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\resizebox{1\textwidth}{!}{\includegraphics{img/postmanpaymentrequired-cut.png}}
 	\caption{Test - Autorizzazione non concessa, pagamento richiesto}
@@ -37,7 +40,7 @@ Ancora, si testa il comportamento in un'altra situazione particolare, ovvero se 
 ma non si fornisce il token.\\
 Ancora una volta, il comportamento atteso e ricevuto è quello di non essere autorizzati a procedere.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\resizebox{1\textwidth}{!}{\includegraphics{img/postmanquerynotoken-cut.png}}
 	\caption{Test - Autorizzazione non concessa, token non inserito}
@@ -64,4 +67,4 @@ ZEPbZiJbcnOb7y9bpOJxNFok'
 \end{algorithm}
 
 Il comando racchiude esattamente quanto svolto da Postman, si effettua una richiesta \texttt{HTTP} con metodo \texttt{GET}, 
-si specifica il link e tramite l’opzione \mintinline{sh}{--header} si specifica il token JWT.
+si specifica il link e tramite l'opzione \mintinline{sh}{--header} si specifica il token JWT.

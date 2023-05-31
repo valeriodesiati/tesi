@@ -7,4 +7,4 @@
 \contentsline {algorithm}{\numberline {7}{\ignorespaces Inoltro richiesta \texttt {HTTP} dal plugin\relax }}{35}{algorithm.7}%
 \contentsline {algorithm}{\numberline {8}{\ignorespaces Inoltro risposta dal plugin a Kong Gateway\relax }}{35}{algorithm.8}%
 \contentsline {algorithm}{\numberline {9}{\ignorespaces Script per la configurazione di Kong Gateway\relax }}{36}{algorithm.9}%
-\contentsline {algorithm}{\numberline {10}{\ignorespaces Test tramite \texttt {curl}\relax }}{39}{algorithm.10}%
+\contentsline {algorithm}{\numberline {10}{\ignorespaces Test tramite \texttt {curl}\relax }}{40}{algorithm.10}%

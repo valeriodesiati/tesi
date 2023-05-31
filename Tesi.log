@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.13)  30 MAY 2023 19:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.13)  31 MAY 2023 17:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -969,31 +969,6 @@ File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
-(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-Package: blindtext 2012/01/06 V2.0 blindtext-Package
-
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-)
-\c@blindtext=\count356
-\c@Blindtext=\count357
-\c@blind@countparstart=\count358
-\blind@countxx=\count359
-\blindtext@numBlindtext=\count360
-\blind@countyy=\count361
-\c@blindlist=\count362
-\c@blindlistlevel=\count363
-\c@blindlist@level=\count364
-\blind@listitem=\count365
-\c@blind@listcount=\count366
-\c@blind@levelcount=\count367
-\blind@mathformula=\count368
-\blind@Mathformula=\count369
-\c@blind@randomcount=\count370
-\c@blind@randommax=\count371
-\c@blind@pangramcount=\count372
-\c@blind@pangrammax=\count373
-)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
@@ -1003,10 +978,10 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 )
-\c@thm=\count374
-\c@defn=\count375
-\c@example=\count376
-\c@oss=\count377
+\c@thm=\count356
+\c@defn=\count357
+\c@example=\count358
+\c@oss=\count359
 runsystem(which pygmentize && touch Tesi.aex)...executed.
 
 runsystem(rm Tesi.aex)...executed.
@@ -1065,42 +1040,50 @@ LaTeX Warning: Label `alg:container_config' multiply defined.
 (./Capitoli/Appendici/Appendice1.aux))
 \openout1 = `Tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count378
+\scratchcounter=\count360
 \scratchdimen=\dimen306
 \scratchbox=\box74
-\nofMPsegments=\count379
-\nofMParguments=\count380
+\nofMPsegments=\count361
+\nofMParguments=\count362
 \everyMPshowfont=\toks53
-\MPscratchCnt=\count381
+\MPscratchCnt=\count363
 \MPscratchDim=\dimen307
-\MPnumerator=\count382
-\makeMPintoPDFobject=\count383
+\MPnumerator=\count364
+\makeMPintoPDFobject=\count365
 \everyMPtoPDFconversion=\toks54
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
@@ -1108,7 +1091,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box75
-Package hyperref Info: Link coloring OFF on input line 122.
+Package hyperref Info: Link coloring OFF on input line 120.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1119,11 +1102,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count384
+\c@section@level=\count366
 )
-LaTeX Info: Redefining \ref on input line 122.
-LaTeX Info: Redefining \pageref on input line 122.
-LaTeX Info: Redefining \nameref on input line 122.
+LaTeX Info: Redefining \ref on input line 120.
+LaTeX Info: Redefining \pageref on input line 120.
+LaTeX Info: Redefining \nameref on input line 120.
 
 (./Tesi.out) (./Tesi.out)
 \@outlinefile=\write8
@@ -1133,8 +1116,8 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \it@ocap on input line 122.
-LaTeX Info: Redefining \it@ccap on input line 122.
+LaTeX Info: Redefining \it@ocap on input line 120.
+LaTeX Info: Redefining \it@ccap on input line 120.
 
 
 File italian.ldf warning: 
@@ -1142,17 +1125,17 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 122.
+italian.ldf    on input line 120.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
-\c@lstlisting=\count385
+\c@lstlisting=\count367
 \openout2 = `Frontespizio/Frontespizio.aux'.
 
 
 (./Frontespizio/Frontespizio.tex
-<Tesi-frn.pdf, id=216, 597.50829pt x 845.0471pt>
+<Tesi-frn.pdf, id=220, 597.50829pt x 845.0471pt>
 File: Tesi-frn.pdf Graphic file (type pdf)
 <use Tesi-frn.pdf>
 Package pdftex.def Info: Tesi-frn.pdf  used on input line 1.
@@ -1276,7 +1259,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--29
 
  []
 
-<img/aesys.png, id=440, 200.75pt x 55.20625pt>
+<img/aesys.png, id=447, 200.75pt x 55.20625pt>
 File: img/aesys.png Graphic file (type png)
 <use img/aesys.png>
 Package pdftex.def Info: img/aesys.png  used on input line 32.
@@ -1319,64 +1302,64 @@ Overfull \hbox (5.0858pt too wide) in alignment at lines 113--113
 
 ]
 Capitolo 2.
-<img/git.png, id=467, 642.4pt x 268.00125pt>
+<img/git.png, id=474, 642.4pt x 268.00125pt>
 File: img/git.png Graphic file (type png)
 <use img/git.png>
 Package pdftex.def Info: img/git.png  used on input line 13.
 (pdftex.def)             Requested size: 642.39844pt x 268.00058pt.
-<img/java.png, id=469, 1204.5pt x 2242.3775pt>
+<img/java.png, id=476, 1204.5pt x 2242.3775pt>
 File: img/java.png Graphic file (type png)
 <use img/java.png>
 Package pdftex.def Info: img/java.png  used on input line 25.
 (pdftex.def)             Requested size: 1204.49707pt x 2242.37206pt.
 [11 <./img/git.png>]
-<img/eclipse.png, id=477, 225.84375pt x 225.84375pt>
+<img/eclipse.png, id=484, 225.84375pt x 225.84375pt>
 File: img/eclipse.png Graphic file (type png)
 <use img/eclipse.png>
 Package pdftex.def Info: img/eclipse.png  used on input line 40.
 (pdftex.def)             Requested size: 225.84319pt x 225.84319pt.
  [12 <./img/java.png> <./img/eclipse.png>]
-<img/spring.png, id=489, 444.66125pt x 114.4275pt>
+<img/spring.png, id=496, 444.66125pt x 114.4275pt>
 File: img/spring.png Graphic file (type png)
 <use img/spring.png>
 Package pdftex.def Info: img/spring.png  used on input line 64.
 (pdftex.def)             Requested size: 444.66016pt x 114.42722pt.
-<img/azure.png, id=491, 308.352pt x 78.0516pt>
+<img/azure.png, id=498, 308.352pt x 78.0516pt>
 File: img/azure.png Graphic file (type png)
 <use img/azure.png>
 Package pdftex.def Info: img/azure.png  used on input line 80.
 (pdftex.def)             Requested size: 308.35124pt x 78.0514pt.
  [13 <./img/spring.png>]
-<img/docker.png, id=502, 1084.05pt x 1084.05pt>
+<img/docker.png, id=509, 1084.05pt x 1084.05pt>
 File: img/docker.png Graphic file (type png)
 <use img/docker.png>
 Package pdftex.def Info: img/docker.png  used on input line 93.
 (pdftex.def)             Requested size: 1084.04736pt x 1084.04736pt.
  [14 <./img/azure.png> <./img/docker.png>]
-<img/kong.png, id=512, 321.2pt x 132.495pt>
+<img/kong.png, id=519, 321.2pt x 132.495pt>
 File: img/kong.png Graphic file (type png)
 <use img/kong.png>
 Package pdftex.def Info: img/kong.png  used on input line 111.
 (pdftex.def)             Requested size: 321.19922pt x 132.49466pt.
-<img/postgres.png, id=514, 3198.95125pt x 1501.61pt>
+<img/postgres.png, id=521, 3198.95125pt x 1501.61pt>
 File: img/postgres.png Graphic file (type png)
 <use img/postgres.png>
 Package pdftex.def Info: img/postgres.png  used on input line 129.
 (pdftex.def)             Requested size: 3198.94348pt x 1501.60635pt.
  [15 <./img/kong.png>]
-<img/lua.png, id=523, 642.4pt x 642.4pt>
+<img/lua.png, id=530, 642.4pt x 642.4pt>
 File: img/lua.png Graphic file (type png)
 <use img/lua.png>
 Package pdftex.def Info: img/lua.png  used on input line 146.
 (pdftex.def)             Requested size: 642.39844pt x 642.39844pt.
 
 [16 <./img/postgres.png> <./img/lua.png>]
-<img/jwt.png, id=532, 1284.8pt x 722.7pt>
+<img/jwt.png, id=539, 1284.8pt x 722.7pt>
 File: img/jwt.png Graphic file (type png)
 <use img/jwt.png>
 Package pdftex.def Info: img/jwt.png  used on input line 171.
 (pdftex.def)             Requested size: 1284.79688pt x 722.69823pt.
-<img/postman.png, id=534, 636.3775pt x 572.1375pt>
+<img/postman.png, id=541, 636.3775pt x 572.1375pt>
 File: img/postman.png Graphic file (type png)
 <use img/postman.png>
 Package pdftex.def Info: img/postman.png  used on input line 182.
@@ -1386,20 +1369,26 @@ Package pdftex.def Info: img/postman.png  used on input line 182.
 
  (./Capitoli/AnalisiRequisiti.tex
 Capitolo 3.
-) [19
+<img/comunicazioni_applicazioni.drawio.png, id=553, 820.06375pt x 356.33125pt>
+File: img/comunicazioni_applicazioni.drawio.png Graphic file (type png)
+<use img/comunicazioni_applicazioni.drawio.png>
+Package pdftex.def Info: img/comunicazioni_applicazioni.drawio.png  used on inp
+ut line 9.
+(pdftex.def)             Requested size: 820.06175pt x 356.33037pt.
+[19
 
 
 
 
-]
+ <./img/comunicazioni_applicazioni.drawio.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 27--160
+
+ []
+
+[20]
 \openout2 = `Capitoli/ProgettazioneSviluppo.aux'.
 
- (./Capitoli/ProgettazioneSviluppo.tex [20
-
-
-
-
-]
+ (./Capitoli/ProgettazioneSviluppo.tex
 Capitolo 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--18
@@ -1411,8 +1400,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--18
 
  []
 
-[21]
-<img/monovsmicro.jpg, id=561, 546.843pt x 299.31825pt>
+[21
+
+
+
+
+]
+<img/monovsmicro.jpg, id=578, 546.843pt x 299.31825pt>
 File: img/monovsmicro.jpg Graphic file (type jpg)
 <use img/monovsmicro.jpg>
 Package pdftex.def Info: img/monovsmicro.jpg  used on input line 21.
@@ -1442,19 +1436,19 @@ Underfull \hbox (badness 10000) in alignment at lines 63--63
 [][][] 
  []
 
-<img/comunicazionemicroservizio.png, id=571, 564.97072pt x 195.129pt>
+<img/comunicazionemicroservizio.png, id=588, 564.97072pt x 195.129pt>
 File: img/comunicazionemicroservizio.png Graphic file (type png)
 <use img/comunicazionemicroservizio.png>
 Package pdftex.def Info: img/comunicazionemicroservizio.png  used on input line
  71.
 (pdftex.def)             Requested size: 564.96935pt x 195.12851pt.
 [24 <./img/comunicazionemicroservizio.png>]
-<img/dbtables-drawio.png, id=577, 181.3977pt x 198.0198pt>
+<img/dbtables-drawio.png, id=594, 181.3977pt x 198.0198pt>
 File: img/dbtables-drawio.png Graphic file (type png)
 <use img/dbtables-drawio.png>
 Package pdftex.def Info: img/dbtables-drawio.png  used on input line 87.
 (pdftex.def)             Requested size: 181.39725pt x 198.01932pt.
-<img/emaildb_e.png, id=578, 1558.623pt x 650.43pt>
+<img/emaildb_e.png, id=595, 1558.623pt x 650.43pt>
 File: img/emaildb_e.png Graphic file (type png)
 <use img/emaildb_e.png>
 Package pdftex.def Info: img/emaildb_e.png  used on input line 94.
@@ -1475,17 +1469,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--114
  []
 
 [26]
-<img/classi.png, id=589, 257.2812pt x 231.264pt>
+<img/classi.png, id=606, 257.2812pt x 231.264pt>
 File: img/classi.png Graphic file (type png)
 <use img/classi.png>
 Package pdftex.def Info: img/classi.png  used on input line 120.
 (pdftex.def)             Requested size: 257.28058pt x 231.26343pt.
-<img/controller.png, id=590, 1539.351pt x 825.0825pt>
+<img/controller.png, id=607, 1539.351pt x 825.0825pt>
 File: img/controller.png Graphic file (type png)
 <use img/controller.png>
 Package pdftex.def Info: img/controller.png  used on input line 127.
 (pdftex.def)             Requested size: 1539.34726pt x 825.08049pt.
-<img/exception.png, id=591, 822.6735pt x 342.078pt>
+<img/exception.png, id=608, 822.6735pt x 342.078pt>
 File: img/exception.png Graphic file (type png)
 <use img/exception.png>
 Package pdftex.def Info: img/exception.png  used on input line 134.
@@ -1734,56 +1728,60 @@ B.pygtex)) [36]
  (./Capitoli/Testing.tex
 Capitolo 5.
 
-LaTeX Warning: Citation `Postman ' on page 37 undefined on input line 9.
+LaTeX Warning: Citation `Postman ' on page 37 undefined on input line 12.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--10
+Underfull \hbox (badness 10000) in paragraph at lines 6--13
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--10
+Underfull \hbox (badness 10000) in paragraph at lines 6--13
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
+Underfull \hbox (badness 10000) in paragraph at lines 6--13
 
  []
 
-[37
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37
 
 
 
 
 ]
-<img/postmanauthorized-cut.png, id=659, 542.025pt x 210.7875pt>
+<img/postmanauthorized-cut.png, id=676, 542.025pt x 210.7875pt>
 File: img/postmanauthorized-cut.png Graphic file (type png)
 <use img/postmanauthorized-cut.png>
-Package pdftex.def Info: img/postmanauthorized-cut.png  used on input line 21.
+Package pdftex.def Info: img/postmanauthorized-cut.png  used on input line 24.
 (pdftex.def)             Requested size: 542.02367pt x 210.78699pt.
-<img/postmanpaymentrequired-cut.png, id=660, 619.113pt x 254.75175pt>
+<img/postmanpaymentrequired-cut.png, id=677, 619.113pt x 254.75175pt>
 File: img/postmanpaymentrequired-cut.png Graphic file (type png)
 <use img/postmanpaymentrequired-cut.png>
 Package pdftex.def Info: img/postmanpaymentrequired-cut.png  used on input line
- 31.
+ 34.
 (pdftex.def)             Requested size: 619.1115pt x 254.75111pt.
-<img/postmanquerynotoken-cut.png, id=661, 646.8165pt x 284.262pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38 <./img/postmanauthorized-cut.png>]
+<img/postmanquerynotoken-cut.png, id=683, 646.8165pt x 284.262pt>
 File: img/postmanquerynotoken-cut.png Graphic file (type png)
 <use img/postmanquerynotoken-cut.png>
-Package pdftex.def Info: img/postmanquerynotoken-cut.png  used on input line 42
+Package pdftex.def Info: img/postmanquerynotoken-cut.png  used on input line 45
 .
 (pdftex.def)             Requested size: 646.81491pt x 284.26129pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[38 <./img/postmanauthorized-cut.png> <./img/postmanpaymentrequired-cut.png>]
+ [39 <./img/postmanpaymentrequired-cut.png> <./img/postmanquerynotoken-cut.png>
+]
 \openout6 = `Tesi.pyg'.
 
 
@@ -1793,15 +1791,15 @@ B.pygtex)
 
 
 (./_minted-Tesi/C3CDB50BA915D5A6520725FDF5DB68DA485351A2653A8CC56049AE9D3323AC1
-B.pygtex)) [39 <./img/postmanquerynotoken-cut.png>]
+B.pygtex)) [40]
 \openout2 = `Capitoli/Conclusione.aux'.
 
- (./Capitoli/Conclusione.tex [40
+ (./Capitoli/Conclusione.tex) [41
 
 
 
 
-]) [41] (./Tesi.bbl [42
+] (./Tesi.bbl [42
 
 
 
@@ -1848,18 +1846,18 @@ Underfull \hbox (badness 7415) in paragraph at lines 86--89
 ]
 Appendice A.
 ) [47]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
  (./Tesi.aux (./Frontespizio/Frontespizio.aux)
 (./Capitoli/Introduzione.aux) (./Capitoli/DescrizioneStage.aux)
 (./Capitoli/TecnologieUtilizzate.aux) (./Capitoli/AnalisiRequisiti.aux)
 (./Capitoli/ProgettazioneSviluppo.aux) (./Capitoli/Testing.aux)
 (./Capitoli/Conclusione.aux) (./Capitoli/Ringraziamenti.aux)
 (./Capitoli/Appendici/Appendice1.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 93913E436E14E8D0B9BA94F61CAF36C2;2898.
+(rerunfilecheck)             Checksum: 27037D9F1392F878E9A95E720FAFD433;2958.
 
 
 LaTeX Warning: There were undefined references.
@@ -1869,13 +1867,13 @@ LaTeX Warning: There were multiply-defined labels.
 
 runsystem(rm Tesi.pyg)...executed.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 187.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
  ) 
 Here is how much of TeX's memory you used:
- 32317 strings out of 483099
- 581433 string characters out of 5964234
- 1116879 words of memory out of 5000000
- 46333 multiletter control sequences out of 15000+600000
+ 32182 strings out of 483099
+ 579416 string characters out of 5964234
+ 1104989 words of memory out of 5000000
+ 46189 multiletter control sequences out of 15000+600000
  539230 words of font info for 49 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  68i,14n,97p,906b,2341s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1891,9 +1889,9 @@ onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt8.pfb>
-Output written on Tesi.pdf (57 pages, 2687893 bytes).
+Output written on Tesi.pdf (57 pages, 2707230 bytes).
 PDF statistics:
- 818 PDF objects out of 1000 (max. 8388607)
- 167 named destinations out of 1000 (max. 500000)
- 604 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 837 PDF objects out of 1000 (max. 8388607)
+ 177 named destinations out of 1000 (max. 500000)
+ 617 words of extra memory for PDF output out of 10000 (max. 10000000)
 
