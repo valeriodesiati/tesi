@@ -44,15 +44,15 @@ Compilando un codice \emph{Java} si ottiene un file \emph{Java bytecode} (con es
 
 \section{Spring Framework}\label{sec:spring}
 \emph{Spring} è un framework open source per lo sviluppo di applicazioni in Java.\\
-\emph{Spring} è strutturato in diversi moduli ma consente l'utilizzo solo di quelli di cui effettivamente si necessita. \cite{SpringFramework}\\
+\emph{Spring} è strutturato in diversi moduli ma consente di utilizzare solo quelli di cui effettivamente si necessita. \cite{SpringFramework}\\
 Nello specifico, per la realizzazione del progetto sono stati utilizzati i moduli descritti in seguito.
 \subsection{Spring Boot}\label{sec:springboot}
 L'utilizzo di questo modulo consente di creare applicazioni Java standalone, pronte all'esecuzione. \cite{springBoot}\\
 \emph{Spring Boot} consente di scegliere quale tool utilizzare per effettuare la build, in questo progetto è stato utilizzato Maven.\\
-Alla base di ogni build con \emph{Spring Boot} e \emph{Maven} c'è il file \emph{pom.xml} (acronimo di Project Object Model) in cui sono descritte tutte le impostazioni e le dipendenze necessarie alla build in un linguaggio \emph{simil-XML}.
+Alla base di ogni build con \emph{Spring Boot} e \emph{Maven} c'è il file \texttt{pom.xml} (acronimo di Project Object Model) in cui sono descritte tutte le impostazioni e le dipendenze necessarie alla build in un linguaggio \emph{simil-XML}.
 \subsection{Spring Data}\label{sec:springdata}
 \emph{Spring Data} fornisce un modello di programmazione per l'accesso ai dati indipendentemente dal tipo di database utilizzato. \cite{SpringData}\\
-Nello specifico, per la realizzazione del progetto è stata utilizzata la specifica di \emph{Spring Data} chiamata \emph{JPA} \cite{SpringDataJPA} (Java Persistence API) per:
+Nello specifico, per la realizzazione del progetto è stata utilizzata la specifica \emph{Spring Data JPA} \cite{SpringDataJPA} (Java Persistence API) per:
 \begin{itemize}
 	\item[$\bullet$]Gestione del database
 	\item[$\bullet$]Creazione di tabelle
@@ -68,7 +68,7 @@ Nello specifico, per la realizzazione del progetto è stata utilizzata la specif
 
 
 \section{Azure DevOps}\label{sec:azure}
-\emph{Azure DevOps} è una piattaforma fornita da Microsoft\texttrademark  che consente di pianificare il lavoro, creare e distribuire applicazioni. \cite{Microsoft}\\
+\emph{Azure DevOps} è una piattaforma fornita da Microsoft che consente di pianificare il lavoro, creare e distribuire applicazioni. \cite{Microsoft}\\
 Nello specifico, per la realizzazione del progetto sono state utilizzate le applicazioni descritte in seguito:
 \begin{itemize}
 	\item \textbf{Azure Repos} per la creazione e la gestione di repository \emph{Git} per il controllo e il versionamento del codice sorgente.
@@ -85,7 +85,7 @@ Nello specifico, per la realizzazione del progetto sono state utilizzate le appl
 \section{Docker}\label{sec:docker}
 \emph{Docker} è un progetto open source per la creazione di container portabili e multipiattaforma.\\
 Docker utilizza il kernel Linux per isolare i processi in modo da poterli eseguire in maniera indipendente.\\
-Ogni container è basato su un'immagine, solitamente un intero Sistema Operativo, a scelta tra quelle fornite all'interno di Docker Hub (raccolta ufficiale di tutte le immagini disponibili) o un'immagine “custom”, realizzata appositamente dal singolo sviluppatore per un determinato scopo.\\
+Ogni container è basato su un'immagine a scelta tra quelle fornite all'interno di Docker Hub (raccolta ufficiale di tutte le immagini disponibili) o un'immagine “custom”, realizzata appositamente dal singolo sviluppatore per un determinato scopo.\\
 Grazie all'organizzazione in container si ha un alto livello di sicurezza, come se i sistemi in esecuzione fossero fisicamente separati. \cite{RedHatDocker}\\
 Nella realizzazione del progetto è stata utilizzata l'immagine ufficiale di \emph{Kong Gateway} (argomento approfondito nel paragrafo successivo) per la creazione del container.
 \begin{figure}[ht]
@@ -151,14 +151,14 @@ Inoltre fornisce la possibilità di aggiungere tipi di dato, funzioni, operatori
 \section{JWT}\label{sec:jwt}
 \emph{JWT} (JSON Web Token) è un open standard che definisce un metodo sicuro per la trasmissione di informazioni tra le parti sottoforma di oggetto JSON.\\
 Le informazioni inviate sono firmate digitalmente tramite un \emph{secret}, utilizzando l'algoritmo HMAC, oppure tramite una coppia di chiavi pubblica/privata, 
-con gli algoritmi RSA o ECDSA. \cite{JWT}
+con gli algoritmi RSA o ECDSA. \cite{JWT}\\
 Questa tipologia di token risulta utile in diversi scenari, come:
 \begin{itemize}
 	\item \textbf{Autorizzazioni}, una volta che l'utente effettua una richiesta includendo il token sarà autorizzato ad accedere a tutte le risorse che gli sono permesse.
 	\item \textbf{Scambio di informazioni}, utilizzando i token JWT firmati con una coppia di chiavi è possibile in ogni momento verificare l'autenticità del mittente o del destinatario.
 \end{itemize}
 
-Un token JWT composto da tre parti principali, in questo ordine:
+Un token JWT risulta composto da tre parti principali, in questo ordine:
 \begin{itemize}
 	\item[$\bullet$]Header
 	\item[$\bullet$]Payload

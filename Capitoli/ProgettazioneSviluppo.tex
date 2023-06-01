@@ -6,7 +6,7 @@ In questo capitolo saranno esposti gli approcci teorici e pratici per lo svilupp
 Prima di introdurre il concetto di architettura a microservizi è bene introdurre il concetto di architettura monolitica.\\
 Un'architettura monolitica è una metodologia di sviluppo secondo la quale tutti i processi coinvolti sono strettamente legati tra di loro e sono erogati 
 come un singolo servizio.\\
-Questa tipologia di approccio porta ad avere sistemi nei quali modificare le funzionalità diventa più complesso in quanto si deve agire sull'intero sistema e non 
+Questa tipologia di approccio porta ad avere sistemi nei quali modificare le funzionalità diventa più complesso, in quanto si deve agire sull'intero sistema e non 
 solo sulle parti effettivamente interessate.\\
 Inoltre, utilizzare un'architettura monolitica porta a correre dei rischi per quanto riguarda la disponibilità dell'applicazione, in quanto anche se solo uno dei 
 processi coinvolti avesse un malfunzionamento, questo si propagherebbe nell'intera applicazione.\\ \\
@@ -102,7 +102,7 @@ Il progetto è stato realizzato utilizzando l'IDE Eclipse ed è composto da cinq
 Descrizione dei package:
 \begin{itemize}
 	\item \textbf{\texttt{com.aesys.valeriodesiati.mail}}\\ Contiene la classe principale del microservizio.
-	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.model}}\\ Contiene le classi relative alle Entità all'interno del Database.\\
+	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.model}}\\ Contiene le classi relative alle entità all'interno del Database.\\
 	\emph{Spring Boot JPA} consente la creazione di entità in un Database a partire da una normale classe Java tramite l'aggiunta di annotazioni fornite dal framework.
 	\item \textbf{\texttt{com.aesys.valeriodesiati.mail.repository}}\\ Contiene le interfacce relative alle entità del Database che ereditano l'interfaccia 
 	\mintinline{java}{JpaRepository<T,ID>}.\\ Tale interfaccia contiene le API per tutte le operazioni CRUD di base.\\ CRUD (Create Read Update Delete) è un acronimo 
@@ -159,9 +159,9 @@ public class EmailApplication {
 \end{algorithm}
 
 La classe principale del progetto è composta da un solo comando, che si occupa di avviare l'applicazione.\\
-Il metodo \mintinline{java}{run()} è il metodo principale di Spring Framework, serve ad avviare tutti i processi necessari all'esecuzione dell'applicazione.\\
+Il metodo \mintinline{java}{run()} è il metodo principale di Spring Framework, serve ad avviare tutti i processi necessari per l'esecuzione dell'applicazione.\\
 La prima cosa che è possibile notare è che il metodo \mintinline{java}{run()} prende come parametri il file bytecode della classe stessa ed eventuali argomenti.\\
-Nello specifico, il metodo:
+Nello specifico, il metodo \mintinline{java}{run()}:
 \begin{itemize}
 \item Legge le configurazioni.
 \item Avvia l'Application Context, un gestore per tutte le classi coinvolte nell'esecuzione dell'applicazione.
@@ -264,8 +264,7 @@ I metodi che possono essere utilizzati con questa tipologia di Controller sono \
 \mintinline{java}{@PostMapping}, \mintinline{java}{@PutMapping},\\ \mintinline{java}{@DeleteMapping} ecc., si devono sempre specificare l'URL e il tipo di richiesta da gestire.
 In un'architettura REST le risorse sono rappresentate in modo da essere compatibili con le operazioni CRUD (Create, Read, Update, Delete).\\
 Successivamente troviamo un \mintinline{java}{EntityManager} utilizzato l'interazione con il Database ed è parte del modulo Spring Data JPA.\\
-Consente la creazione, la modifica, la rimozione e il caricamento di entità (tabelle) nel Database.
-
+Consente la creazione, la modifica, la rimozione e il caricamento di entità (tabelle) nel Database. \\ \\
 Andando ad analizzarne più a fondo le specifiche è possibile notare, in testa al metodo, l'annotazione\\ \\
 \centerline{\mintinline{java}{@GetMapping("/join/checkemail/{mail}")}} \\ \\
 tramite la quale diventa possibile intercettare delle richieste \texttt{HTTP GET} effettuate in un determinato percorso. Il parametro \mintinline{java}{{mail}} può essere
@@ -304,7 +303,7 @@ Solitamente ad ogni \emph{service} è associata una o più \emph{routes}. \cite{
 \subsection{Route}\label{sec:kongroute}
 Una \emph{route} è una regola definita per indirizzare correttamente le richieste del client.\\
 L'associazione di una (o più) route ad un servizio consente di realizzare un meccanismo di routing molto potente, dato che è possibile configurare
- nel dettaglio il percorso che si vuole realizzare (protocolli da utilizzare, livello di sicurezza ecc.). \cite{Kong}
+ nel dettaglio il percorso che si vuole realizzare (con i relativi protocolli da utilizzare, livello di sicurezza ecc.). \cite{Kong}
 
 \subsection{Consumer}\label{sec:kongconsumer}
 Un \emph{consumer} in Kong Gateway può essere inteso come un utente di uno specifico servizio e può essere identificato tramite un \texttt{id} univoco. \cite{Kong}
@@ -334,7 +333,7 @@ Come detto in precedenza la logica del plugin è interamente contenuta nel file 
 	\item Analizzare il token ricevuto.
 	\item Parse del token.
 	\item Inviare una richiesta \texttt{HTTP} al microservizio \texttt{CheckEmail}.
-	\item Ottenere e inoltrare al Gateway il codice di risposta ottenuto.
+	\item Ottenere risposta dal microservizio e inoltrarla al Gateway.
 \end{enumerate}
 
 Il primo punto è realizzato dalla funzione \mintinline{lua}{SplitToken(token)}, che analizza il token \texttt{JWT} ricevuto e lo suddivide nelle tre parti di cui è composto: Header, Body e Signature.\\
@@ -391,8 +390,9 @@ la ricerca di eventuali componenti del token corrotte.
 \caption{Parse token JWT}\label{alg:parsetoken}
 \end{algorithm}
 \newpage
-Il ciclo del funzionamento del plugin termina quindi l'estrazione dell'indirizzo mail dal token decodificato e l'inoltro della richiesta \texttt{HTTP} al microservizio \texttt{CheckEmail}.\\
-Il microservizio è raggiungibile al link\\ \texttt{ http://restservice-springid.azurewebsites.net/join/checkemail/}, \\unendo al link l'indirizzo mail che si desidera controllare.\\
+Il ciclo di funzionamento del plugin termina quindi con l'estrazione dell'indirizzo mail dal token decodificato e l'inoltro della richiesta \texttt{HTTP} al microservizio \texttt{CheckEmail}.\\
+Il microservizio è raggiungibile al link\\ \texttt{ http://restservice-springid.azurewebsites.net/join/checkemail/}, \\
+unendo al link l'indirizzo mail che si desidera controllare, come riportato di seguito.\\
 \begin{algorithm}
 \centering
 \begin{minted}[fontsize=\scriptsize, xleftmargin=20pt, linenos]{lua}
@@ -403,7 +403,7 @@ Il microservizio è raggiungibile al link\\ \texttt{ http://restservice-springid
 \caption{Inoltro richiesta \texttt{HTTP} dal plugin}\label{alg:pluginhttprequest }
 \end{algorithm}
 
-L'ultimo controllo che si effettua è quello sul codice di ritorno \texttt{HTTP} ricevuto dal microservizio, quindi si invia una risposta da Kong Gateway all'utente.
+L'ultimo controllo che si effettua è quello sul codice di ritorno \texttt{HTTP} ricevuto dal microservizio, che viene quindi inoltrato da Kong Gateway all'utente.
 
 \begin{algorithm}
 \centering
@@ -425,12 +425,15 @@ L'ultimo controllo che si effettua è quello sul codice di ritorno \texttt{HTTP}
 Kong Gateway è stato containerizzato tramite Docker utilizzando l'immagine ufficiale presente su Docker Hub.\\
 Il container è stato reso raggiungibile tramite una macchina virtuale su Azure con immagine Debian.\\
 Sono state create delle pipeline CI/CD per automatizzare i processi di containerizzazione e di installazione del plugin.\\
-La pipeline è azionata automaticamente dai cambiamenti nella repository principale del progetto e si occupa di far eseguire, all'interno della macchina virtuale, uno script per l'aggiornamento dei \emph{services}, \emph{routes}, \emph{consumers}.\\
-
+La pipeline è azionata automaticamente dai cambiamenti nella repository principale del progetto e si occupa di far eseguire, all'interno della macchina virtuale, 
+uno script per l'aggiornamento dei \emph{services}, \emph{routes}, \emph{consumers}.
+\newpage
 Il gateway può essere configurato in modi diversi:
-Interfaccia grafica di Kong Manager, disponibile collegandosi da browser alla porta 8002 del container.
-Tramite file JSON contenenti le informazioni necessarie che saranno aggiunte al file di configurazione principale (\texttt{kong.conf}), inoltrati con delle richieste \texttt{HTTP POST} verso il container in esecuzione.
-\\
+\begin{itemize}
+\item Interfaccia grafica di Kong Manager, disponibile collegandosi da browser alla porta 8002 del container.
+\item Tramite file JSON contenenti le informazioni necessarie che saranno aggiunte al file di configurazione principale (\texttt{kong.conf}), inoltrati con delle richieste \texttt{HTTP POST} verso il container in esecuzione.
+\end{itemize}
+\ \\
 Come detto in precedenza, gli aspetti configurabili sono:
 \begin{itemize}
 	\item\emph{Services}
@@ -446,10 +449,11 @@ I plugin custom, come quello realizzato, non necessitano di un file di configura
 Tutta la configurazione è effettuata tramite lo script bash \texttt{addplugin} che ha i seguenti compiti:
 \begin{itemize}
 \item Avviare il container.
-\item Copiare all'interno i file relativi ai plugin custom.
+\item Copiare al suo interno i file relativi ai plugin custom.
 \item Riavviare il container (per consentire la lettura dei file dei plugin caricati)
 \item Eseguire il comando \mintinline{bash}{curl} per tutti i file JSON presenti relativi a tutte le altre configurazioni necessarie.
 \end{itemize}
+\newpage
 Di seguito alcune righe dello script di configurazione:
 
 \begin{algorithm}

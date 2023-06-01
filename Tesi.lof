@@ -26,7 +26,7 @@
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Diagramma UML delle classi \emph {controller} del progetto\relax }}{27}{figure.caption.28}%
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Diagramma UML delle \emph {custom exception} del progetto\relax }}{27}{figure.caption.29}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Test - Autorizzazione concessa\relax }}{38}{figure.caption.34}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Test - Autorizzazione non concessa, pagamento richiesto\relax }}{39}{figure.caption.35}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Test - Autorizzazione non concessa, token non inserito\relax }}{39}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Test - Autorizzazione concessa\relax }}{40}{figure.caption.34}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Test - Autorizzazione non concessa, pagamento richiesto\relax }}{41}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Test - Autorizzazione non concessa, token non inserito\relax }}{41}{figure.caption.36}%
 \addvspace {10\p@ }
