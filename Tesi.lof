@@ -2,32 +2,32 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Logo di AESYS S.r.l.\relax }}{6}{figure.caption.7}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Logo di AESYS S.r.l.\relax }}{4}{figure.caption.7}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Logo di Git\relax }}{11}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Logo di Java\relax }}{12}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Logo di Eclipse\relax }}{12}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Logo di Spring\relax }}{13}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Logo di Azure\relax }}{14}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Logo di Docker\relax }}{14}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Logo di Kong Gateway\relax }}{15}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Logo di PostgreSQL\relax }}{16}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Logo di Lua\relax }}{16}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Logo di JWT\relax }}{17}{figure.caption.19}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Logo di Postman\relax }}{18}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Logo di Git\relax }}{9}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Logo di Java\relax }}{10}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Logo di Eclipse\relax }}{10}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Logo di Spring\relax }}{11}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Logo di Azure\relax }}{12}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Logo di Docker\relax }}{12}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Logo di Kong Gateway\relax }}{13}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Logo di PostgreSQL\relax }}{14}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Logo di Lua\relax }}{14}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Logo di JWT\relax }}{15}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Logo di Postman\relax }}{16}{figure.caption.20}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Schema comunicazioni\relax }}{19}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Schema comunicazioni\relax }}{17}{figure.caption.21}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Container e Virtual Machine a confronto\relax }}{22}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Architettura monolitica e architettura a microservizi a confronto\relax }}{23}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Schema di comunicazione Utente - microservizio\relax }}{26}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Modello Entità Relazione del Database\relax }}{27}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Contenuto delle tabelle visualizzato dalla shell di PostgreSQL\relax }}{27}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Diagramma UML delle classi principali del progetto\relax }}{29}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Diagramma UML delle classi \emph {controller} del progetto\relax }}{29}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Diagramma UML delle \emph {custom exception} del progetto\relax }}{29}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Container e Virtual Machine a confronto\relax }}{20}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Architettura monolitica e architettura a microservizi a confronto\relax }}{21}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Schema di comunicazione Utente - microservizio\relax }}{23}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Modello Entità Relazione del Database\relax }}{24}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Contenuto delle tabelle visualizzato dalla shell di PostgreSQL\relax }}{24}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Diagramma UML delle classi principali del progetto\relax }}{26}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Diagramma UML delle classi \emph {controller} del progetto\relax }}{26}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Diagramma UML delle \emph {custom exception} del progetto\relax }}{26}{figure.caption.30}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Test - Autorizzazione concessa\relax }}{42}{figure.caption.35}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Test - Autorizzazione non concessa, pagamento richiesto\relax }}{43}{figure.caption.36}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Test - Autorizzazione non concessa, token non inserito\relax }}{43}{figure.caption.37}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Test - Autorizzazione concessa\relax }}{38}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Test - Autorizzazione non concessa, pagamento richiesto\relax }}{39}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Test - Autorizzazione non concessa, token non inserito\relax }}{39}{figure.caption.37}%
 \addvspace {10\p@ }

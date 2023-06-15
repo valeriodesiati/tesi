@@ -1,4 +1,4 @@
-\chapter{Requisiti e casi d'uso}\label{chapter:requisiti}
+\chapter{Requisiti e casi d'uso}\label{chap:requisiti}
 In questo capitolo saranno elencati ed esplicati i requisiti per la realizzazione dell'applicazione e i possibili casi d'uso.
 
 \section{Requisiti}\label{sec:requisiti}
@@ -13,13 +13,13 @@ Il funzionamento che si vuole ottenere dall'applicazione è descritto dalla segu
 
 Ricapitolando, dallo schema delle comunicazioni si evince che il funzionamento dell'applicazione si articola in:
 \begin{enumerate}
-\item Invio della richiesta \texttt{HTTP GET} dall'utente a Kong Gateway.
-\item Inoltro del token all'interno della richiesta da Kong Gateway al plugin Lua.
-\item Estrapolazione dell'indirizzo mail dal token ricevuto (verificandone anche l'integrità).
-\item Richiesta \texttt{HTTP GET} dal plugin al microservizio Spring.
-\item Operazioni per il collegamento al Database.
-\item Esecuzione della query per verificare le autorizzazioni dell'indirizzo mail ricevuto.
-\item Ottenimento del risultato della query.
+\item Invio della richiesta \texttt{HTTP GET} dall'utente a Kong Gateway;
+\item Inoltro del token all'interno della richiesta da Kong Gateway al plugin Lua;
+\item Estrapolazione dell'indirizzo mail dal token ricevuto (verificandone anche l'integrità);
+\item Richiesta \texttt{HTTP GET} dal plugin al microservizio Spring;
+\item Operazioni per il collegamento al Database;
+\item Esecuzione della query per verificare le autorizzazioni dell'indirizzo mail ricevuto;
+\item Ottenimento del risultato della query;
 \item Si rimanda l'informazione ottenuta effettuando il percorso inverso, fino a comunicarla all'utente. 
 \end{enumerate}
 

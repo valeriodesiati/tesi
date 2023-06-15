@@ -1,4 +1,4 @@
-\chapter{Progettazione e sviluppo}\label{chapter:progettazionesviluppo}
+\chapter{Progettazione e sviluppo}\label{chap:progettazionesviluppo}
 In questo capitolo saranno esposti gli approcci teorici e pratici per lo sviluppo del progetto.
 
 \section{Containerizzazione con Docker}\label{sec:ContDocker}
@@ -19,9 +19,9 @@ La scalabilità è garantita dal fatto che un container può essere creato, gest
 Docker è un software open source per la creazione e la gestione di container.\\
 L'utilizzo di Docker si basa sulle \emph{Docker images} che possono essere utilizzate per:
 \begin{itemize}
-\item Template per la creazione di container
-\item Starting point per un container
-\item Eseguire codice all'interno di un container 
+\item Template per la creazione di container;
+\item Starting point per un container;
+\item Eseguire codice all'interno di un container .
 \end{itemize}
 
 Le \emph{Docker images} possono essere prelevate da Docker Hub, la raccolta ufficiale di immagini messe a disposizione per gli utenti, oppure si può scrivere un file di testo, il \texttt{Dockerfile}, per racchiudere tutti i comandi per assemblare un'immagine durante la fase di buil
@@ -67,7 +67,7 @@ Una volta estratto l'indirizzo e-mail il microservizio effettua una \emph{query}
 In base al risultato della query il microservizio restituisce un codice \texttt{HTTP} come risposta alla richiesta.\\
 \newline
 La tipologia di richieste descritte sono effettuate tramite il metodo \textbf{\texttt{GET}} di \texttt{HTTP}, quindi vengono richiesti dei dati dal server.\\
-\newpage
+
 I codici che possono essere restituiti sono:\\
 \begin{table}[ht]
 	\centering
@@ -188,9 +188,9 @@ Il metodo \mintinline{java}{run()} è il metodo principale di Spring Framework, 
 La prima cosa che è possibile notare è che il metodo \mintinline{java}{run()} prende come parametri il file bytecode della classe stessa ed eventuali argomenti.\\
 Nello specifico, il metodo \mintinline{java}{run()}:
 \begin{itemize}
-\item Legge le configurazioni.
-\item Avvia l'Application Context, un gestore per tutte le classi coinvolte nell'esecuzione dell'applicazione.
-\item Scansiona il Path dell'intero progetto, per trovare e organizzare tutte le classi annotate con \mintinline{java}{@Controller}, \mintinline{java}{@RestController}, \mintinline{java}{@Entity } ecc.
+\item Legge le configurazioni;
+\item Avvia l'Application Context, un gestore per tutte le classi coinvolte nell'esecuzione dell'applicazione;
+\item Scansiona il Path dell'intero progetto, per trovare e organizzare tutte le classi annotate con \mintinline{java}{@Controller}, \mintinline{java}{@RestController}, \mintinline{java}{@Entity } ecc.;
 \item Se richiesto, avvia Tomcat Server per il deploy e l'avvio dell'applicazione.
 \end{itemize}
 \newpage
@@ -234,7 +234,7 @@ utilizzando come campi gli attributi della classe.\\
 È possibile notare come la classe \texttt{Users.java} sia una classe molto “standard” per quanto riguarda la creazione di oggetti di tipo \texttt{Users}, 
 le uniche aggiunte solo le annotazioni Spring, come ad esempio:
 \begin{itemize}
-\item \mintinline{java}{@Id} e \mintinline{java}{@GeneratedValue()} per definire l'attributo come \emph{id} autogenerato.
+\item \mintinline{java}{@Id} e \mintinline{java}{@GeneratedValue()} per definire l'attributo come \emph{id} autogenerato;
 \item \mintinline{java}{@Column()} per definire il nome di un campo (colonna) della tabella ed eventuali altre proprietà.
 \end{itemize}
 \newpage
@@ -355,9 +355,9 @@ Come detto in precedenza la logica del plugin è interamente contenuta nel file 
 È richiesto il seguente comportamento dal plugin:
 
 \begin{enumerate}
-	\item Analizzare il token ricevuto.
-	\item Parse del token.
-	\item Inviare una richiesta \texttt{HTTP} al microservizio \texttt{CheckEmail}.
+	\item Analizzare il token ricevuto;
+	\item Parse del token;
+	\item Inviare una richiesta \texttt{HTTP} al microservizio \texttt{CheckEmail};
 	\item Ottenere risposta dal microservizio e inoltrarla al Gateway.
 \end{enumerate}
 
@@ -461,10 +461,10 @@ Il gateway può essere configurato in modi diversi:
 \ \\
 Come detto in precedenza, gli aspetti configurabili sono:
 \begin{itemize}
-	\item\emph{Services}
-	\item\emph{Routes}
-	\item\emph{Consumers}
-	\item\emph{Plugin}
+	\item\emph{Services};
+	\item\emph{Routes};
+	\item\emph{Consumers};
+	\item\emph{Plugin}.
 \end{itemize}
 
 Ognuno con un file JSON di configurazione dedicato.\\
@@ -473,9 +473,9 @@ I plugin custom, come quello realizzato, non necessitano di un file di configura
 
 Tutta la configurazione è effettuata tramite lo script bash \texttt{addplugin} che ha i seguenti compiti:
 \begin{itemize}
-\item Avviare il container.
-\item Copiare al suo interno i file relativi ai plugin custom.
-\item Riavviare il container (per consentire la lettura dei file dei plugin caricati)
+\item Avviare il container;
+\item Copiare al suo interno i file relativi ai plugin custom;
+\item Riavviare il container (per consentire la lettura dei file dei plugin caricati);
 \item Eseguire il comando \mintinline{bash}{curl} per tutti i file JSON presenti relativi a tutte le altre configurazioni necessarie.
 \end{itemize}
 \newpage

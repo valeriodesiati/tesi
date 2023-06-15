@@ -9,35 +9,12 @@
 Prima di addentrarsi nelle specifiche di questo progetto è bene partire dal concetto di applicazioni cloud – native.\\
 Un'applicazione cloud – native è un'applicazione concepita e realizzata per risiedere in cloud.\\
 L'approccio da utilizzare per lo sviluppo di questa tipologia di applicazioni è diametralmente opposto a quello per lo sviluppo di un'applicazione monolitica, 
-come sarà spiegato in seguito nel paragrafo \ref{sec:microserviziintro}.\\
-\\
+come sarà spiegato in seguito nel paragrafo \ref{sec:microserviziintro}.\\ \\
 Le applicazioni cloud – native si basano su tre concetti fondamentali:
 \begin{itemize}
-\item Orchestratori di container
-\item Microservizi
-\item Scalabilità
-\end{itemize}
-
-Proprio nel rispetto di questa filosofia, sono stati introdotti i cosiddetti \emph{Orchestratori di container}, che sono utilizzati per racchiudere, e allo stesso tempo 
-isolare, una o più applicazioni nel loro ambiente di esecuzione, con i relativi file necessari.\\ \\
-In altre parole, i container possono essere visti come delle Virtual Machine (infatti ne possiedono molte delle caratteristiche) che però non eseguono un sistema operativo 
-nella sua interezza, ma solo l'applicazione di cui si necessita ed eventuali altri servizi coinvolti nel ciclo di vita di questa.
-I container risultano essere comodi e affidabili per l'utilizzo in tutti i momenti della creazione di un nuovo software, dallo sviluppo, al test, 
-fino alla fase finale di produzione.\\ Altri due vantaggi che si possono ottenere dall'utilizzo dei container, così come per le Virtual Machine, 
-riguardano la sicurezza e la scalabilità.\\
-La prima è conseguenza del fatto che, come detto sopra, si riesce ad isolare l'applicazione in esecuzione in un determinato container e quindi, se dovessero esserci 
-problemi (nella maggior parte dei casi possono verificarsi problemi inevitabili), questi non potrebbero intaccare in nessun modo altri container e quindi il funzionamento 
-di altre applicazioni.\\
-La scalabilità è garantita dal fatto che un container può essere creato, gestito e modificato in base alle necessità, non esistono \emph{container standard}, ognuno 
-viene adattato allo scopo da raggiungere. \cite{RedHatMicroservices}, \cite{Amazon} \\ \\
-
-I microservizi possono essere definiti come la scomposizione di applicazioni in elementi più piccoli, così da ottenere diversi vantaggi, come:
-\begin{itemize}
-\item \textbf{Scalabilità}\\ C'è la possibilità di misurare il carico di lavoro di un singolo servizio in ogni momento e adattarlo di conseguenza (si pensi alla differenza 
-che può esserci in termini di carico di lavoro, ad esempio, nelle ore diurne e nelle ore notturne) il che può portare diversi vantaggi.
-\item \textbf{Semplicità di distribuzione}\\ I microservizi possono essere distribuiti con l'approccio \emph{CI/CD} (Continuous Integration/Continuous Delivery), 
-proprio come è stato fatto nella realizzazione di questo progetto, così da semplificare l'integrazione e il testing di nuove funzionalità.
-\item \textbf{Indipendenza}\\ Si possono gestire gli errori di un determinato servizio isolandolo, senza bloccare l'intera applicazione.
+\item Orchestratori di container;
+\item Microservizi;
+\item Scalabilità.
 \end{itemize}
 
 Lo scopo di questo progetto è stato di realizzare un plugin per l'API Gateway Kong.\\
@@ -47,18 +24,29 @@ Il plugin, insieme al Gateway, funge quindi da tramite tra l'utente e il microse
 inoltrandole al microservizio, che risponderà al plugin che a sua volta inoltrerà la risposta all'utente.\\ \\
 Quindi, il progetto ha tre macro – componenti:
 \begin{itemize}
-\item Kong Gateway
-\item Plugin per Kong Gateway scritto in linguaggio Lua
-\item Microservizio scritto in linguaggio Java
+\item Kong Gateway;
+\item Plugin per Kong Gateway scritto in linguaggio Lua;
+\item Microservizio scritto in linguaggio Java.
 \end{itemize}
 
+In definitiva, l'obiettivo del progetto è quello di realizzare un software che consenta l'autenticazione di un utente tramite un token da includere all'interno della 
+richiesta inviata, senza quindi l'utilizzo di password o altri strumenti di autenticazione, come dettagliato nel \emph{Capitolo \ref{chap:requisiti} – Requisiti e casi d'uso}. \\
+
 Si è deciso, insieme al Tutor Aziendale, di puntare su Kong Gateway come API Gateway per questo progetto proprio perché questo consente l'installazione di plugin 
-proprietari e custom, oltre a fornire tutte le funzioni di base di un API Gateway. \cite{Kong}\\ \\
-Per quanto riguarda lo sviluppo del plugin, si è voluto utilizzare il linguaggio Lua per le sue caratteristiche di semplicità di utilizzo, integrazione e leggerezza.\\ \\
+proprietari e custom, oltre a fornire tutte le funzioni di base di un API Gateway.\\
+Per quanto riguarda lo sviluppo del plugin, si è voluto utilizzare il linguaggio Lua per le sue caratteristiche di semplicità di utilizzo e integrazione e leggerezza.\\ \\
 
 Infine, per la realizzazione del microservizio è stato deciso di utilizzare il linguaggio Java e il framework Spring perché sono stati reputati più adatti allo scopo.\\
 Il framework Spring fornisce delle caratteristiche che risultano essere comode e sicure per il programmatore per quanto riguarda la creazione di microservizi, 
-gestione dei dati, integrazione con un Database ecc., il tutto mantenendo intatti i costrutti e le pratiche del linguaggio Java. \cite{Java}, \cite{SpringFramework}
-\\ \\
-Tutte le caratteristiche e le specifiche tecniche riguardanti le macro – componenti e le micro – componenti del progetto saranno esposte in seguito.
+gestione dei dati, integrazione con un Database ecc., il tutto mantenendo intatti i costrutti e le pratiche del linguaggio Java.\\
+Tutte le tecnologie utilizzate all'interno del progetto sono approfondite nel \emph{Capitolo \ref{chap:tecnologie} – Tecnologie utilizzate}.\\ \\
+
+Più nello specifico, la realizzazione del progetto si è articolata in diverse fasi, iniziando dallo sviluppo del Database e del microservizio in Java.\\
+Lo sviluppo è stato effettuato all'inizio in locale, con i relativi test di corretto funzionamento e, successivamente, si è passati all'installazione di Kong Gateway
+sulla Virtual Machine creata su Microsoft Azure e quindi allo sviluppo del plugin in Lua per il Gateway.\\
+Infine, si è posto il microservizio all'interno della Virtual Machine (con il relativo ambiente di esecuzione, la JVM) e quindi sono state finalizzate tutte le 
+impostazioni per la corretta comunicazione tra microservizio, plugin, Gateway e utente.\\
+Per la fase di test, sia in locale che in remoto, è stato utilizzato il software Postman.\\
+Tutti questi argomenti, lo sviluppo e il testing, saranno approfonditi rispettivamente nel \emph{Capitolo \ref{chap:progettazionesviluppo} – Progettazione e sviluppo} 
+e \emph{Capitolo \ref{chap:testing} – Testing}.
 
