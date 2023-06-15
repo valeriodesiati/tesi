@@ -2,12 +2,19 @@
 In questo capitolo saranno esposti gli approcci teorici e pratici per lo sviluppo del progetto.
 
 \section{Containerizzazione con Docker}\label{sec:ContDocker}
-Sulla base di quanto spiegato precedentemente, per quanto riguarda la creazione e l'utilizzo delle applicazioni cloud – native, sono stati introdotti i cosiddetti \emph{Orchestratori di container}, che sono utilizzati per racchiudere e allo stesso tempo isolare, una o più applicazioni nel loro ambiente di esecuzione, con i relativi file necessari.\\
-In altre parole, i container possono essere visti come delle Virtual Machine (infatti possiedono molte delle caratteristiche) che però non eseguono un sistema operativo nella sua interezza, ma solo l'applicazione di cui si necessita ed eventuali altri servizi coinvolti nel ciclo di vita di questa.\\
-I container risultano essere comodi e affidabili per l'utilizzo in tutti i momenti della creazione di un nuovo software, dallo sviluppo al test, fino alla fase finale di produzione.\\
+Sulla base di quanto spiegato precedentemente, per quanto riguarda la creazione e l'utilizzo delle applicazioni cloud – native, sono stati introdotti i cosiddetti 
+\emph{Orchestratori di container}, che sono utilizzati per racchiudere e allo stesso tempo isolare, una o più applicazioni nel loro ambiente di esecuzione, con i relativi 
+file necessari.\\
+In altre parole, i container possono essere visti come delle Virtual Machine (infatti possiedono molte delle caratteristiche) che però non eseguono un sistema operativo 
+nella sua interezza, ma solo l'applicazione di cui si necessita ed eventuali altri servizi coinvolti nel ciclo di vita di questa.\\
+I container risultano essere comodi e affidabili per l'utilizzo in tutti i momenti della creazione di un nuovo software, dallo sviluppo al test, 
+fino alla fase finale di produzione.\\
 Altri due vantaggi che si possono ottenere dall'utilizzo dei container, così come per le Virtual Machine, riguardano la sicurezza e la scalabilità.\\
-La prima è conseguenza del fatto che, come detto sopra, si riesce ad isolare l'applicazione in esecuzione in un determinato container e quindi, se dovessero esserci problemi (nella maggior parte dei casi possono verificarsi problemi inevitabili), questi non potrebbero intaccare in nessun modo altri container e quindi il funzionamento di altre applicazioni.\\
-La scalabilità è garantita dal fatto che un container può essere creato, gestito e modificato in base alle necessità, non esistono \emph{container standard}, ognuno viene adattato per lo scopo da raggiungere.\\
+La prima è conseguenza del fatto che, come detto sopra, si riesce ad isolare l'applicazione in esecuzione in un determinato container e quindi, se dovessero 
+esserci problemi (nella maggior parte dei casi possono verificarsi problemi inevitabili), questi non potrebbero intaccare in nessun modo altri container e 
+quindi il funzionamento di altre applicazioni.\\
+La scalabilità è garantita dal fatto che un container può essere creato, gestito e modificato in base alle necessità, non esistono \emph{container standard}, 
+ognuno viene adattato per lo scopo da raggiungere.\\
 
 \begin{figure}[ht]
     \centering
@@ -24,7 +31,8 @@ L'utilizzo di Docker si basa sulle \emph{Docker images} che possono essere utili
 \item Eseguire codice all'interno di un container .
 \end{itemize}
 
-Le \emph{Docker images} possono essere prelevate da Docker Hub, la raccolta ufficiale di immagini messe a disposizione per gli utenti, oppure si può scrivere un file di testo, il \texttt{Dockerfile}, per racchiudere tutti i comandi per assemblare un'immagine durante la fase di buil
+Le \emph{Docker images} possono essere prelevate da Docker Hub, la raccolta ufficiale di immagini messe a disposizione per gli utenti, oppure si può scrivere 
+un file di testo, il \texttt{Dockerfile}, per racchiudere tutti i comandi per assemblare un'immagine durante la fase di build.
 
 
 \section{Introduzione ai microservizi}\label{sec:microserviziintro}
