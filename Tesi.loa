@@ -1,10 +1,10 @@
-\contentsline {algorithm}{\numberline {1}{\ignorespaces Classe \emph {mail} del progetto\relax }}{28}{algorithm.1}%
-\contentsline {algorithm}{\numberline {2}{\ignorespaces Classe \mintinline {java}{@Entity} Users.java\relax }}{29}{algorithm.2}%
-\contentsline {algorithm}{\numberline {3}{\ignorespaces Classe \mintinline {java}{@RestController} JoinController.java\relax }}{30}{algorithm.3}%
-\contentsline {algorithm}{\numberline {4}{\ignorespaces File di configurazione \texttt {application.properties}\relax }}{31}{algorithm.4}%
-\contentsline {algorithm}{\numberline {5}{\ignorespaces Suddivisione token JWT\relax }}{33}{algorithm.5}%
-\contentsline {algorithm}{\numberline {6}{\ignorespaces Parse token JWT\relax }}{34}{algorithm.6}%
-\contentsline {algorithm}{\numberline {7}{\ignorespaces Inoltro richiesta \texttt {HTTP} dal plugin\relax }}{35}{algorithm.7}%
-\contentsline {algorithm}{\numberline {8}{\ignorespaces Inoltro risposta dal plugin a Kong Gateway\relax }}{35}{algorithm.8}%
-\contentsline {algorithm}{\numberline {9}{\ignorespaces Script per la configurazione di Kong Gateway\relax }}{37}{algorithm.9}%
-\contentsline {algorithm}{\numberline {10}{\ignorespaces Test tramite \texttt {curl}\relax }}{42}{algorithm.10}%
+\contentsline {algorithm}{\numberline {1}{\ignorespaces Classe \emph {mail} del progetto\relax }}{30}{algorithm.1}%
+\contentsline {algorithm}{\numberline {2}{\ignorespaces Classe \mintinline {java}{@Entity} Users.java\relax }}{31}{algorithm.2}%
+\contentsline {algorithm}{\numberline {3}{\ignorespaces Classe \mintinline {java}{@RestController} JoinController.java\relax }}{32}{algorithm.3}%
+\contentsline {algorithm}{\numberline {4}{\ignorespaces File di configurazione \texttt {application.properties}\relax }}{33}{algorithm.4}%
+\contentsline {algorithm}{\numberline {5}{\ignorespaces Suddivisione token JWT\relax }}{35}{algorithm.5}%
+\contentsline {algorithm}{\numberline {6}{\ignorespaces Parse token JWT\relax }}{36}{algorithm.6}%
+\contentsline {algorithm}{\numberline {7}{\ignorespaces Inoltro richiesta \texttt {HTTP} dal plugin\relax }}{37}{algorithm.7}%
+\contentsline {algorithm}{\numberline {8}{\ignorespaces Inoltro risposta dal plugin a Kong Gateway\relax }}{37}{algorithm.8}%
+\contentsline {algorithm}{\numberline {9}{\ignorespaces Script per la configurazione di Kong Gateway\relax }}{39}{algorithm.9}%
+\contentsline {algorithm}{\numberline {10}{\ignorespaces Test tramite \texttt {curl}\relax }}{44}{algorithm.10}%

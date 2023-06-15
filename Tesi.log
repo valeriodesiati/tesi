@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.13)  1 JUN 2023 17:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.13)  15 JUN 2023 18:24
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1032,6 +1032,9 @@ LaTeX Warning: Label `fig:one' multiply defined.
 
 LaTeX Warning: Label `fig:one' multiply defined.
 
+
+LaTeX Warning: Label `fig:one' multiply defined.
+
 ) (./Capitoli/Testing.aux
 
 LaTeX Warning: Label `alg:container_config' multiply defined.
@@ -1135,7 +1138,7 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 
 
 (./Frontespizio/Frontespizio.tex
-<Tesi-frn.pdf, id=220, 597.50829pt x 845.0471pt>
+<Tesi-frn.pdf, id=224, 597.50829pt x 845.0471pt>
 File: Tesi-frn.pdf Graphic file (type pdf)
 <use Tesi-frn.pdf>
 Package pdftex.def Info: Tesi-frn.pdf  used on input line 1.
@@ -1269,7 +1272,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--29
 
  []
 
-<img/aesys.png, id=447, 200.75pt x 55.20625pt>
+<img/aesys.png, id=454, 200.75pt x 55.20625pt>
 File: img/aesys.png Graphic file (type png)
 <use img/aesys.png>
 Package pdftex.def Info: img/aesys.png  used on input line 32.
@@ -1312,64 +1315,64 @@ Overfull \hbox (5.0858pt too wide) in alignment at lines 113--113
 
 ]
 Capitolo 2.
-<img/git.png, id=474, 642.4pt x 268.00125pt>
+<img/git.png, id=481, 642.4pt x 268.00125pt>
 File: img/git.png Graphic file (type png)
 <use img/git.png>
 Package pdftex.def Info: img/git.png  used on input line 13.
 (pdftex.def)             Requested size: 642.39844pt x 268.00058pt.
-<img/java.png, id=476, 1204.5pt x 2242.3775pt>
+<img/java.png, id=483, 1204.5pt x 2242.3775pt>
 File: img/java.png Graphic file (type png)
 <use img/java.png>
 Package pdftex.def Info: img/java.png  used on input line 25.
 (pdftex.def)             Requested size: 1204.49707pt x 2242.37206pt.
 [11 <./img/git.png>]
-<img/eclipse.png, id=484, 225.84375pt x 225.84375pt>
+<img/eclipse.png, id=491, 225.84375pt x 225.84375pt>
 File: img/eclipse.png Graphic file (type png)
 <use img/eclipse.png>
 Package pdftex.def Info: img/eclipse.png  used on input line 40.
 (pdftex.def)             Requested size: 225.84319pt x 225.84319pt.
  [12 <./img/java.png> <./img/eclipse.png>]
-<img/spring.png, id=496, 444.66125pt x 114.4275pt>
+<img/spring.png, id=503, 444.66125pt x 114.4275pt>
 File: img/spring.png Graphic file (type png)
 <use img/spring.png>
 Package pdftex.def Info: img/spring.png  used on input line 64.
 (pdftex.def)             Requested size: 444.66016pt x 114.42722pt.
-<img/azure.png, id=498, 308.352pt x 78.0516pt>
+<img/azure.png, id=505, 308.352pt x 78.0516pt>
 File: img/azure.png Graphic file (type png)
 <use img/azure.png>
 Package pdftex.def Info: img/azure.png  used on input line 80.
 (pdftex.def)             Requested size: 308.35124pt x 78.0514pt.
  [13 <./img/spring.png>]
-<img/docker.png, id=509, 1084.05pt x 1084.05pt>
+<img/docker.png, id=516, 1084.05pt x 1084.05pt>
 File: img/docker.png Graphic file (type png)
 <use img/docker.png>
 Package pdftex.def Info: img/docker.png  used on input line 93.
 (pdftex.def)             Requested size: 1084.04736pt x 1084.04736pt.
  [14 <./img/azure.png> <./img/docker.png>]
-<img/kong.png, id=519, 321.2pt x 132.495pt>
+<img/kong.png, id=526, 321.2pt x 132.495pt>
 File: img/kong.png Graphic file (type png)
 <use img/kong.png>
 Package pdftex.def Info: img/kong.png  used on input line 111.
 (pdftex.def)             Requested size: 321.19922pt x 132.49466pt.
-<img/postgres.png, id=521, 3198.95125pt x 1501.61pt>
+<img/postgres.png, id=528, 3198.95125pt x 1501.61pt>
 File: img/postgres.png Graphic file (type png)
 <use img/postgres.png>
 Package pdftex.def Info: img/postgres.png  used on input line 129.
 (pdftex.def)             Requested size: 3198.94348pt x 1501.60635pt.
  [15 <./img/kong.png>]
-<img/lua.png, id=530, 642.4pt x 642.4pt>
+<img/lua.png, id=537, 642.4pt x 642.4pt>
 File: img/lua.png Graphic file (type png)
 <use img/lua.png>
 Package pdftex.def Info: img/lua.png  used on input line 146.
 (pdftex.def)             Requested size: 642.39844pt x 642.39844pt.
 
 [16 <./img/postgres.png> <./img/lua.png>]
-<img/jwt.png, id=539, 1284.8pt x 722.7pt>
+<img/jwt.png, id=546, 1284.8pt x 722.7pt>
 File: img/jwt.png Graphic file (type png)
 <use img/jwt.png>
 Package pdftex.def Info: img/jwt.png  used on input line 171.
 (pdftex.def)             Requested size: 1284.79688pt x 722.69823pt.
-<img/postman.png, id=541, 636.3775pt x 572.1375pt>
+<img/postman.png, id=548, 636.3775pt x 572.1375pt>
 File: img/postman.png Graphic file (type png)
 <use img/postman.png>
 Package pdftex.def Info: img/postman.png  used on input line 182.
@@ -1379,7 +1382,7 @@ Package pdftex.def Info: img/postman.png  used on input line 182.
 
  (./Capitoli/AnalisiRequisiti.tex
 Capitolo 3.
-<img/comunicazioni_applicazioni.drawio.png, id=553, 820.06375pt x 356.33125pt>
+<img/comunicazioni_applicazioni.drawio.png, id=560, 820.06375pt x 356.33125pt>
 File: img/comunicazioni_applicazioni.drawio.png Graphic file (type png)
 <use img/comunicazioni_applicazioni.drawio.png>
 Package pdftex.def Info: img/comunicazioni_applicazioni.drawio.png  used on inp
@@ -1401,69 +1404,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--160
  (./Capitoli/ProgettazioneSviluppo.tex
 Capitolo 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--18
+Underfull \hbox (badness 10000) in paragraph at lines 5--11
 
  []
 
+<img/containervsvm.png, id=578, 618.31pt x 319.1925pt>
+File: img/containervsvm.png Graphic file (type png)
+<use img/containervsvm.png>
+Package pdftex.def Info: img/containervsvm.png  used on input line 14.
+(pdftex.def)             Requested size: 618.30849pt x 319.19171pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--18
+Underfull \vbox (badness 1048) has occurred while \output is active []
 
- []
-
-[21
+ [21
 
 
 
 
 ]
-<img/monovsmicro.jpg, id=578, 546.843pt x 299.31825pt>
+Underfull \hbox (badness 10000) in paragraph at lines 31--43
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--43
+
+ []
+
+[22 <./img/containervsvm.png>]
+<img/monovsmicro.jpg, id=591, 546.843pt x 299.31825pt>
 File: img/monovsmicro.jpg Graphic file (type jpg)
 <use img/monovsmicro.jpg>
-Package pdftex.def Info: img/monovsmicro.jpg  used on input line 21.
+Package pdftex.def Info: img/monovsmicro.jpg  used on input line 46.
 (pdftex.def)             Requested size: 546.84166pt x 299.31752pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--29
+Underfull \hbox (badness 10000) in paragraph at lines 51--54
 
  []
 
-[22 <./img/monovsmicro.jpg>]
+[23 <./img/monovsmicro.jpg>]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 38.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 63.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 44.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 69.
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--45
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--45
+Underfull \hbox (badness 10000) in paragraph at lines 64--70
 
  []
 
-[23]
-Underfull \hbox (badness 10000) in alignment at lines 63--63
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--70
+
+ []
+
+[24] [25]
+Underfull \hbox (badness 10000) in alignment at lines 88--88
 [][][] 
  []
 
-<img/comunicazionemicroservizio.png, id=588, 564.97072pt x 195.129pt>
+<img/comunicazionemicroservizio.png, id=605, 564.97072pt x 195.129pt>
 File: img/comunicazionemicroservizio.png Graphic file (type png)
 <use img/comunicazionemicroservizio.png>
 Package pdftex.def Info: img/comunicazionemicroservizio.png  used on input line
- 71.
+ 96.
 (pdftex.def)             Requested size: 564.96935pt x 195.12851pt.
-[24 <./img/comunicazionemicroservizio.png>]
-<img/dbtables-drawio.png, id=594, 181.3977pt x 198.0198pt>
+[26 <./img/comunicazionemicroservizio.png>]
+<img/dbtables-drawio.png, id=611, 181.3977pt x 198.0198pt>
 File: img/dbtables-drawio.png Graphic file (type png)
 <use img/dbtables-drawio.png>
-Package pdftex.def Info: img/dbtables-drawio.png  used on input line 87.
+Package pdftex.def Info: img/dbtables-drawio.png  used on input line 112.
 (pdftex.def)             Requested size: 181.39725pt x 198.01932pt.
-<img/emaildb_e.png, id=595, 1558.623pt x 650.43pt>
+<img/emaildb_e.png, id=612, 1558.623pt x 650.43pt>
 File: img/emaildb_e.png Graphic file (type png)
 <use img/emaildb_e.png>
-Package pdftex.def Info: img/emaildb_e.png  used on input line 94.
+Package pdftex.def Info: img/emaildb_e.png  used on input line 119.
 (pdftex.def)             Requested size: 1558.61922pt x 650.4284pt.
- [25 <./img/dbtables-drawio.png> <./img/emaildb_e.png>]
+ [27 <./img/dbtables-drawio.png> <./img/emaildb_e.png>]
 \openout7 = `Tesi.pyg'.
 
 
@@ -1474,27 +1490,27 @@ C.pygtex)
 
 (./_minted-Tesi/49DFE0CBB9871836295429EB21F68FE89538B8C0AEADEA7EB0FE6577D5E4831
 C.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 112--114
+Underfull \hbox (badness 10000) in paragraph at lines 137--139
 
  []
 
-[26]
-<img/classi.png, id=606, 257.2812pt x 231.264pt>
+[28]
+<img/classi.png, id=624, 257.2812pt x 231.264pt>
 File: img/classi.png Graphic file (type png)
 <use img/classi.png>
-Package pdftex.def Info: img/classi.png  used on input line 120.
+Package pdftex.def Info: img/classi.png  used on input line 145.
 (pdftex.def)             Requested size: 257.28058pt x 231.26343pt.
-<img/controller.png, id=607, 1539.351pt x 825.0825pt>
+<img/controller.png, id=625, 1539.351pt x 825.0825pt>
 File: img/controller.png Graphic file (type png)
 <use img/controller.png>
-Package pdftex.def Info: img/controller.png  used on input line 127.
+Package pdftex.def Info: img/controller.png  used on input line 152.
 (pdftex.def)             Requested size: 1539.34726pt x 825.08049pt.
-<img/exception.png, id=608, 822.6735pt x 342.078pt>
+<img/exception.png, id=626, 822.6735pt x 342.078pt>
 File: img/exception.png Graphic file (type png)
 <use img/exception.png>
-Package pdftex.def Info: img/exception.png  used on input line 134.
+Package pdftex.def Info: img/exception.png  used on input line 159.
 (pdftex.def)             Requested size: 822.67148pt x 342.07715pt.
- [27 <./img/classi.png> <./img/controller.png> <./img/exception.png>]
+ [29 <./img/classi.png> <./img/controller.png> <./img/exception.png>]
 \openout6 = `Tesi.pyg'.
 
 
@@ -1504,7 +1520,7 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
 )
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 158.
+put line 183.
 \openout7 = `Tesi.pyg'.
 
 
@@ -1534,7 +1550,7 @@ C.pygtex)
 
 
 (./_minted-Tesi/51EA46BA5B796402DE4B5E87CC26F7679538B8C0AEADEA7EB0FE6577D5E4831
-C.pygtex) [28]
+C.pygtex) [30]
 \openout6 = `Tesi.pyg'.
 
 
@@ -1574,7 +1590,7 @@ C.pygtex)
 
 
 (./_minted-Tesi/86EA9D4194C7161F47BB22AFE24E14B69538B8C0AEADEA7EB0FE6577D5E4831
-C.pygtex) [29]
+C.pygtex) [31]
 \openout6 = `Tesi.pyg'.
 
 
@@ -1660,31 +1676,31 @@ C.pygtex)
 
 (./_minted-Tesi/674441960CA1BA2DE08AD4E50C9FDE989538B8C0AEADEA7EB0FE6577D5E4831
 C.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 260--277
+Underfull \hbox (badness 10000) in paragraph at lines 285--302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--277
+Underfull \hbox (badness 10000) in paragraph at lines 285--302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--277
-
- []
-
-[30]
-\openout6 = `Tesi.pyg'.
-
-
-(./_minted-Tesi/BC9DA2EC1B310B0C3D2EF84BDB2AAE3F485351A2653A8CC56049AE9D3323AC1
-B.pygtex) [31]
-Underfull \hbox (badness 10000) in paragraph at lines 300--302
+Underfull \hbox (badness 10000) in paragraph at lines 285--302
 
  []
 
 [32]
+\openout6 = `Tesi.pyg'.
+
+
+(./_minted-Tesi/BC9DA2EC1B310B0C3D2EF84BDB2AAE3F485351A2653A8CC56049AE9D3323AC1
+B.pygtex) [33]
+Underfull \hbox (badness 10000) in paragraph at lines 325--327
+
+ []
+
+[34]
 \openout7 = `Tesi.pyg'.
 
 
@@ -1709,12 +1725,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 300--302
 
 
 (./_minted-Tesi/674441960CA1BA2DE08AD4E50C9FDE980E89AE4ABE44ACAE61F52A1EF8C9B66
-9.pygtex) [33]
+9.pygtex) [35]
 \openout6 = `Tesi.pyg'.
 
 
 (./_minted-Tesi/1EF93D56BD098DB9F214F876CFAF69510E89AE4ABE44ACAE61F52A1EF8C9B66
-9.pygtex) [34]
+9.pygtex) [36]
 \openout6 = `Tesi.pyg'.
 
 
@@ -1724,8 +1740,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 300--302
 
 
 (./_minted-Tesi/6A353F5DAADB9A1F4B97BFB3B4AD3A890E89AE4ABE44ACAE61F52A1EF8C9B66
-9.pygtex) [35]
-Underfull \hbox (badness 10000) in paragraph at lines 445--448
+9.pygtex) [37]
+Underfull \hbox (badness 10000) in paragraph at lines 470--473
 
  []
 
@@ -1733,15 +1749,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 445--448
 
 
 (./_minted-Tesi/37055243218EFA7C8ADB2346F2386F7A3F2F6D2950BD4B5C2478DFDE02D8FB5
-7.pygtex) [36]
+7.pygtex) [38]
 \openout6 = `Tesi.pyg'.
 
 
 (./_minted-Tesi/6FA1DDAAE49B89687F6C502124F14D9D485351A2653A8CC56049AE9D3323AC1
-B.pygtex)) [37]
+B.pygtex)) [39]
 \openout2 = `Capitoli/Testing.aux'.
 
- (./Capitoli/Testing.tex [38
+ (./Capitoli/Testing.tex [40
 
 
 
@@ -1771,13 +1787,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39]
-<img/postmanauthorized-cut.png, id=686, 542.025pt x 210.7875pt>
+ [41]
+<img/postmanauthorized-cut.png, id=703, 542.025pt x 210.7875pt>
 File: img/postmanauthorized-cut.png Graphic file (type png)
 <use img/postmanauthorized-cut.png>
 Package pdftex.def Info: img/postmanauthorized-cut.png  used on input line 24.
 (pdftex.def)             Requested size: 542.02367pt x 210.78699pt.
-<img/postmanpaymentrequired-cut.png, id=687, 619.113pt x 254.75175pt>
+<img/postmanpaymentrequired-cut.png, id=704, 619.113pt x 254.75175pt>
 File: img/postmanpaymentrequired-cut.png Graphic file (type png)
 <use img/postmanpaymentrequired-cut.png>
 Package pdftex.def Info: img/postmanpaymentrequired-cut.png  used on input line
@@ -1786,14 +1802,14 @@ Package pdftex.def Info: img/postmanpaymentrequired-cut.png  used on input line
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40 <./img/postmanauthorized-cut.png>]
-<img/postmanquerynotoken-cut.png, id=693, 646.8165pt x 284.262pt>
+ [42 <./img/postmanauthorized-cut.png>]
+<img/postmanquerynotoken-cut.png, id=710, 646.8165pt x 284.262pt>
 File: img/postmanquerynotoken-cut.png Graphic file (type png)
 <use img/postmanquerynotoken-cut.png>
 Package pdftex.def Info: img/postmanquerynotoken-cut.png  used on input line 45
 .
 (pdftex.def)             Requested size: 646.81491pt x 284.26129pt.
- [41 <./img/postmanpaymentrequired-cut.png> <./img/postmanquerynotoken-cut.png>
+ [43 <./img/postmanpaymentrequired-cut.png> <./img/postmanquerynotoken-cut.png>
 ]
 \openout6 = `Tesi.pyg'.
 
@@ -1804,7 +1820,7 @@ B.pygtex)
 
 
 (./_minted-Tesi/C3CDB50BA915D5A6520725FDF5DB68DA485351A2653A8CC56049AE9D3323AC1
-B.pygtex)) [42]
+B.pygtex)) [44]
 \openout2 = `Capitoli/Conclusione.aux'.
 
  (./Capitoli/Conclusione.tex
@@ -1837,12 +1853,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--21
 
  []
 
-) [43
+) [45
 
 
 
 
-] [44] (./Tesi.bbl
+] [46] (./Tesi.bbl
 Underfull \hbox (badness 6268) in paragraph at lines 10--13
 []\OT1/cmr/m/n/12 Amazon AWS.  Mi-cro-ser-vi-zi.  []$\OT1/cmtt/m/n/12 https : /
  / aws . amazon . com / it /
@@ -1860,7 +1876,7 @@ Underfull \hbox (badness 5862) in paragraph at lines 56--59
 pring . io / projects /
  []
 
-[45
+[47
 
 
 
@@ -1870,10 +1886,10 @@ Underfull \hbox (badness 7415) in paragraph at lines 86--89
  . postman . com / docs /
  []
 
-) [46]
+) [48]
 \openout2 = `Capitoli/Ringraziamenti.aux'.
 
- (./Capitoli/Ringraziamenti.tex) [47
+ (./Capitoli/Ringraziamenti.tex) [49
 
 
 
@@ -1881,14 +1897,14 @@ Underfull \hbox (badness 7415) in paragraph at lines 86--89
 \openout2 = `Capitoli/Appendici/Appendice1.aux'.
 
 
-(./Capitoli/Appendici/Appendice1.tex [48
+(./Capitoli/Appendici/Appendice1.tex [50
 
 
 
 
 ]
 Appendice A.
-) [49]
+) [51]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
  (./Tesi.aux (./Frontespizio/Frontespizio.aux)
@@ -1900,7 +1916,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 27037D9F1392F878E9A95E720FAFD433;2958.
+(rerunfilecheck)             Checksum: 97897B42B28B037D059BA07C77E78574;3040.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1910,10 +1926,10 @@ runsystem(rm Tesi.pyg)...executed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
  ) 
 Here is how much of TeX's memory you used:
- 32185 strings out of 483099
- 579583 string characters out of 5964234
+ 32197 strings out of 483099
+ 579795 string characters out of 5964234
  1104989 words of memory out of 5000000
- 46188 multiletter control sequences out of 15000+600000
+ 46195 multiletter control sequences out of 15000+600000
  539230 words of font info for 49 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  68i,14n,97p,906b,2341s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1929,9 +1945,9 @@ onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt8.pfb>
-Output written on Tesi.pdf (59 pages, 2710159 bytes).
+Output written on Tesi.pdf (61 pages, 2728310 bytes).
 PDF statistics:
- 847 PDF objects out of 1000 (max. 8388607)
- 179 named destinations out of 1000 (max. 500000)
- 617 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 867 PDF objects out of 1000 (max. 8388607)
+ 183 named destinations out of 1000 (max. 500000)
+ 630 words of extra memory for PDF output out of 10000 (max. 10000000)
 

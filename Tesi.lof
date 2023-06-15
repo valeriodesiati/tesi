@@ -18,15 +18,16 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Schema comunicazioni\relax }}{19}{figure.caption.21}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Architettura monolitica e architettura a microservizi a confronto\relax }}{22}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Schema di comunicazione Utente - microservizio\relax }}{24}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Modello Entità Relazione del Database\relax }}{25}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Contenuto delle tabelle visualizzato dalla shell di PostgreSQL\relax }}{25}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagramma UML delle classi principali del progetto\relax }}{27}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Diagramma UML delle classi \emph {controller} del progetto\relax }}{27}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Diagramma UML delle \emph {custom exception} del progetto\relax }}{27}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Container e Virtual Machine a confronto\relax }}{22}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Architettura monolitica e architettura a microservizi a confronto\relax }}{23}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Schema di comunicazione Utente - microservizio\relax }}{26}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Modello Entità Relazione del Database\relax }}{27}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Contenuto delle tabelle visualizzato dalla shell di PostgreSQL\relax }}{27}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Diagramma UML delle classi principali del progetto\relax }}{29}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Diagramma UML delle classi \emph {controller} del progetto\relax }}{29}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Diagramma UML delle \emph {custom exception} del progetto\relax }}{29}{figure.caption.30}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Test - Autorizzazione concessa\relax }}{40}{figure.caption.34}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Test - Autorizzazione non concessa, pagamento richiesto\relax }}{41}{figure.caption.35}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Test - Autorizzazione non concessa, token non inserito\relax }}{41}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Test - Autorizzazione concessa\relax }}{42}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Test - Autorizzazione non concessa, pagamento richiesto\relax }}{43}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Test - Autorizzazione non concessa, token non inserito\relax }}{43}{figure.caption.37}%
 \addvspace {10\p@ }
