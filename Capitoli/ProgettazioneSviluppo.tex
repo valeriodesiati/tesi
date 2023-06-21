@@ -62,7 +62,7 @@ Di seguito sono elencati alcuni dei vantaggi di un'architettura a microservizi:
 
 \begin{itemize}
 	\item \textbf{Agilità}\\ Essendo ogni applicazione suddivisa in servizi di base, i team di sviluppo agiscono in contesti ridotti, semplificando il lavoro e riducendo i tempi del ciclo di sviluppo.
-	\item \textbf{Scalabilità}\\Lavorare con un microservizio consente di scalare in modo indipendente per rispondere alla richiesta di un determinato servizio.\\ In questo modo è possibile misurare il carico di lavoro di un singolo servizio e adattarlo di conseguenza; il che può portare a dei vantaggi anche in termini economici per il mantenimento dell'applicazione. 
+	\item \textbf{Scalabilità}\\Lavorare con un microservizio consente di scalare in modo indipendente per rispondere alla richiesta di un determinato servizio.\\ In questo modo è possibile misurare il carico di lavoro di un singolo servizio e adattarlo di conseguenza, il che può portare a dei vantaggi anche in termini economici per il mantenimento dell'applicazione. 
 	\item \textbf{Semplicità di distribuzione}\\ I microservizi supportano l'approccio \emph{CI/CD} (Continuous Integration/Continuous Delivery), così da semplificare l'integrazione e il testing di nuove funzionalità avendo comunque la possibilità di effettuare un rollback in caso di problemi.
 	\item \textbf{Codice riutilizzabile}\\ Uno dei vantaggi del suddividere un'applicazione in servizi è la possibilità di poter riutilizzare codici di servizi già esistenti per altre applicazioni.
 	\item \textbf{Resilienza}\\ Avendo un'applicazione a servizi indipendenti si aumenta la resilienza in caso di errori.\\ Si possono gestire completamente gli errori di un servizio isolando la funzionalità senza bloccare l'intera applicazione.
@@ -198,7 +198,7 @@ Nello specifico, il metodo \mintinline{java}{run()}:
 \begin{itemize}
 \item Legge le configurazioni;
 \item Avvia l'Application Context, un gestore per tutte le classi coinvolte nell'esecuzione dell'applicazione;
-\item Scansiona il Path dell'intero progetto, per trovare e organizzare tutte le classi annotate con \mintinline{java}{@Controller}, \mintinline{java}{@RestController}, \mintinline{java}{@Entity } ecc.;
+\item Scansiona il Path dell'intero progetto, per trovare e organizzare tutte le classi annotate con \mintinline{java}{@Controller}, \mintinline{java}{@RestController}, \mintinline{java}{@Entity}, ecc.;
 \item Se richiesto, avvia Tomcat Server per il deploy e l'avvio dell'applicazione.
 \end{itemize}
 \newpage
@@ -294,9 +294,9 @@ Si tratta della classe che svolge il compito principale del microservizio, ovver
 tabella \texttt{email}, ma anche nella tabella \texttt{users}, proprio a certificare che l'indirizzo dato sia abilitato a procedere.\\
 La classe è annotata come \mintinline{java}{@RestController}, utilizzato per la gestione di richieste \texttt{HTTP}.\\
 I metodi che possono essere utilizzati con questa tipologia di Controller sono \mintinline{java}{@RequestMapping}, \mintinline{java}{@GetMapping}, 
-\mintinline{java}{@PostMapping}, \mintinline{java}{@PutMapping},\\ \mintinline{java}{@DeleteMapping} ecc., si devono sempre specificare l'URL e il tipo di richiesta da gestire.
+\mintinline{java}{@PostMapping}, \mintinline{java}{@PutMapping},\\ \mintinline{java}{@DeleteMapping}, ecc., si devono sempre specificare l'URL e il tipo di richiesta da gestire.
 In un'architettura REST le risorse sono rappresentate in modo da essere compatibili con le operazioni CRUD (Create, Read, Update, Delete).\\
-Successivamente troviamo un \mintinline{java}{EntityManager} utilizzato l'interazione con il Database ed è parte del modulo Spring Data JPA.\\
+Successivamente si trova un \mintinline{java}{EntityManager} utilizzato l'interazione con il Database ed è parte del modulo Spring Data JPA.\\
 Consente la creazione, la modifica, la rimozione e il caricamento di entità (tabelle) nel Database. \\ \\
 Andando ad analizzarne più a fondo le specifiche è possibile notare, in testa al metodo, l'annotazione\\ \\
 \centerline{\mintinline{java}{@GetMapping("/join/checkemail/{mail}")}} \\ \\
@@ -389,7 +389,7 @@ La funzione restituisce un array contenente le tre componenti del token.
 Successivamente si procede con il parse del token, mediante la funzione \mintinline{lua}{ParseToken(token)} che inizia chiamando la funzione \mintinline{lua}{SplitToken(token)}
 per ottenere l'array delle parti, per poi proseguire applicando una decodifica ad ogni parte controllando anche l'eventuale presenza di errori.\\
 La funzione può restituire tre o quattro risultati: nel caso in cui non ci siano stati errori vengono restituite solo le tre componenti del token decodificate, altrimenti 
-vengono restituiti quattro risultati, i primi tre impostati a \mintinline{lua}{null} (rappresentano i campi del token) e il quarto come stringa con un messaggio di errore.\\
+vengono restituiti quattro risultati, i primi tre impostati a \mintinline{lua}{nil} (rappresentano i campi del token) e il quarto come stringa con un messaggio di errore.\\
 Da notare come tutte le parti vengano prima suddivise e poi decodificate anche se il dato ricercato (l'indirizzo mail) si trova solo nel Body, questo per favorire e semplificare 
 la ricerca di eventuali componenti del token corrotte.
 
